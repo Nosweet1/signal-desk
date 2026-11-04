@@ -1,13 +1,13 @@
 window.SIGNAL_DATA = {
   "version": 1,
-  "generatedAt": "2026-11-04T17:57:52.856Z",
+  "generatedAt": "2026-11-04T17:58:58.416Z",
   "name": "信号台 Signal Desk",
   "motto": "只盯真正会改变人类生存与发展轨迹的事",
   "stats": {
     "sourcesTotal": 33,
-    "sourcesOk": 27,
-    "rawItems": 515,
-    "clusters": 508,
+    "sourcesOk": 32,
+    "rawItems": 622,
+    "clusters": 614,
     "shown": 10
   },
   "categories": [
@@ -38,91 +38,27 @@ window.SIGNAL_DATA = {
   ],
   "health": [
     {
-      "name": "爱范儿",
-      "category": "frontier",
-      "tier": "core",
-      "ok": true,
-      "count": 20,
-      "error": ""
-    },
-    {
-      "name": "极客公园",
-      "category": "frontier",
-      "tier": "core",
-      "ok": true,
-      "count": 30,
-      "error": ""
-    },
-    {
-      "name": "雷峰网",
-      "category": "frontier",
-      "tier": "core",
-      "ok": true,
-      "count": 20,
-      "error": ""
-    },
-    {
-      "name": "联合国新闻",
-      "category": "order",
-      "tier": "core",
-      "ok": true,
-      "count": 30,
-      "error": ""
-    },
-    {
-      "name": "量子位",
-      "category": "frontier",
-      "tier": "core",
-      "ok": true,
-      "count": 10,
-      "error": ""
-    },
-    {
-      "name": "少数派",
-      "category": "frontier",
-      "tier": "core",
-      "ok": true,
-      "count": 10,
-      "error": ""
-    },
-    {
-      "name": "钛媒体",
-      "category": "economy",
-      "tier": "core",
-      "ok": true,
-      "count": 19,
-      "error": ""
-    },
-    {
-      "name": "中新网",
-      "category": "order",
-      "tier": "core",
-      "ok": true,
-      "count": 30,
-      "error": ""
-    },
-    {
-      "name": "中新网财经",
-      "category": "economy",
-      "tier": "core",
-      "ok": true,
-      "count": 30,
-      "error": ""
-    },
-    {
-      "name": "中新网国际",
-      "category": "order",
-      "tier": "core",
-      "ok": true,
-      "count": 30,
-      "error": ""
-    },
-    {
       "name": "Ars Technica",
       "category": "frontier",
       "tier": "core",
       "ok": true,
       "count": 20,
+      "error": ""
+    },
+    {
+      "name": "BBC",
+      "category": "order",
+      "tier": "cloud",
+      "ok": true,
+      "count": 32,
+      "error": ""
+    },
+    {
+      "name": "BBC 科学",
+      "category": "survival",
+      "tier": "cloud",
+      "ok": true,
+      "count": 40,
       "error": ""
     },
     {
@@ -142,11 +78,35 @@ window.SIGNAL_DATA = {
       "error": ""
     },
     {
+      "name": "FT",
+      "category": "economy",
+      "tier": "cloud",
+      "ok": true,
+      "count": 13,
+      "error": ""
+    },
+    {
+      "name": "Guardian",
+      "category": "order",
+      "tier": "cloud",
+      "ok": true,
+      "count": 40,
+      "error": ""
+    },
+    {
       "name": "InfoQ",
       "category": "frontier",
       "tier": "core",
       "ok": true,
       "count": 20,
+      "error": ""
+    },
+    {
+      "name": "Inside Climate News",
+      "category": "survival",
+      "tier": "cloud",
+      "ok": true,
+      "count": 10,
       "error": ""
     },
     {
@@ -254,48 +214,88 @@ window.SIGNAL_DATA = {
       "error": ""
     },
     {
-      "name": "BBC",
+      "name": "中新网",
       "category": "order",
-      "tier": "cloud",
-      "ok": false,
-      "count": 0,
-      "error": "UND_ERR_CONNECT_TIMEOUT"
+      "tier": "core",
+      "ok": true,
+      "count": 30,
+      "error": ""
     },
     {
-      "name": "BBC 科学",
-      "category": "survival",
-      "tier": "cloud",
-      "ok": false,
-      "count": 0,
-      "error": "UND_ERR_CONNECT_TIMEOUT"
+      "name": "中新网国际",
+      "category": "order",
+      "tier": "core",
+      "ok": true,
+      "count": 30,
+      "error": ""
     },
     {
-      "name": "FT",
+      "name": "中新网财经",
       "category": "economy",
-      "tier": "cloud",
-      "ok": false,
-      "count": 0,
-      "error": "UND_ERR_CONNECT_TIMEOUT"
+      "tier": "core",
+      "ok": true,
+      "count": 30,
+      "error": ""
     },
     {
-      "name": "Guardian",
+      "name": "少数派",
+      "category": "frontier",
+      "tier": "core",
+      "ok": true,
+      "count": 10,
+      "error": ""
+    },
+    {
+      "name": "极客公园",
+      "category": "frontier",
+      "tier": "core",
+      "ok": true,
+      "count": 30,
+      "error": ""
+    },
+    {
+      "name": "爱范儿",
+      "category": "frontier",
+      "tier": "core",
+      "ok": true,
+      "count": 20,
+      "error": ""
+    },
+    {
+      "name": "联合国新闻",
       "category": "order",
-      "tier": "cloud",
-      "ok": false,
-      "count": 0,
-      "error": "UND_ERR_CONNECT_TIMEOUT"
+      "tier": "core",
+      "ok": true,
+      "count": 30,
+      "error": ""
+    },
+    {
+      "name": "量子位",
+      "category": "frontier",
+      "tier": "core",
+      "ok": true,
+      "count": 10,
+      "error": ""
+    },
+    {
+      "name": "钛媒体",
+      "category": "economy",
+      "tier": "core",
+      "ok": true,
+      "count": 19,
+      "error": ""
+    },
+    {
+      "name": "雷峰网",
+      "category": "frontier",
+      "tier": "core",
+      "ok": true,
+      "count": 20,
+      "error": ""
     },
     {
       "name": "IMF",
       "category": "economy",
-      "tier": "cloud",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "name": "Inside Climate News",
-      "category": "survival",
       "tier": "cloud",
       "ok": false,
       "count": 0,
@@ -318,7 +318,7 @@ window.SIGNAL_DATA = {
       "tags": [
         "warming"
       ],
-      "score": 8.36
+      "score": 8.35
     },
     {
       "id": "5Lit5Zu95aSu",
@@ -354,6 +354,40 @@ window.SIGNAL_DATA = {
         "warming"
       ],
       "score": 7.82
+    },
+    {
+      "id": "VUsgcG9saXRp",
+      "title": "UK politics: Burnham says US midterm results have created ‘opportunity’ for world to focus on cost of living and ending Iran war – as it happened",
+      "url": "https://www.theguardian.com/politics/live/2026/nov/04/ed-miliband-andy-burnham-king-charles-labour-louise-haigh-alex-burghart-pmqs-conservatives-uk-politics-latest-news",
+      "summary": "‘I think people want to see the world coming together and focusing on the things that matter to people,’ PM says Louise Haigh starts by saying she is standing in for Andy Burnham. She says this weekend the whole country ",
+      "category": "order",
+      "publishedAt": "2026-11-04T17:01:31.000Z",
+      "source": "Guardian",
+      "sources": [
+        "Guardian"
+      ],
+      "clusterSize": 1,
+      "tags": [
+        "war"
+      ],
+      "score": 7.08
+    },
+    {
+      "id": "VmFuY2UgYmxh",
+      "title": "Vance blames Iran war for crushing Republican midterms defeat",
+      "url": "https://www.ft.com/content/6bc8be51-5bd8-468c-bd3c-82bbc2866ba1?syn-25a6b1a6=1",
+      "summary": "Senate races in Alaska and Mississippi not yet called even as blame game over blue wave begins",
+      "category": "economy",
+      "publishedAt": "2026-11-04T16:27:31.000Z",
+      "source": "FT",
+      "sources": [
+        "FT"
+      ],
+      "clusterSize": 1,
+      "tags": [
+        "war"
+      ],
+      "score": 7
     },
     {
       "id": "QW1lcmljYW5z",
@@ -404,7 +438,7 @@ window.SIGNAL_DATA = {
       "tags": [
         "emissions"
       ],
-      "score": 6.6
+      "score": 6.59
     },
     {
       "id": "54m55pyX5pmu",
@@ -424,55 +458,21 @@ window.SIGNAL_DATA = {
       "score": 6.48
     },
     {
-      "id": "V2hhdOKAmXMg",
-      "title": "What’s next for US energy policy after the midterm elections?",
-      "url": "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/",
-      "summary": "I’ve been locked in to my various screens since results from midterm elections started to roll in last night. And it didn’t take long to see the beginning of the blue wave: Democrats took control of both the US House of ",
-      "category": "frontier",
-      "publishedAt": "2026-11-04T17:08:00.000Z",
-      "source": "MIT 科技评论",
-      "sources": [
-        "MIT 科技评论"
-      ],
-      "clusterSize": 1,
-      "tags": [
-        "policy"
-      ],
-      "score": 6.21
-    },
-    {
-      "id": "TXlzdGVyaW91",
-      "title": "Mysterious anthrax outbreak kills hippos in Africa — raising concerns for human spread",
-      "url": "https://www.nature.com/articles/d41586-026-03580-4",
-      "summary": "Nature, Published online: 04 November 2026; doi:10.1038/d41586-026-03580-4 The latest cases, in the Democratic Republic of the Congo, come as the country grapples with ongoing Ebola and cholera outbreaks.",
-      "category": "frontier",
-      "publishedAt": "2026-11-04T00:00:00.000Z",
-      "source": "Nature",
-      "sources": [
-        "Nature"
-      ],
-      "clusterSize": 1,
-      "tags": [
-        "outbreak"
-      ],
-      "score": 6.17
-    },
-    {
-      "id": "VUsgY2xpbWF0",
-      "title": "UK climate minister Katie White: COP31 must respond to ‘really scary’ science",
-      "url": "https://www.carbonbrief.org/uk-climate-minister-katie-white-cop31-must-respond-to-really-scary-science",
-      "summary": "The upcoming COP31 climate talks in Antalya, Turkey need to respond to the latest science on global warming, which is… The post UK climate minister Katie White: COP31 must respond to ‘really scary’ science appeared first",
+      "id": "UHJpbmNlIFdp",
+      "title": "Prince William says UK faces terrifying risk of more wildfires due to climate change",
+      "url": "https://www.bbc.co.uk/news/articles/cr62yv02zwxwo?at_medium=RSS&at_campaign=rss",
+      "summary": "The prince says 2026 was the first summer he felt \"worried about the scale of the wildfires\".",
       "category": "survival",
-      "publishedAt": "2026-11-03T16:50:09.000Z",
-      "source": "Carbon Brief",
+      "publishedAt": "2026-11-04T06:11:43.000Z",
+      "source": "BBC 科学",
       "sources": [
-        "Carbon Brief"
+        "BBC 科学"
       ],
       "clusterSize": 1,
       "tags": [
         "climate"
       ],
-      "score": 5.64
+      "score": 5.91
     }
   ]
 };
