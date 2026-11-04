@@ -13,17 +13,20 @@ on:
       - '.github/workflows/fetch.yml'
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: signal-desk
-  cancel-in-progress: true
+  group: signal-desk-pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -34,26 +37,19 @@ jobs:
       - name: Fetch public feeds
         run: node scripts/fetch.mjs
 
-      - name: Persist latest data
-        run: |
-          git config user.name "signal-desk-bot"
-          git config user.email "signal-desk-bot@users.noreply.github.com"
-          git add data/feed.js
-          if git diff --staged --quiet; then
-            echo "数据无变化，跳过提交"
-          else
-            git commit -m "data: refresh signals [skip ci]"
-            git push
-          fi
-
+      # 数据只在云端重新生成并随站点发布，不写回仓库：
+      # 避免每半小时一个 commit 淹没历史，也避免并发任务互相 non-fast-forward
       - name: Assemble site bundle
         run: |
           mkdir -p site/data
           cp index.html site/
           cp data/feed.js site/data/
+          cp .nojekyll site/
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: './site'
-      - uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
