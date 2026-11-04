@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>信号台 · Signal Desk</title>
+<style>
+:root{
+  --bg:#0b0e14; --panel:#12161f; --panel2:#171c27; --line:#242b3a;
+  --text:#dbe1ec; --dim:#8b95a9; --faint:#5c6678;
+  --accent:#7aa2f7; --good:#9ece6a; --warn:#e0af68; --bad:#f7768e;
+  --frontier:#7aa2f7; --survival:#f7768e; --order:#e0af68; --economy:#9ece6a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--bg); color:var(--text);
+  font:13px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;
+  overflow-y:auto; overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::-webkit-scrollbar{width:7px}
+body::-webkit-scrollbar-thumb{background:#2b3344;border-radius:4px}
+body::-webkit-scrollbar-track{background:transparent}
+
+header{
+  position:sticky; top:0; z-index:5;
+  display:flex; align-items:center; gap:10px;
+  padding:13px 15px 11px;
+  background:linear-gradient(180deg,var(--bg) 82%,rgba(11,14,20,0));
+  border-bottom:1px solid var(--line);
+}
+.logo{
+  width:30px;height:30px;flex:0 0 30px;border-radius:8px;
+  display:grid;place-items:center;font-size:16px;color:#0b0e14;
+  background:linear-gradient(135deg,#7aa2f7,#9ece6a);
+}
+.brand{flex:1;min-width:0}
+.brand h1{font-size:14px;font-weight:650;letter-spacing:.06em;line-height:1.2}
+.brand p{font-size:10.5px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.status{display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--dim);white-space:nowrap}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--good);box-shadow:0 0 7px var(--good)}
+.dot.warn{background:var(--warn);box-shadow:0 0 7px var(--warn)}
+.dot.bad{background:var(--bad);box-shadow:0 0 7px var(--bad)}
+.iconbtn{
+  width:25px;height:25px;flex:0 0 25px;border:1px solid var(--line);border-radius:7px;
+  background:var(--panel);color:var(--dim);cursor:pointer;font-size:13px;line-height:1;
+  display:grid;place-items:center;transition:.18s;
+}
+.iconbtn:hover{color:var(--accent);border-color:var(--accent);transform:rotate(35deg)}
+
+nav{
+  position:sticky;top:55px;z-index:4;
+  display:flex;gap:5px;padding:9px 14px 10px;
+  background:var(--bg);border-bottom:1px solid var(--line);
+}
+.tab{
+  flex:1;text-align:center;padding:5px 0;border-radius:6px;cursor:pointer;
+  font-size:11px;color:var(--dim);border:1px solid transparent;
+  transition:.16s;user-select:none;
+}
+.tab:hover{color:var(--text);background:var(--panel)}
+.tab.on{color:var(--text);background:var(--panel2);border-color:var(--line)}
+.tab.on::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;margin-right:5px;vertical-align:1px;background:var(--tc,var(--accent))}
+
+main{padding:10px 12px 4px}
+.card{
+  display:block;text-decoration:none;color:inherit;
+  position:relative;background:var(--panel);border:1px solid var(--line);
+  border-left:3px solid var(--c);border-radius:8px;
+  padding:9px 11px 9px 12px;margin-bottom:7px;
+  transition:background .16s,border-color .16s,transform .16s;
+}
+.card:hover{background:var(--panel2);border-color:#36415a;transform:translateX(2px)}
+.card .top{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.cat{font-size:10px;font-weight:600;color:var(--c);letter-spacing:.04em}
+.multi{
+  font-size:9.5px;color:var(--bg);background:var(--c);
+  padding:1px 5px;border-radius:4px;font-weight:700;
+}
+.rank{margin-left:auto;font-size:9.5px;color:var(--faint);font-variant-numeric:tabular-nums}
+.title{
+  font-size:12.8px;line-height:1.45;font-weight:550;color:var(--text);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.meta{
+  display:flex;align-items:center;gap:6px;flex-wrap:wrap;
+  margin-top:5px;font-size:10px;color:var(--faint);
+}
+.src{color:var(--dim)}
+.tag{
+  font-size:9.5px;color:var(--accent);background:rgba(122,162,247,.1);
+  border:1px solid rgba(122,162,247,.22);padding:0 5px;border-radius:4px;
+}
+.summary{
+  max-height:0;overflow:hidden;opacity:0;
+  font-size:11px;line-height:1.6;color:var(--dim);
+  border-top:1px dashed transparent;
+  transition:max-height .22s ease,opacity .22s ease,margin .22s ease,padding .22s ease;
+}
+.card:hover .summary{
+  max-height:110px;opacity:1;margin-top:7px;padding-top:7px;border-top-color:var(--line);
+}
+.empty{padding:38px 16px;text-align:center;color:var(--faint);font-size:12px}
+
+footer{
+  padding:10px 15px 16px;border-top:1px solid var(--line);margin-top:8px;
+  font-size:10px;color:var(--faint);
+}
+.health{display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none}
+.health:hover{color:var(--dim)}
+.fails{display:none;margin-top:8px;line-height:1.7;color:var(--dim);word-break:break-all}
+.fails.show{display:block}
+.hint{margin-top:7px;color:#495366;font-size:9.5px;letter-spacing:.02em}
+kbd{
+  font:inherit;font-size:9px;border:1px solid var(--line);border-radius:3px;
+  padding:0 3px;color:var(--faint);background:var(--panel);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">◈</div>
+  <div class="brand">
+    <h1>信号台 <span style="font-weight:400;color:var(--faint);font-size:10px">SIGNAL DESK</span></h1>
+    <p id="motto">只盯真正会改变人类生存与发展轨迹的事</p>
+  </div>
+  <div class="status"><span class="dot" id="dot"></span><span id="stxt">载入中</span></div>
+  <button class="iconbtn" id="refresh" title="刷新数据 (R)">⟳</button>
+</header>
+
+<nav id="tabs"></nav>
+<main id="list"></main>
+
+<footer>
+  <div class="health" id="healthToggle"><span id="healthTxt">—</span><span style="margin-left:auto">▾</span></div>
+  <div class="fails" id="fails"></div>
+  <div class="hint">公开 RSS 聚合 · 点击标题跳原文 · 悬停看摘要 · <kbd>R</kbd> 刷新 <kbd>0</kbd>-<kbd>4</kbd> 切栏目</div>
+</footer>
+
+<script src="./data/feed.js"></script>
+<script>
+(function(){
+  var DATA = window.SIGNAL_DATA || null;
+  var filter = 'all';
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
+  var safeUrl = function(u){ return /^https?:\/\//i.test(u||'') ? esc(u) : '#'; };
+  var $ = function(id){ return document.getElementById(id); };
+
+  function ago(iso){
+    var s = (Date.now() - new Date(iso).getTime())/1000;
+    if (!isFinite(s) || s < 0) s = 0;
+    if (s < 3600) return Math.max(1,Math.floor(s/60)) + ' 分钟前';
+    if (s < 86400) return Math.floor(s/3600) + ' 小时前';
+    return Math.floor(s/86400) + ' 天前';
+  }
+  function catOf(id){
+    var cs = (DATA && DATA.categories) || [];
+    for (var i=0;i<cs.length;i++) if (cs[i].id === id) return cs[i];
+    return {id:id,name:id,color:'var(--accent)'};
+  }
+
+  function renderTabs(){
+    var cs = (DATA && DATA.categories) || [];
+    var html = '<div class="tab'+(filter==='all'?' on':'')+'" data-f="all">全部</div>';
+    for (var i=0;i<cs.length;i++){
+      var c = cs[i];
+      var short = {'frontier':'前沿','survival':'生存','order':'秩序','economy':'经济'}[c.id] || c.name.slice(0,2);
+      html += '<div class="tab'+(filter===c.id?' on':'')+'" data-f="'+esc(c.id)+'" style="--tc:'+c.color+'">'+short+'</div>';
+    }
+    $('tabs').innerHTML = html;
+    var tabs = $('tabs').querySelectorAll('.tab');
+    for (var j=0;j<tabs.length;j++) tabs[j].onclick = function(){ filter=this.getAttribute('data-f'); renderTabs(); renderList(); };
+  }
+
+  function renderStatus(){
+    if (!DATA){ $('dot').className='dot bad'; $('stxt').textContent='无数据'; return; }
+    var h = (Date.now() - new Date(DATA.generatedAt).getTime())/3600000;
+    var d = $('dot'), t = $('stxt');
+    if (h < 1){ d.className='dot'; t.textContent='实时'; }
+    else if (h < 3){ d.className='dot warn'; t.textContent = Math.floor(h)+' 小时前'; }
+    else { d.className='dot bad'; t.textContent = (h<48?Math.floor(h)+' 小时前':Math.floor(h/24)+' 天前'); }
+  }
+
+  function renderHealth(){
+    if (!DATA) return;
+    var hs = DATA.health || [];
+    var ok = hs.filter(function(x){return x.ok;}).length;
+    $('healthTxt').textContent = '信源 ' + ok + '/' + hs.length + ' 正常 · 本次扫描 ' + (DATA.stats.rawItems||0) + ' 条';
+    var bad = hs.filter(function(x){return !x.ok;});
+    $('fails').innerHTML = bad.length
+      ? '<b style="color:var(--warn)">暂不可用：</b>' + bad.map(function(x){ return esc(x.name)+' <span style="color:var(--faint)">('+esc(x.error)+')</span>'; }).join(' · ')
+      : '所有信源均正常';
+  }
+
+  function renderList(){
+    if (!DATA){
+      $('list').innerHTML = '<div class="empty">数据文件尚未生成<br><span style="font-size:10px">运行 <b>refresh.cmd</b> 或等待 GitHub Actions 首次抓取</span></div>';
+      return;
+    }
+    var items = (DATA.items||[]).filter(function(x){ return filter==='all' || x.category===filter; });
+    if (!items.length){ $('list').innerHTML = '<div class="empty">这个栏目暂时没有入选信号</div>'; return; }
+    $('motto').textContent = DATA.motto || '只盯真正会改变人类生存与发展轨迹的事';
+    var html = '';
+    for (var i=0;i<items.length;i++){
+      var it = items[i], c = catOf(it.category);
+      var tags = (it.tags||[]).slice(0,2).map(function(t){return '<span class="tag">'+esc(t)+'</span>';}).join('');
+      html += '<a class="card" style="--c:'+c.color+'" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">'
+        + '<div class="top"><span class="cat">'+esc(c.name)+'</span>'
+        + (it.clusterSize>1 ? '<span class="multi">'+it.clusterSize+' 家报道</span>' : '')
+        + '<span class="rank">#'+(i+1)+'</span></div>'
+        + '<div class="title">'+esc(it.title)+'</div>'
+        + '<div class="meta"><span class="src">'+esc(it.source)+'</span><span>·</span><span>'+ago(it.publishedAt)+'</span>'+tags+'</div>'
+        + (it.summary ? '<div class="summary">'+esc(it.summary)+'</div>' : '')
+        + '</a>';
+    }
+    $('list').innerHTML = html;
+  }
+
+  function renderAll(){ renderStatus(); renderTabs(); renderHealth(); renderList(); }
+
+  function reload(){
+    $('stxt').textContent = '刷新中';
+    var s = document.createElement('script');
+    s.src = './data/feed.js?t=' + Date.now();
+    s.onload = function(){ if (window.SIGNAL_DATA){ DATA = window.SIGNAL_DATA; renderAll(); } s.remove(); };
+    s.onerror = function(){ $('dot').className='dot bad'; $('stxt').textContent='离线'; s.remove(); };
+    document.head.appendChild(s);
+  }
+
+  $('refresh').onclick = reload;
+  $('healthToggle').onclick = function(){ $('fails').classList.toggle('show'); };
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'r' || e.key === 'R') { reload(); return; }
+    if (e.key === 'Escape' || e.key === '0') { filter='all'; }
+    else if (/^[1-4]$/.test(e.key)) {
+      var cs=(DATA&&DATA.categories)||[];
+      if (cs[+e.key-1]) filter = cs[+e.key-1].id;
+    } else return;
+    renderTabs(); renderList();
+  });
+
+  renderAll();
+  setInterval(renderStatus, 60000);
+  setInterval(reload, 5*60*1000);
+})();
+</script>
+</body>
+</html>

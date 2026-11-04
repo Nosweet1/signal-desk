@@ -1,0 +1,89 @@
+{
+  "name": "信号台 Signal Desk",
+  "motto": "只盯真正会改变人类生存与发展轨迹的事",
+  "maxItems": 10,
+  "maxPerCategory": 4,
+  "maxPerSource": 2,
+  "maxAgeHours": 72,
+  "halfLifeHours": 30,
+  "categories": [
+    { "id": "frontier",  "name": "文明与前沿", "color": "#7aa2f7", "hint": "AI、基础科学、航天、算力" },
+    { "id": "survival",  "name": "生存底线",   "color": "#f7768e", "hint": "气候、能源、粮食、公共卫生" },
+    { "id": "order",     "name": "秩序与规则", "color": "#e0af68", "hint": "政策、监管、国际组织、冲突" },
+    { "id": "economy",   "name": "经济与分配", "color": "#9ece6a", "hint": "宏观、就业、产业、资本" }
+  ],
+  "signals": {
+    "high": {
+      "score": 3.2,
+      "terms": [
+        "气候", "升温", "全球变暖", "极端天气", "干旱", "洪灾", "海平面", "碳排放", "碳中和", "冰川",
+        "粮食", "饥荒", "水危机", "能源危机", "核聚变", "可控核聚变", "核事故", "核武",
+        "疫情", "大流行", "病毒", "疫苗", "公共卫生", "抗生素", "耐药", "超级细菌",
+        "AGI", "通用人工智能", "AI安全", "AI 安全", "对齐", "基因编辑", "CRISPR", "脑机",
+        "量子计算", "小行星", "物种灭绝", "生物多样性", "老龄化", "生育率", "人口危机",
+        "战争", "冲突", "制裁", "联合国", "安理会", "央行", "经济衰退", "失业潮", "贫富",
+        "climate", "warming", "emissions", "sea level", "fusion", "famine", "drought",
+        "pandemic", "outbreak", "vaccine", "antimicrobial", "AGI", "alignment", "CRISPR",
+        "extinction", "biodiversity", "nuclear", "war", "sanction", "United Nations",
+        "recession", "unemployment", "inequality", "fertility", "asteroid"
+      ]
+    },
+    "medium": {
+      "score": 1.3,
+      "terms": [
+        "首次", "突破", "里程碑", "量产", "商用", "临床", "试验", "论文", "研究", "监管",
+        "法案", "禁令", "政策", "标准", "芯片", "算力", "机器人", "自动化", "电池", "储能",
+        "太阳能", "电网", "登月", "火星", "卫星", "开源", "裁员", "就业", "利率", "通胀",
+        "breakthrough", "first ever", "milestone", "trial", "study", "research",
+        "regulation", "policy", "bill", "ban", "chip", "robot", "battery", "solar",
+        "grid", "quantum", "launch", "layoff", "inflation", "interest rate"
+      ]
+    },
+    "noise": {
+      "score": -3,
+      "terms": [
+        "开箱", "评测", "上手体验", "优惠", "折扣", "降价", "打折", "值得买", "种草", "好物",
+        "抽奖", "送福利", "跑分", "游戏体验", "明星", "八卦", "演唱会", "新皮肤", "攻略",
+        "促销", "优惠券", "剁手", "晒单", "装机", "固件更新",
+        "unboxing", "hands-on", "best deals", "discount", "coupon", "giveaway", "review",
+        "deal", "save money", "prime day", "black friday"
+      ]
+    }
+  },
+  "sources": [
+    { "name": "联合国新闻",   "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml", "category": "order",     "weight": 5, "lang": "zh", "tier": "core" },
+    { "name": "UN News",     "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml", "category": "order",     "weight": 5, "lang": "en", "tier": "core" },
+    { "name": "WHO",         "url": "https://www.who.int/rss-feeds/news-english.xml",        "category": "survival",  "weight": 5, "lang": "en", "tier": "core" },
+    { "name": "Carbon Brief","url": "https://www.carbonbrief.org/feed/",                     "category": "survival",  "weight": 5, "lang": "en", "tier": "core" },
+    { "name": "Nature",      "url": "https://www.nature.com/nature.rss",                     "category": "frontier",  "weight": 5, "lang": "en", "tier": "core" },
+    { "name": "Science",     "url": "https://www.science.org/rss/news_current.xml",          "category": "frontier",  "weight": 5, "lang": "en", "tier": "core" },
+    { "name": "MIT 科技评论", "url": "https://www.technologyreview.com/feed/",               "category": "frontier",  "weight": 5, "lang": "en", "tier": "core" },
+    { "name": "Phys.org",    "url": "https://phys.org/rss-feed/",                            "category": "frontier",  "weight": 4, "lang": "en", "tier": "core" },
+    { "name": "STAT News",   "url": "https://www.statnews.com/feed/",                        "category": "survival",  "weight": 4, "lang": "en", "tier": "core" },
+    { "name": "Ars Technica","url": "https://feeds.arstechnica.com/arstechnica/index",       "category": "frontier",  "weight": 4, "lang": "en", "tier": "core" },
+    { "name": "NASA",        "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",        "category": "frontier",  "weight": 4, "lang": "en", "tier": "core" },
+    { "name": "Solidot",     "url": "https://www.solidot.org/index.rss",                     "category": "frontier",  "weight": 4, "lang": "zh", "tier": "core" },
+    { "name": "量子位",       "url": "https://www.qbitai.com/feed",                           "category": "frontier",  "weight": 4, "lang": "zh", "tier": "core" },
+    { "name": "中新网",       "url": "https://www.chinanews.com.cn/rss/importnews.xml",       "category": "order",     "weight": 3, "lang": "zh", "tier": "core" },
+    { "name": "NPR",         "url": "https://feeds.npr.org/1001/rss.xml",                    "category": "order",     "weight": 3, "lang": "en", "tier": "core" },
+    { "name": "Wired",       "url": "https://www.wired.com/feed/rss",                        "category": "frontier",  "weight": 3, "lang": "en", "tier": "core" },
+    { "name": "钛媒体",       "url": "https://www.tmtpost.com/rss.xml",                       "category": "economy",   "weight": 3, "lang": "zh", "tier": "core" },
+    { "name": "极客公园",     "url": "https://www.geekpark.net/rss",                          "category": "frontier",  "weight": 3, "lang": "zh", "tier": "core" },
+    { "name": "雷峰网",       "url": "https://www.leiphone.com/feed",                         "category": "frontier",  "weight": 3, "lang": "zh", "tier": "core" },
+    { "name": "InfoQ",       "url": "https://www.infoq.cn/feed",                             "category": "frontier",  "weight": 2, "lang": "zh", "tier": "core" },
+    { "name": "爱范儿",       "url": "https://www.ifanr.com/feed",                            "category": "frontier",  "weight": 2, "lang": "zh", "tier": "core" },
+    { "name": "少数派",       "url": "https://sspai.com/feed",                                "category": "frontier",  "weight": 2, "lang": "zh", "tier": "core" },
+    { "name": "The Verge",   "url": "https://www.theverge.com/rss/index.xml",                "category": "frontier",  "weight": 2, "lang": "en", "tier": "core" },
+    { "name": "中新网财经",   "url": "https://www.chinanews.com.cn/rss/finance.xml",          "category": "economy",   "weight": 4, "lang": "zh", "tier": "core" },
+    { "name": "中新网国际",   "url": "https://www.chinanews.com.cn/rss/world.xml",            "category": "order",     "weight": 4, "lang": "zh", "tier": "core" },
+    { "name": "CNBC",        "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html","category": "economy",   "weight": 4, "lang": "en", "tier": "core" },
+    { "name": "MarketWatch", "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories", "category": "economy", "weight": 3, "lang": "en", "tier": "core" },
+
+    { "name": "BBC",         "url": "https://feeds.bbci.co.uk/news/rss.xml",                 "category": "order",     "weight": 4, "lang": "en", "tier": "cloud" },
+    { "name": "BBC 科学",     "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml", "category": "survival", "weight": 4, "lang": "en", "tier": "cloud" },
+    { "name": "Guardian",    "url": "https://www.theguardian.com/world/rss",                 "category": "order",     "weight": 4, "lang": "en", "tier": "cloud" },
+    { "name": "FT",          "url": "https://www.ft.com/rss/home",                           "category": "economy",   "weight": 4, "lang": "en", "tier": "cloud" },
+    { "name": "IMF",         "url": "https://www.imf.org/en/News/RSS?language=eng",          "category": "economy",   "weight": 5, "lang": "en", "tier": "cloud" },
+    { "name": "Inside Climate News", "url": "https://insideclimatenews.org/feed/",          "category": "survival",  "weight": 4, "lang": "en", "tier": "cloud" }
+  ]
+}
