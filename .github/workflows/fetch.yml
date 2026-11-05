@@ -2,7 +2,10 @@ name: Fetch & Deploy Signals
 
 on:
   schedule:
+    # 云端抓取频率：改这一行即可。页面上的「刷新模式」只控制浏览器多久来取一次数据，不影响这里。
+    # 想更及时可换 '*/15 * * * *'（约 400-600 分钟/月，仍在免费额度内）；每小时用 '0 * * * *'。
     - cron: '*/30 * * * *'
+  # 在 GitHub Actions 页面点 Run workflow 可立即重抓一次，不必等定时
   workflow_dispatch:
   push:
     branches: [main]

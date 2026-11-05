@@ -22,13 +22,13 @@ body{
 body::-webkit-scrollbar{width:7px}
 body::-webkit-scrollbar-thumb{background:#2b3344;border-radius:4px}
 body::-webkit-scrollbar-track{background:transparent}
+a{color:inherit}
 
 header{
-  position:sticky; top:0; z-index:5;
-  display:flex; align-items:center; gap:10px;
-  padding:13px 15px 11px;
-  background:linear-gradient(180deg,var(--bg) 82%,rgba(11,14,20,0));
-  border-bottom:1px solid var(--line);
+  position:sticky; top:0; z-index:6;
+  display:flex; align-items:center; gap:8px;
+  padding:13px 14px 11px;
+  background:var(--bg); border-bottom:1px solid var(--line);
 }
 .logo{
   width:30px;height:30px;flex:0 0 30px;border-radius:8px;
@@ -38,7 +38,7 @@ header{
 .brand{flex:1;min-width:0}
 .brand h1{font-size:14px;font-weight:650;letter-spacing:.06em;line-height:1.2}
 .brand p{font-size:10.5px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
-.status{display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--dim);white-space:nowrap}
+.status{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--dim);white-space:nowrap;font-variant-numeric:tabular-nums}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--good);box-shadow:0 0 7px var(--good)}
 .dot.warn{background:var(--warn);box-shadow:0 0 7px var(--warn)}
 .dot.bad{background:var(--bad);box-shadow:0 0 7px var(--bad)}
@@ -47,11 +47,12 @@ header{
   background:var(--panel);color:var(--dim);cursor:pointer;font-size:13px;line-height:1;
   display:grid;place-items:center;transition:.18s;
 }
-.iconbtn:hover{color:var(--accent);border-color:var(--accent);transform:rotate(35deg)}
+.iconbtn:hover,.iconbtn.on{color:var(--accent);border-color:var(--accent)}
+#refresh:hover{transform:rotate(35deg)}
 
 nav{
-  position:sticky;top:55px;z-index:4;
-  display:flex;gap:5px;padding:9px 14px 10px;
+  position:sticky;top:55px;z-index:5;
+  display:flex;gap:5px;padding:9px 14px 8px;
   background:var(--bg);border-bottom:1px solid var(--line);
 }
 .tab{
@@ -63,44 +64,103 @@ nav{
 .tab.on{color:var(--text);background:var(--panel2);border-color:var(--line)}
 .tab.on::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;margin-right:5px;vertical-align:1px;background:var(--tc,var(--accent))}
 
+.toolbar{
+  display:flex;align-items:center;gap:8px;padding:8px 14px;
+  border-bottom:1px solid var(--line);font-size:10.5px;color:var(--faint);
+}
+.vswitch{display:flex;gap:3px;background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:2px}
+.vbtn{
+  border:0;background:transparent;color:var(--dim);font:inherit;font-size:10.5px;
+  padding:3px 9px;border-radius:5px;cursor:pointer;white-space:nowrap;
+}
+.vbtn.on{background:var(--panel2);color:var(--text)}
+.tbcount{margin-left:auto;font-variant-numeric:tabular-nums}
+
+.settings{
+  display:none;padding:11px 14px 12px;background:var(--panel);
+  border-bottom:1px solid var(--line);
+}
+.settings.show{display:block}
+.srow{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;font-size:11px;color:var(--text)}
+.srow small{margin-left:auto;color:var(--faint);font-size:10px;font-variant-numeric:tabular-nums}
+.modes{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px}
+.mode{
+  border:1px solid var(--line);background:var(--bg);color:var(--dim);
+  font:inherit;font-size:10.5px;padding:4px 9px;border-radius:6px;cursor:pointer;
+}
+.mode:hover{color:var(--text)}
+.mode.on{color:var(--bg);background:var(--accent);border-color:var(--accent);font-weight:600}
+.chk{display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--dim);margin:5px 0;cursor:pointer}
+.chk input{accent-color:var(--accent);width:13px;height:13px;cursor:pointer}
+.snote{margin-top:8px;font-size:10px;line-height:1.6;color:var(--faint);border-top:1px dashed var(--line);padding-top:7px}
+
 main{padding:10px 12px 4px}
+.digest{
+  background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:8px;padding:10px 11px;margin-bottom:10px;
+}
+.dhead{display:block;font-size:10.5px;color:var(--accent);margin-bottom:8px}
+.dhead span{display:block;color:var(--faint);font-size:10px;margin-top:3px;font-variant-numeric:tabular-nums;line-height:1.5}
+.dlist{list-style:none;counter-reset:dp}
+.dlist li{
+  counter-increment:dp;position:relative;padding:5px 0 6px 20px;
+  border-top:1px dashed var(--line);font-size:11px;line-height:1.55;
+}
+.dlist li:first-child{border-top:0;padding-top:1px}
+.dlist li::before{
+  content:counter(dp);position:absolute;left:0;top:6px;
+  width:14px;height:14px;border-radius:4px;background:var(--panel2);
+  color:var(--faint);font-size:9px;display:grid;place-items:center;
+}
+.dlist li:first-child::before{top:2px}
+.dt{font-weight:600;color:var(--text);text-decoration:none}
+.dt:hover{color:var(--accent)}
+.db{color:var(--dim);font-size:10.5px;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
 .card{
-  display:block;text-decoration:none;color:inherit;
-  position:relative;background:var(--panel);border:1px solid var(--line);
+  display:block;position:relative;background:var(--panel);border:1px solid var(--line);
   border-left:3px solid var(--c);border-radius:8px;
-  padding:9px 11px 9px 12px;margin-bottom:7px;
-  transition:background .16s,border-color .16s,transform .16s;
+  padding:9px 11px 10px 12px;margin-bottom:8px;
+  transition:background .16s,border-color .16s;
 }
-.card:hover{background:var(--panel2);border-color:#36415a;transform:translateX(2px)}
-.card .top{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.card:hover{background:var(--panel2);border-color:#36415a}
+.card .top{display:flex;align-items:center;gap:6px;margin-bottom:5px;flex-wrap:wrap}
 .cat{font-size:10px;font-weight:600;color:var(--c);letter-spacing:.04em}
-.multi{
-  font-size:9.5px;color:var(--bg);background:var(--c);
-  padding:1px 5px;border-radius:4px;font-weight:700;
+.badge{
+  font-size:9px;padding:1px 5px;border-radius:4px;line-height:1.4;white-space:nowrap;
 }
+.auth{color:var(--good);border:1px solid rgba(158,206,106,.35);background:rgba(158,206,106,.08)}
+.multi{color:var(--bg);background:var(--c);font-weight:700}
+.en{color:var(--warn);border:1px solid rgba(224,175,104,.35);background:rgba(224,175,104,.08)}
 .rank{margin-left:auto;font-size:9.5px;color:var(--faint);font-variant-numeric:tabular-nums}
 .title{
-  font-size:12.8px;line-height:1.45;font-weight:550;color:var(--text);
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  display:block;font-size:12.8px;line-height:1.45;font-weight:550;color:var(--text);
+  text-decoration:none;
+}
+.title:hover{color:var(--accent)}
+.brief{
+  font-size:11.2px;line-height:1.65;color:var(--dim);
+  margin-top:6px;padding-top:6px;border-top:1px dashed var(--line);
+  word-break:break-word;
+}
+.brief.none{color:var(--faint);font-style:italic}
+.facts{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.fact{
+  font-size:10px;color:var(--accent);background:rgba(122,162,247,.09);
+  border:1px solid rgba(122,162,247,.2);padding:1px 6px;border-radius:4px;
+  font-variant-numeric:tabular-nums;
 }
 .meta{
   display:flex;align-items:center;gap:6px;flex-wrap:wrap;
-  margin-top:5px;font-size:10px;color:var(--faint);
+  margin-top:8px;font-size:10px;color:var(--faint);
 }
 .src{color:var(--dim)}
 .tag{
   font-size:9.5px;color:var(--accent);background:rgba(122,162,247,.1);
   border:1px solid rgba(122,162,247,.22);padding:0 5px;border-radius:4px;
 }
-.summary{
-  max-height:0;overflow:hidden;opacity:0;
-  font-size:11px;line-height:1.6;color:var(--dim);
-  border-top:1px dashed transparent;
-  transition:max-height .22s ease,opacity .22s ease,margin .22s ease,padding .22s ease;
-}
-.card:hover .summary{
-  max-height:110px;opacity:1;margin-top:7px;padding-top:7px;border-top-color:var(--line);
-}
+.orig{margin-left:auto;color:var(--dim);text-decoration:none;font-size:10px;white-space:nowrap}
+.orig:hover{color:var(--accent)}
 .empty{padding:38px 16px;text-align:center;color:var(--faint);font-size:12px}
 
 footer{
@@ -127,27 +187,60 @@ kbd{
     <p id="motto">只盯真正会改变人类生存与发展轨迹的事</p>
   </div>
   <div class="status"><span class="dot" id="dot"></span><span id="stxt">载入中</span></div>
-  <button class="iconbtn" id="refresh" title="刷新数据 (R)">⟳</button>
+  <button class="iconbtn" id="settingsBtn" title="刷新模式与显示设置 (S)">⚙</button>
+  <button class="iconbtn" id="refresh" title="立即刷新 (R)">⟳</button>
 </header>
 
 <nav id="tabs"></nav>
-<main id="list"></main>
+
+<div class="toolbar">
+  <div class="vswitch" id="vswitch">
+    <button class="vbtn on" data-v="focus">重点</button>
+    <button class="vbtn" data-v="all">全部</button>
+  </div>
+  <span id="tbcount" class="tbcount">—</span>
+</div>
+
+<div class="settings" id="settings">
+  <div class="srow"><b>刷新模式</b><small id="nextRefresh">—</small></div>
+  <div class="modes" id="modes"></div>
+  <label class="chk"><input type="checkbox" id="pauseHidden"> 窗口隐藏时暂停自动刷新</label>
+  <label class="chk"><input type="checkbox" id="showDigest"> 显示顶部速览</label>
+  <div class="snote">云端每 30 分钟重新抓取一次公开 RSS 并生成数据文件；这里设置的是本页多久去取一次新数据，不会触发重新抓取。想立刻重抓，在本机运行 <b>refresh.cmd</b>，或在 GitHub Actions 里手动触发。</div>
+</div>
+
+<main id="main">
+  <section class="digest" id="digest">
+    <div class="dhead">⚡ 本轮速览 <span id="dsummary">—</span></div>
+    <ol class="dlist" id="dpoints"></ol>
+  </section>
+  <div id="list"></div>
+</main>
 
 <footer>
   <div class="health" id="healthToggle"><span id="healthTxt">—</span><span style="margin-left:auto">▾</span></div>
   <div class="fails" id="fails"></div>
-  <div class="hint">公开 RSS 聚合 · 点击标题跳原文 · 悬停看摘要 · <kbd>R</kbd> 刷新 <kbd>0</kbd>-<kbd>4</kbd> 切栏目</div>
+  <div class="hint">公开 RSS 聚合 · 每条直接给要点 · 点标题看原文 · <kbd>R</kbd> 刷新 <kbd>V</kbd> 切范围 <kbd>S</kbd> 设置 <kbd>0</kbd>-<kbd>4</kbd> 切栏目</div>
 </footer>
 
 <script src="./data/feed.js"></script>
 <script>
 (function(){
   var DATA = window.SIGNAL_DATA || null;
-  var filter = 'all';
+  var KEY = 'signal-desk-settings-v2';
+  var MODES = { '2m':120000, '5m':300000, '15m':900000, '30m':1800000, 'manual':0 };
+  var MODE_LABELS = [['2m','2 分钟'],['5m','5 分钟'],['15m','15 分钟'],['30m','30 分钟'],['manual','仅手动']];
+  var DEF = { mode:'5m', pauseHidden:true, showDigest:true, view:'focus' };
+  var S = DEF;
+  try { var saved = JSON.parse(localStorage.getItem(KEY) || 'null'); if (saved) for (var k in DEF) if (saved[k] !== undefined) S[k] = saved[k]; } catch(e){}
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(S)); } catch(e){} }
+
+  var filter = 'all', timer = null, nextAt = 0;
   var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
   var safeUrl = function(u){ return /^https?:\/\//i.test(u||'') ? esc(u) : '#'; };
   var $ = function(id){ return document.getElementById(id); };
+  var pad2 = function(n){ return (n<10?'0':'')+n; };
 
   function ago(iso){
     var s = (Date.now() - new Date(iso).getTime())/1000;
@@ -160,6 +253,10 @@ kbd{
     var cs = (DATA && DATA.categories) || [];
     for (var i=0;i<cs.length;i++) if (cs[i].id === id) return cs[i];
     return {id:id,name:id,color:'var(--accent)'};
+  }
+  function currentItems(){
+    if (!DATA) return [];
+    return (S.view === 'all' ? (DATA.allItems || DATA.items || []) : (DATA.items || []));
   }
 
   function renderTabs(){
@@ -175,65 +272,141 @@ kbd{
     for (var j=0;j<tabs.length;j++) tabs[j].onclick = function(){ filter=this.getAttribute('data-f'); renderTabs(); renderList(); };
   }
 
+  function renderViewSwitch(){
+    var bs = $('vswitch').querySelectorAll('.vbtn');
+    for (var i=0;i<bs.length;i++){
+      bs[i].className = 'vbtn' + (bs[i].getAttribute('data-v') === S.view ? ' on' : '');
+      bs[i].onclick = function(){ S.view = this.getAttribute('data-v'); save(); renderViewSwitch(); renderList(); };
+    }
+  }
+
   function renderStatus(){
     if (!DATA){ $('dot').className='dot bad'; $('stxt').textContent='无数据'; return; }
     var h = (Date.now() - new Date(DATA.generatedAt).getTime())/3600000;
-    var d = $('dot'), t = $('stxt');
-    if (h < 1){ d.className='dot'; t.textContent='实时'; }
-    else if (h < 3){ d.className='dot warn'; t.textContent = Math.floor(h)+' 小时前'; }
-    else { d.className='dot bad'; t.textContent = (h<48?Math.floor(h)+' 小时前':Math.floor(h/24)+' 天前'); }
+    var d = $('dot'), age;
+    if (h < 1){ d.className='dot'; age='实时'; }
+    else if (h < 3){ d.className='dot warn'; age=Math.floor(h)+' 小时前'; }
+    else { d.className='dot bad'; age=(h<48?Math.floor(h)+' 小时前':Math.floor(h/24)+' 天前'); }
+    var cd = '';
+    if (nextAt){
+      var s = Math.max(0, Math.ceil((nextAt - Date.now())/1000));
+      cd = ' · ' + Math.floor(s/60) + ':' + pad2(s%60);
+    } else if (S.mode === 'manual') cd = ' · 仅手动';
+    $('stxt').textContent = age + cd;
+    $('nextRefresh').textContent = nextAt ? '下次 ' + Math.floor(Math.max(0,(nextAt-Date.now())/1000)/60) + ' 分后' : '不会自动刷新';
+  }
+
+  function renderDigest(){
+    var box = $('digest');
+    box.style.display = S.showDigest ? '' : 'none';
+    if (!S.showDigest || !DATA || !DATA.digest) return;
+    $('dsummary').textContent = DATA.digest.summaryLine || '';
+    var pts = DATA.digest.points || [];
+    $('dpoints').innerHTML = pts.map(function(p){
+      var c = catOf(p.category);
+      return '<li><a class="dt" href="'+safeUrl(p.url)+'" target="_blank" rel="noopener noreferrer">'+esc(p.title)+'</a>'
+        + '<div class="db">'+esc(p.brief || '')+'</div></li>';
+    }).join('');
   }
 
   function renderHealth(){
     if (!DATA) return;
-    var hs = DATA.health || [];
-    var ok = hs.filter(function(x){return x.ok;}).length;
-    $('healthTxt').textContent = '信源 ' + ok + '/' + hs.length + ' 正常 · 本次扫描 ' + (DATA.stats.rawItems||0) + ' 条';
+    var hs = DATA.health || [], ok = hs.filter(function(x){return x.ok;}).length;
+    var st = DATA.stats || {};
+    $('healthTxt').textContent = '信源 ' + ok + '/' + hs.length + ' 可用 · 权威源 ' + (st.authorityTotal||0) + ' 家（本机 ' + (st.authorityOk||0) + '） · 本轮扫描 ' + (st.rawItems||0) + ' 条';
     var bad = hs.filter(function(x){return !x.ok;});
-    $('fails').innerHTML = bad.length
-      ? '<b style="color:var(--warn)">暂不可用：</b>' + bad.map(function(x){ return esc(x.name)+' <span style="color:var(--faint)">('+esc(x.error)+')</span>'; }).join(' · ')
-      : '所有信源均正常';
+    var cloud = bad.filter(function(x){return x.tier === 'cloud';});
+    var local = bad.filter(function(x){return x.tier !== 'cloud';});
+    var fmt = function(x){ return esc(x.name)+' <span style="color:var(--faint)">('+esc(x.error)+')</span>'; };
+    var parts = [];
+    if (cloud.length) parts.push('<b style="color:var(--dim)">境外源本机不可达，GitHub Actions 会自动重试：</b>' + cloud.map(fmt).join(' · '));
+    if (local.length) parts.push('<b style="color:var(--warn)">异常：</b>' + local.map(fmt).join(' · '));
+    $('fails').innerHTML = parts.length ? parts.join('<br>') : '所有信源均正常';
   }
 
   function renderList(){
     if (!DATA){
       $('list').innerHTML = '<div class="empty">数据文件尚未生成<br><span style="font-size:10px">运行 <b>refresh.cmd</b> 或等待 GitHub Actions 首次抓取</span></div>';
+      $('tbcount').textContent = '—';
       return;
     }
-    var items = (DATA.items||[]).filter(function(x){ return filter==='all' || x.category===filter; });
-    if (!items.length){ $('list').innerHTML = '<div class="empty">这个栏目暂时没有入选信号</div>'; return; }
     $('motto').textContent = DATA.motto || '只盯真正会改变人类生存与发展轨迹的事';
+    var all = currentItems();
+    var items = all.filter(function(x){ return filter==='all' || x.category===filter; });
+    $('tbcount').textContent = items.length + ' 条' + (S.view==='all' ? '（全集）' : '（重点）');
+    if (!items.length){ $('list').innerHTML = '<div class="empty">这个栏目暂时没有入选信号</div>'; return; }
     var html = '';
     for (var i=0;i<items.length;i++){
       var it = items[i], c = catOf(it.category);
       var tags = (it.tags||[]).slice(0,2).map(function(t){return '<span class="tag">'+esc(t)+'</span>';}).join('');
-      html += '<a class="card" style="--c:'+c.color+'" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">'
+      var facts = (it.facts||[]).map(function(f){return '<span class="fact">'+esc(f)+'</span>';}).join('');
+      var brief = it.brief || it.summary || '';
+      html += '<article class="card" style="--c:'+c.color+'">'
         + '<div class="top"><span class="cat">'+esc(c.name)+'</span>'
-        + (it.clusterSize>1 ? '<span class="multi">'+it.clusterSize+' 家报道</span>' : '')
+        + ((it.authority||3)>=5 ? '<span class="badge auth">权威源</span>' : '')
+        + (it.clusterSize>1 ? '<span class="badge multi">'+it.clusterSize+' 家报道</span>' : '')
+        + (it.briefLang==='en' ? '<span class="badge en">EN 摘要</span>' : '')
         + '<span class="rank">#'+(i+1)+'</span></div>'
-        + '<div class="title">'+esc(it.title)+'</div>'
-        + '<div class="meta"><span class="src">'+esc(it.source)+'</span><span>·</span><span>'+ago(it.publishedAt)+'</span>'+tags+'</div>'
-        + (it.summary ? '<div class="summary">'+esc(it.summary)+'</div>' : '')
-        + '</a>';
+        + '<a class="title" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">'+esc(it.title)+'</a>'
+        + '<div class="brief'+(brief?'':' none')+'">'+esc(brief || '该信源未提供摘要，点标题看原文。')+'</div>'
+        + (facts ? '<div class="facts">'+facts+'</div>' : '')
+        + '<div class="meta"><span class="src">'+esc(it.source)+'</span><span>·</span><span>'+ago(it.publishedAt)+'</span>'+tags
+        + '<a class="orig" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">原文 ↗</a></div>'
+        + '</article>';
     }
     $('list').innerHTML = html;
   }
 
-  function renderAll(){ renderStatus(); renderTabs(); renderHealth(); renderList(); }
+  function renderSettings(){
+    $('modes').innerHTML = MODE_LABELS.map(function(m){
+      return '<button class="mode'+(S.mode===m[0]?' on':'')+'" data-m="'+m[0]+'">'+m[1]+'</button>';
+    }).join('');
+    var bs = $('modes').querySelectorAll('.mode');
+    for (var i=0;i<bs.length;i++) bs[i].onclick = function(){
+      S.mode = this.getAttribute('data-m'); save(); renderSettings(); schedule();
+    };
+    $('pauseHidden').checked = !!S.pauseHidden;
+    $('showDigest').checked = !!S.showDigest;
+    $('settingsBtn').className = 'iconbtn' + ($('settings').classList.contains('show') ? ' on' : '');
+  }
 
-  function reload(){
-    $('stxt').textContent = '刷新中';
+  function renderAll(){ renderStatus(); renderTabs(); renderViewSwitch(); renderDigest(); renderHealth(); renderList(); }
+
+  function schedule(){
+    clearTimeout(timer);
+    var ms = MODES[S.mode] || 0;
+    if (!ms){ nextAt = 0; renderStatus(); return; }
+    nextAt = Date.now() + ms;
+    timer = setTimeout(function(){
+      if (document.hidden && S.pauseHidden){ schedule(); return; }
+      reload(false);
+    }, ms);
+    renderStatus();
+  }
+
+  function reload(manual){
+    if (manual) $('stxt').textContent = '刷新中';
     var s = document.createElement('script');
     s.src = './data/feed.js?t=' + Date.now();
-    s.onload = function(){ if (window.SIGNAL_DATA){ DATA = window.SIGNAL_DATA; renderAll(); } s.remove(); };
-    s.onerror = function(){ $('dot').className='dot bad'; $('stxt').textContent='离线'; s.remove(); };
+    s.onload = function(){ if (window.SIGNAL_DATA){ DATA = window.SIGNAL_DATA; renderAll(); } s.remove(); schedule(); };
+    s.onerror = function(){ $('dot').className='dot bad'; $('stxt').textContent='离线'; s.remove(); schedule(); };
     document.head.appendChild(s);
   }
 
-  $('refresh').onclick = reload;
+  $('refresh').onclick = function(){ reload(true); };
+  $('settingsBtn').onclick = function(){
+    $('settings').classList.toggle('show');
+    $('settingsBtn').className = 'iconbtn' + ($('settings').classList.contains('show') ? ' on' : '');
+  };
+  $('pauseHidden').onchange = function(){ S.pauseHidden = this.checked; save(); };
+  $('showDigest').onchange = function(){ S.showDigest = this.checked; save(); renderDigest(); };
   $('healthToggle').onclick = function(){ $('fails').classList.toggle('show'); };
+
   document.addEventListener('keydown', function(e){
-    if (e.key === 'r' || e.key === 'R') { reload(); return; }
+    if (/input|textarea/i.test((e.target && e.target.tagName) || '')) return;
+    if (e.key === 'r' || e.key === 'R') { reload(true); return; }
+    if (e.key === 's' || e.key === 'S') { $('settingsBtn').click(); return; }
+    if (e.key === 'v' || e.key === 'V') { S.view = S.view === 'focus' ? 'all' : 'focus'; save(); renderViewSwitch(); renderList(); return; }
     if (e.key === 'Escape' || e.key === '0') { filter='all'; }
     else if (/^[1-4]$/.test(e.key)) {
       var cs=(DATA&&DATA.categories)||[];
@@ -241,10 +414,15 @@ kbd{
     } else return;
     renderTabs(); renderList();
   });
+  document.addEventListener('visibilitychange', function(){
+    if (!document.hidden && S.pauseHidden && nextAt && nextAt <= Date.now()) reload(false);
+    renderStatus();
+  });
 
+  renderSettings();
   renderAll();
-  setInterval(renderStatus, 60000);
-  setInterval(reload, 5*60*1000);
+  schedule();
+  setInterval(renderStatus, 1000);
 })();
 </script>
 </body>
