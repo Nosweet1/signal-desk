@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-05T23:57:45.699Z",
+  "headline": "主线：vaccine / trial / war｜首条「Two new Ebola vaccines …」",
+  "items": [
+    {
+      "id": "VHdvIG5ldyBF",
+      "title": "Two new Ebola vaccines to join DR Congo clinical trial",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168742",
+      "source": "UN News",
+      "category": "order",
+      "score": 8.93,
+      "brief": "Two new Ebola vaccine candidates will be added to a clinical trial in the Democratic Republic of the Congo (DRC) as the country continues to battle a deadly outbreak caused by the…",
+      "why": "本轮影响度最高的一档，命中「vaccine、trial」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "RmFyYWdlIHNh",
+      "title": "Farage says he is worried Trump will step up Iran war after midterm 'disaster'",
+      "url": "https://www.bbc.co.uk/news/articles/cqz0vz55jpglo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "order",
+      "score": 8.7,
+      "brief": "Donald Trump \"broke a promise\" to the American electorate by launching the war, Reform UK leader adds.",
+      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "QVJN77ya4oCc",
+      "title": "ARM：“芯片税” 失速，AGI CPU 撑得住估值吗？",
+      "url": "https://www.huxiu.com/article/4903417.html",
+      "source": "虎嗅",
+      "category": "economy",
+      "score": 8.57,
+      "brief": "本文来自微信公众号： 海豚研究 ，作者：海豚君 ARM（ARM.O）于北京时间2026年11月5日上午的美股盘后发布了2027财年第二季度财报（截止2026年9月），要点如下： 1、主要数据：ARM本季度实现收入14.4亿美元，同比增长27%，高于市场预期（13.8亿美元）。",
+      "why": "本轮影响度最高的一档，命中「AGI、芯片」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2026年、14.4亿"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "Q2hpbGVhbiBy",
+      "title": "Chilean rodent population collapse reveals how extreme drought can overwhelm wildlife's resilience",
+      "url": "https://phys.org/news/2026-11-chilean-rodent-population-collapse-reveals.html",
+      "source": "Phys.org",
+      "category": "frontier",
+      "score": 8.4,
+      "brief": "Research published in the journal Ecology analyzed 12 years of records from a population of degus in central Chile, revealing that these endemic rodents managed to withstand nearly a decade…",
+      "why": "本轮影响度最高的一档，命中「drought」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "RGVtb2NyYXRz",
+      "title": "Democrats’ Big Statehouse Wins Could Transform Climate and Energy Policy",
+      "url": "https://insideclimatenews.org/news/05112026/inside-clean-energy-democrats-trifecta-results/",
+      "source": "Inside Climate News",
+      "category": "survival",
+      "score": 7.77,
+      "brief": "Before Tuesday’s election, Republicans held more governorships and state legislative seats than Democrats, along with an advantage in state trifectas—unified control of the governor’s…",
+      "why": "本轮影响度最高的一档，命中「climate、policy」。",
+      "impact": [
+        "公共健康与资源约束：影响的是成本曲线和监管强度"
+      ],
+      "horizon": "长期"
+    },
+    {
+      "id": "TmFzZGFxIGRy",
+      "title": "Nasdaq drops the most since pandemic as Democratic ‘blue wave’ upends AI bets",
+      "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
+      "source": "FT",
+      "category": "economy",
+      "score": 7.62,
+      "brief": "Investors fear newly elected politicians up and down the US will seek to slow data centre development in blow to tech stocks",
+      "why": "本轮影响度最高的一档，命中「pandemic」，来源权威。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    }
+  ],
+  "watch": [
+    {
+      "title": "特朗普：俄乌冲突已非常接近解决",
+      "source": "中新网国际",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-06/10726987.shtml"
+    },
+    {
+      "title": "儿基会：冲突中袭击供水和环境卫生设施事件增加三倍",
+      "source": "联合国新闻",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143138"
+    },
+    {
+      "title": "联合国阿卜耶伊安全部队继续发挥稳定作用 无人机袭击凸显地区安全风险",
+      "source": "联合国新闻",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143137"
+    }
+  ],
+  "engine": "rules",
+  "stats": {
+    "scanned": 1240,
+    "events": 1218,
+    "sources": "101/108",
+    "candidates": 10
+  }
+}
