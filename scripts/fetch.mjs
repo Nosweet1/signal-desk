@@ -23,7 +23,9 @@ const FETCH_BATCH = 12;
 const CLUSTER_THRESHOLD = 0.34;
 const CLUSTER_WINDOW_MS = 48 * 3600 * 1000;
 const BRIEF_MAX = 190;
-const ALL_ITEMS_LIMIT = CFG.allItemsLimit || 60;
+const ALL_ITEMS_LIMIT = CFG.allItemsLimit || 300;
+const TRANSLATE_MAX = Number(process.env.TRANSLATE_MAX || 70); // 每轮最多翻译多少条，控制免费额度
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 /* ---------------- XML 清洗 ---------------- */
 function decode(s = '') {
@@ -466,6 +468,49 @@ for (const rule of CFG.reserveSources || []) {
 }
 picked.sort((a, b) => b.score - a.score);
 
+/* ---------------- 构建期翻译：英文条目标题/摘要 → 中文 ----------------
+ * 走 MyMemory 免费接口（无需 key，约 5000 词/天），失败一律静默跳过。
+ * 前端因此零请求即可显示中文，离线也能看。SKIP_TRANSLATE=1 可关闭。 */
+function looksEnglish(s = '') {
+  const cn = (s.match(/[\u4e00-\u9fa5]/g) || []).length;
+  const en = (s.match(/[A-Za-z]/g) || []).length;
+  return cn === 0 && en >= 8;
+}
+async function myMemory(q) {
+  const url = 'https://api.mymemory.translated.net/get?q='
+    + encodeURIComponent(String(q).slice(0, 460)) + '&langpair=en|zh-CN';
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), 8000);
+  try {
+    const r = await fetch(url, { signal: ac.signal, headers: { 'user-agent': UA } });
+    if (!r.ok) return '';
+    const j = await r.json();
+    const out = j?.responseData?.translatedText || '';
+    if (!out || /MYMEMORY WARNING|QUERY LENGTH LIMIT|INVALID/i.test(out)) return '';
+    return String(out).trim();
+  } catch { return ''; } finally { clearTimeout(timer); }
+}
+async function translateAll(list) {
+  if (process.env.SKIP_TRANSLATE === '1') return 0;
+  const seen = new Set();
+  let done = 0, ok = 0;
+  for (const it of list) {
+    if (done >= TRANSLATE_MAX) break;
+    if (!it || seen.has(it.id)) continue;
+    seen.add(it.id);
+    const needT = looksEnglish(it.title);
+    const needB = it.brief && looksEnglish(it.brief);
+    if (!needT && !needB) continue;
+    done++;
+    if (needT) { const zh = await myMemory(it.title); if (zh) { it.titleZh = zh; ok++; } await sleep(260); }
+    if (needB) { const zh = await myMemory(it.brief); if (zh) { it.briefZh = zh; ok++; } await sleep(260); }
+  }
+  return ok;
+}
+
+const allOut = scored.slice(0, ALL_ITEMS_LIMIT);
+const zhCount = await translateAll([...picked, ...allOut]);
+
 // 速览：一眼看完本轮最重要的几条，不必逐张卡片读
 const tagCount = new Map();
 for (const it of picked) for (const t of it.tags) tagCount.set(t, (tagCount.get(t) || 0) + 1);
@@ -477,12 +522,13 @@ const digest = {
     + (topTag ? ` · 「${topTag}」最集中` : ''),
   points: picked.slice(0, CFG.digestCount || 5).map(x => ({
     id: x.id, title: x.title, brief: x.brief, briefLang: x.briefLang,
+    titleZh: x.titleZh || '', briefZh: x.briefZh || '',
     category: x.category, source: x.source, url: x.url, clusterSize: x.clusterSize
   }))
 };
 
 const payload = {
-  version: 2,
+  version: 3,
   generatedAt: new Date().toISOString(),
   name: CFG.name,
   motto: CFG.motto,
@@ -496,13 +542,14 @@ const payload = {
     rawItems: raw.length,
     clusters: clusters.length,
     shown: picked.length,
-    allItems: Math.min(ALL_ITEMS_LIMIT, scored.length)
+    allItems: Math.min(ALL_ITEMS_LIMIT, scored.length),
+    translated: zhCount
   },
   categories: CFG.categories,
   health: health.sort((a, b) => (a.ok ? 0 : 1) - (b.ok ? 0 : 1) || a.name.localeCompare(b.name)),
   digest,
   items: picked,
-  allItems: scored.slice(0, ALL_ITEMS_LIMIT),
+  allItems: allOut,
   view: { maxItems: CFG.maxItems, maxPerCategory: CFG.maxPerCategory, maxPerSource: CFG.maxPerSource }
 };
 
@@ -517,7 +564,7 @@ if (process.env.DEBUG) {
 
 const ok = health.filter(h => h.ok);
 const briefEmpty = payload.allItems.filter(x => !x.brief).length;
-console.log(`信源 ${ok.length}/${health.length} 可用（权威级 ${payload.stats.authorityOk}/${payload.stats.authorityTotal}） | 原始 ${raw.length} 条 | 合并为 ${clusters.length} 个事件 | 展示 ${picked.length} 条 / 全集 ${payload.allItems.length} 条 | 空摘要 ${briefEmpty}`);
+console.log(`信源 ${ok.length}/${health.length} 可用（权威级 ${payload.stats.authorityOk}/${payload.stats.authorityTotal}） | 原始 ${raw.length} 条 | 合并为 ${clusters.length} 个事件 | 展示 ${picked.length} 条 / 全集 ${payload.allItems.length} 条 | 空摘要 ${briefEmpty} | 英译中 ${zhCount} 段`);
 console.log('失败源: ' + (health.filter(h => !h.ok).map(h => `${h.name}(${h.error})`).join(', ') || '无'));
 console.log('--- TOP 5 ---');
 for (const it of picked.slice(0, 5)) {

@@ -210,9 +210,76 @@ kbd{
   font:inherit;font-size:9px;border:1px solid var(--line);border-radius:3px;
   padding:0 3px;color:var(--faint);background:var(--panel);
 }
+
+/* ---------- 下拉刷新 ---------- */
+.pull{
+  height:0;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;
+  background:var(--panel);border-bottom:1px solid transparent;
+  font-size:10.5px;color:var(--dim);transition:border-color .2s;
+}
+.pull.on{border-bottom-color:var(--line)}
+.pull span{padding-bottom:7px;letter-spacing:.04em;white-space:nowrap}
+.pull.ready{color:var(--accent)}
+.pull.busy{color:var(--accent)}
+.pull .arw{display:inline-block;transition:transform .2s;margin-right:5px}
+.pull.ready .arw{transform:rotate(180deg)}
+
+/* ---------- 译文 ---------- */
+.tout{
+  display:block;font-size:10.5px;line-height:1.5;color:var(--faint);
+  margin-top:3px;word-break:break-word;
+}
+.tout::before{content:"EN ";font-size:8.5px;border:1px solid var(--line);border-radius:3px;padding:0 3px;margin-right:4px;color:#495366}
+a.title .tr{color:inherit}
+.brief .tr{color:var(--dim)}
+
+/* ---------- 加载更多 ---------- */
+.more{
+  width:100%;padding:11px;margin:2px 0 4px;border:1px dashed var(--line);border-radius:7px;
+  background:transparent;color:var(--dim);font:inherit;font-size:11px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:7px;transition:.16s;
+}
+.more:hover{border-color:var(--accent);color:var(--accent)}
+.more[disabled]{opacity:.5;cursor:default}
+.more .n{font-size:9.5px;color:var(--faint)}
+.endnote{
+  text-align:center;font-size:10px;color:var(--faint);
+  padding:10px 0 2px;line-height:1.7;
+}
+
+/* ---------- 划词词典 ---------- */
+#dict{
+  position:absolute;z-index:80;max-width:270px;display:none;
+  background:#1b2130;border:1px solid #33405a;border-radius:9px;
+  box-shadow:0 10px 30px rgba(0,0,0,.55);padding:9px 11px 10px;
+  font-size:11.5px;line-height:1.6;color:var(--text);
+}
+#dict.show{display:block;animation:pop .14s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+#dict .w{font-size:14px;font-weight:650;letter-spacing:.01em}
+#dict .ph{font-size:10.5px;color:var(--warn);margin-left:6px;font-weight:400}
+#dict .say{
+  float:right;margin-left:8px;font-size:11px;color:var(--faint);cursor:pointer;
+  border:1px solid var(--line);border-radius:5px;padding:0 5px;line-height:1.5;
+}
+#dict .say:hover{color:var(--accent);border-color:var(--accent)}
+#dict .def{margin-top:5px;color:var(--dim)}
+#dict .def i{font-style:normal;color:var(--accent);font-size:10px;margin-right:3px}
+#dict .def+.def{margin-top:3px}
+#dict .src{margin-top:6px;font-size:9px;color:#46505f;letter-spacing:.03em}
+#dict .ld{color:var(--faint)}
+
+/* ---------- 入口提示 ---------- */
+.mirrors{display:none;margin-top:8px;line-height:1.9}
+.mirrors.show{display:block}
+.mirrors a{color:var(--accent);text-decoration:none;word-break:break-all}
+.mirrors a:hover{text-decoration:underline}
+
 </style>
 </head>
 <body>
+
+<div class="pull" id="pull"><span><i class="arw">↓</i><b id="pullTxt">下拉刷新</b></span></div>
 
 <header>
   <div class="logo">◈</div>
@@ -231,6 +298,10 @@ kbd{
   <div class="vswitch" id="vswitch">
     <button class="vbtn on" data-v="focus">重点</button>
     <button class="vbtn" data-v="all">全部</button>
+  </div>
+  <div class="vswitch" id="trswitch" title="英文标题显示译文还是原文">
+    <button class="vbtn on" data-t="zh">译文</button>
+    <button class="vbtn" data-t="en">原文</button>
   </div>
   <span id="tbcount" class="tbcount">—</span>
 </div>
@@ -261,10 +332,19 @@ kbd{
 <footer>
   <div class="health" id="healthToggle"><span id="healthTxt">—</span><span style="margin-left:auto">▾</span></div>
   <div class="fails" id="fails"></div>
-  <div class="hint">公开 RSS 聚合 · 每条直接给要点 · 点标题看原文 · <kbd>R</kbd> 刷新 <kbd>V</kbd> 切范围 <kbd>S</kbd> 设置 <kbd>0</kbd>-<kbd>4</kbd> 切栏目</div>
+  <div class="health" id="mirrorToggle" style="margin-top:7px"><span>打不开 / 加载慢？点这里换入口</span><span style="margin-left:auto">▾</span></div>
+  <div class="mirrors" id="mirrors">
+    主入口　<a href="https://nosweet1.github.io/signal-desk/" target="_blank" rel="noopener">nosweet1.github.io/signal-desk</a><br>
+    镜像一　<a href="https://gcore.jsdelivr.net/gh/Nosweet1/signal-desk@main/index.html" target="_blank" rel="noopener">gcore.jsdelivr.net/gh/Nosweet1/signal-desk</a><br>
+    镜像二　<a href="https://testingcf.jsdelivr.net/gh/Nosweet1/signal-desk@main/index.html" target="_blank" rel="noopener">testingcf.jsdelivr.net/gh/Nosweet1/signal-desk</a><br>
+    离线　　<a href="./index.html">下载整个仓库后双击 index.html</a>
+    <div style="margin-top:5px;color:#46505f;font-size:9.5px">镜像有 1–2 小时缓存，主入口是最新的。国内手机网络打不开时优先试镜像一。</div>
+  </div>
+  <div class="hint">公开 RSS 聚合 · 每条直接给要点 · 滚到底自动加载更多 · 下拉刷新 · 划词查词 · <kbd>R</kbd> 刷新 <kbd>V</kbd> 切范围 <kbd>S</kbd> 设置 <kbd>0</kbd>-<kbd>4</kbd> 切栏目</div>
 </footer>
 
 <script src="./data/daily.js"></script>
+<script src="./data/dict.js" onerror="window.SIGNAL_DICT=window.SIGNAL_DICT||{}"></script>
 <script src="./data/feed.js"></script>
 <script>
 (function(){
@@ -273,12 +353,13 @@ kbd{
   var KEY = 'signal-desk-settings-v2';
   var MODES = { '2m':120000, '5m':300000, '15m':900000, '30m':1800000, 'manual':0 };
   var MODE_LABELS = [['2m','2 分钟'],['5m','5 分钟'],['15m','15 分钟'],['30m','30 分钟'],['manual','仅手动']];
-  var DEF = { mode:'5m', pauseHidden:true, showDaily:true, showDigest:true, view:'focus' };
+  var DEF = { mode:'5m', pauseHidden:true, showDaily:true, showDigest:true, view:'focus', tr:'zh' };
   var S = DEF;
   try { var saved = JSON.parse(localStorage.getItem(KEY) || 'null'); if (saved) for (var k in DEF) if (saved[k] !== undefined) S[k] = saved[k]; } catch(e){}
   function save(){ try { localStorage.setItem(KEY, JSON.stringify(S)); } catch(e){} }
 
   var filter = 'all', timer = null, nextAt = 0;
+  var PAGE = 20, shown = PAGE, visibleItems = [];
   var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
   var safeUrl = function(u){ return /^https?:\/\//i.test(u||'') ? esc(u) : '#'; };
@@ -323,6 +404,17 @@ kbd{
     }
   }
 
+  function renderTrSwitch(){
+    var box = $('trswitch'); if (!box) return;
+    var bs = box.querySelectorAll('.vbtn');
+    for (var i=0;i<bs.length;i++){
+      bs[i].className = 'vbtn' + (bs[i].getAttribute('data-t') === S.tr ? ' on' : '');
+      bs[i].onclick = function(){
+        S.tr = this.getAttribute('data-t'); save(); renderTrSwitch(); renderDigest(); renderList(true);
+      };
+    }
+  }
+
   function renderStatus(){
     if (!DATA){ $('dot').className='dot bad'; $('stxt').textContent='无数据'; return; }
     var h = (Date.now() - new Date(DATA.generatedAt).getTime())/3600000;
@@ -346,10 +438,18 @@ kbd{
     $('dsummary').textContent = DATA.digest.summaryLine || '';
     var pts = DATA.digest.points || [];
     $('dpoints').innerHTML = pts.map(function(p){
-      var c = catOf(p.category);
-      return '<li><a class="dt" href="'+safeUrl(p.url)+'" target="_blank" rel="noopener noreferrer">'+esc(p.title)+'</a>'
-        + '<div class="db">'+esc(p.brief || '')+'</div></li>';
+      var tt = (S.tr==='zh' && p.titleZh) ? p.titleZh : p.title;
+      var bb = (S.tr==='zh' && p.briefZh) ? p.briefZh : (p.brief || '');
+      return '<li><a class="dt" href="'+safeUrl(p.url)+'" target="_blank" rel="noopener noreferrer">'+esc(tt)+'</a>'
+        + '<div class="db">'+esc(bb)+'</div></li>';
     }).join('');
+  }
+
+  function zhTitleOf(title){
+    if (!DATA || !title || !/^[A-Za-z]/.test(title)) return '';
+    var pool = (DATA.allItems || []).concat(DATA.items || []);
+    for (var i=0;i<pool.length;i++) if (pool[i].title === title) return pool[i].titleZh || '';
+    return '';
   }
 
   function renderDaily(){
@@ -362,9 +462,10 @@ kbd{
     $('ditems').innerHTML = DAILY.items.map(function(it){
       var c = catOf(it.category);
       var imp = (it.impact || []).map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('');
+      var showTitle = (S.tr === 'zh') ? (zhTitleOf(it.title) || it.title) : it.title;
       var title = it.url
-        ? '<a class="t" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">'+esc(it.title)+'</a>'
-        : '<span class="t">'+esc(it.title)+'</span>';
+        ? '<a class="t" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">'+esc(showTitle)+'</a>'
+        : '<span class="t">'+esc(showTitle)+'</span>';
       return '<div class="ditem">' + title
         + '<div class="meta2"><span style="color:'+c.color+'">'+esc(c.name)+'</span>'
         + '<span>'+esc(it.source||'')+'</span><span>'+esc(it.horizon||'')+'</span>'
@@ -398,38 +499,68 @@ kbd{
     $('fails').innerHTML = parts.length ? parts.join('<br>') : '所有信源均正常';
   }
 
-  function renderList(){
+  /* ---------- 译文取舍 ---------- */
+  function pickText(it){
+    var title = it.title || '', sub = '', brief = it.brief || it.summary || '';
+    if (S.tr === 'zh'){
+      if (it.titleZh){ sub = title; title = it.titleZh; }
+      if (it.briefZh) brief = it.briefZh;
+    }
+    return { title: title, sub: sub, brief: brief };
+  }
+
+  function cardHTML(it, idx){
+    var c = catOf(it.category), t = pickText(it);
+    var tags = (it.tags||[]).slice(0,2).map(function(x){return '<span class="tag">'+esc(x)+'</span>';}).join('');
+    var facts = (it.facts||[]).map(function(f){return '<span class="fact">'+esc(f)+'</span>';}).join('');
+    return '<article class="card" style="--c:'+c.color+'">'
+      + '<div class="top"><span class="cat">'+esc(c.name)+'</span>'
+      + (it.type==='wechat' ? '<span class="badge wx">公众号</span>' : '')
+      + ((it.authority||3)>=5 ? '<span class="badge auth">权威源</span>' : '')
+      + (it.clusterSize>1 ? '<span class="badge multi">'+it.clusterSize+' 家报道</span>' : '')
+      + (it.briefLang==='en' ? '<span class="badge en">EN</span>' : '')
+      + '<span class="rank">#'+(idx+1)+'</span></div>'
+      + '<a class="title" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t.title)+'</a>'
+      + (t.sub ? '<span class="tout">'+esc(t.sub)+'</span>' : '')
+      + '<div class="brief'+(t.brief?'':' none')+'">'+esc(t.brief || '该信源未提供摘要，点标题看原文。')+'</div>'
+      + (facts ? '<div class="facts">'+facts+'</div>' : '')
+      + '<div class="meta"><span class="src">'+esc(it.source)+'</span><span>·</span><span>'+ago(it.publishedAt)+'</span>'+tags
+      + '<a class="orig" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">原文 ↗</a></div>'
+      + '</article>';
+  }
+
+  function tailHTML(){
+    var rest = visibleItems.length - shown;
+    if (!visibleItems.length) return '';
+    if (rest > 0){
+      return '<button class="more" id="moreBtn">继续加载 <span class="n">还有 '+rest+' 条</span></button>';
+    }
+    return '<div class="endnote">已经到底了 · 共 '+visibleItems.length+' 条<br>'
+      + '<span style="font-size:9.5px">下拉页面顶部可刷新，或点右上角 ⟳</span></div>';
+  }
+
+  function paint(){
+    $('list').innerHTML = visibleItems.slice(0, shown).map(cardHTML).join('') + tailHTML();
+    var b = $('moreBtn');
+    if (b) b.onclick = function(){ shown = Math.min(visibleItems.length, shown + PAGE); paint(); };
+    $('tbcount').textContent = visibleItems.length + ' 条'
+      + (S.view==='all' ? '（全集）' : '（重点）')
+      + (shown < visibleItems.length ? ' · 已显示 '+shown : '');
+  }
+
+  function renderList(keepPage){
     if (!DATA){
       $('list').innerHTML = '<div class="empty">数据文件尚未生成<br><span style="font-size:10px">运行 <b>refresh.cmd</b> 或等待 GitHub Actions 首次抓取</span></div>';
       $('tbcount').textContent = '—';
+      visibleItems = [];
       return;
     }
     $('motto').textContent = DATA.motto || '只盯真正会改变人类生存与发展轨迹的事';
     var all = currentItems();
-    var items = all.filter(function(x){ return filter==='all' || x.category===filter; });
-    $('tbcount').textContent = items.length + ' 条' + (S.view==='all' ? '（全集）' : '（重点）');
-    if (!items.length){ $('list').innerHTML = '<div class="empty">这个栏目暂时没有入选信号</div>'; return; }
-    var html = '';
-    for (var i=0;i<items.length;i++){
-      var it = items[i], c = catOf(it.category);
-      var tags = (it.tags||[]).slice(0,2).map(function(t){return '<span class="tag">'+esc(t)+'</span>';}).join('');
-      var facts = (it.facts||[]).map(function(f){return '<span class="fact">'+esc(f)+'</span>';}).join('');
-      var brief = it.brief || it.summary || '';
-      html += '<article class="card" style="--c:'+c.color+'">'
-        + '<div class="top"><span class="cat">'+esc(c.name)+'</span>'
-        + (it.type==='wechat' ? '<span class="badge wx">公众号</span>' : '')
-        + ((it.authority||3)>=5 ? '<span class="badge auth">权威源</span>' : '')
-        + (it.clusterSize>1 ? '<span class="badge multi">'+it.clusterSize+' 家报道</span>' : '')
-        + (it.briefLang==='en' ? '<span class="badge en">EN 摘要</span>' : '')
-        + '<span class="rank">#'+(i+1)+'</span></div>'
-        + '<a class="title" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">'+esc(it.title)+'</a>'
-        + '<div class="brief'+(brief?'':' none')+'">'+esc(brief || '该信源未提供摘要，点标题看原文。')+'</div>'
-        + (facts ? '<div class="facts">'+facts+'</div>' : '')
-        + '<div class="meta"><span class="src">'+esc(it.source)+'</span><span>·</span><span>'+ago(it.publishedAt)+'</span>'+tags
-        + '<a class="orig" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">原文 ↗</a></div>'
-        + '</article>';
-    }
-    $('list').innerHTML = html;
+    visibleItems = all.filter(function(x){ return filter==='all' || x.category===filter; });
+    if (!keepPage) shown = PAGE;
+    if (!visibleItems.length){ $('list').innerHTML = '<div class="empty">这个栏目暂时没有入选信号</div>'; $('tbcount').textContent='0 条'; return; }
+    paint();
   }
 
   function renderSettings(){
@@ -446,7 +577,186 @@ kbd{
     $('settingsBtn').className = 'iconbtn' + ($('settings').classList.contains('show') ? ' on' : '');
   }
 
-  function renderAll(){ renderStatus(); renderTabs(); renderViewSwitch(); renderDaily(); renderDigest(); renderHealth(); renderList(); }
+  function renderAll(){ renderStatus(); renderTabs(); renderViewSwitch(); renderTrSwitch(); renderDaily(); renderDigest(); renderHealth(); renderList(); }
+
+  /* ---------- 滚到底自动加载下一批 ---------- */
+  var loadingMore = false;
+  window.addEventListener('scroll', function(){
+    if (loadingMore || shown >= visibleItems.length) return;
+    var rest = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+    if (rest > 700) return;
+    loadingMore = true;
+    setTimeout(function(){
+      shown = Math.min(visibleItems.length, shown + PAGE);
+      paint();
+      loadingMore = false;
+    }, 90);
+  }, { passive: true });
+
+  /* ---------- 下拉刷新（触屏） ---------- */
+  (function(){
+    var el = $('pull'), txt = $('pullTxt');
+    var THRESH = 58, startY = 0, tracking = false, armed = false, busy = false;
+    function setH(h){ el.style.height = h + 'px'; }
+    function reset(){
+      busy = false; armed = false;
+      el.className = 'pull'; setH(0); txt.textContent = '下拉刷新';
+    }
+    window.addEventListener('sd:loaded', function(){ if (busy) setTimeout(reset, 260); });
+    document.addEventListener('touchstart', function(e){
+      if (busy || e.touches.length !== 1) return;
+      if (window.scrollY > 2){ tracking = false; return; }
+      tracking = true; startY = e.touches[0].clientY; armed = false;
+    }, { passive: true });
+    document.addEventListener('touchmove', function(e){
+      if (!tracking || busy) return;
+      var dy = e.touches[0].clientY - startY;
+      if (dy <= 0 || window.scrollY > 2){ if (!busy) reset(); tracking = false; return; }
+      var h = Math.min(92, dy * 0.55);
+      setH(h);
+      armed = h >= THRESH;
+      el.className = 'pull on' + (armed ? ' ready' : '');
+      txt.textContent = armed ? '松手刷新' : '下拉刷新';
+    }, { passive: true });
+    document.addEventListener('touchend', function(){
+      if (!tracking || busy) return;
+      tracking = false;
+      if (armed){
+        busy = true;
+        el.className = 'pull on busy'; setH(44); txt.textContent = '正在刷新…';
+        reload(true);
+        setTimeout(function(){ if (busy) reset(); }, 8000);
+      } else reset();
+    }, { passive: true });
+  })();
+
+  /* ---------- 划词：单词释义 + 整句翻译 ---------- */
+  (function(){
+    var DICT = window.SIGNAL_DICT || {};
+    var box = document.createElement('div');
+    box.id = 'dict';
+    document.body.appendChild(box);
+    var cache = {};
+    try { cache = JSON.parse(localStorage.getItem('sd-dict-cache') || '{}'); } catch(e){ cache = {}; }
+    function persist(){
+      try {
+        var ks = Object.keys(cache);
+        if (ks.length > 500) ks.slice(0, ks.length - 500).forEach(function(k){ delete cache[k]; });
+        localStorage.setItem('sd-dict-cache', JSON.stringify(cache));
+      } catch(e){}
+    }
+    function hide(){ box.className = ''; }
+    function place(x, y){
+      box.style.left = '0px'; box.style.top = '0px';
+      box.className = 'show';
+      var w = box.offsetWidth, h = box.offsetHeight;
+      var left = Math.min(Math.max(8, x - w / 2), window.innerWidth - w - 8);
+      var top = y + 14;
+      if (top + h > window.innerHeight - 10) top = Math.max(8, y - h - 14);
+      box.style.left = (left + window.scrollX) + 'px';
+      box.style.top = (top + window.scrollY) + 'px';
+    }
+    function renderWord(w, data, x, y){
+      var ph = data.ph ? '<span class="ph">/'+esc(data.ph)+'</span>' : '';
+      var defs = (data.defs || []).slice(0, 3).map(function(d, i){
+        var m = String(d).match(/^([a-z]+\.)\s*(.+)$/i);
+        return '<div class="def">' + (m ? '<i>'+esc(m[1])+'</i>'+esc(m[2]) : (i===0?'':"")+esc(d)) + '</div>';
+      }).join('');
+      box.innerHTML = '<div><span class="w">'+esc(w)+'</span>'+ph
+        + '<span class="say" data-say="'+esc(w)+'">🔊</span></div>'
+        + (defs || '<div class="def ld">没有中文释义，点 🔉 听发音</div>')
+        + '<div class="src">'+(data.src || '本地词库')+'</div>';
+      place(x, y);
+    }
+    function renderSent(src, dst, x, y){
+      box.innerHTML = '<div class="w" style="font-size:11.5px;font-weight:500;color:var(--dim)">'+esc(src)+'</div>'
+        + '<div class="def" style="font-size:12.5px;color:var(--text);margin-top:6px">'+esc(dst)+'</div>'
+        + '<div class="src">MyMemory 机器翻译</div>';
+      place(x, y);
+    }
+    function speak(w){
+      try {
+        var u = new SpeechSynthesisUtterance(w);
+        u.lang = 'en-US'; u.rate = 0.92;
+        speechSynthesis.cancel(); speechSynthesis.speak(u);
+      } catch(e){}
+    }
+    function onlineWord(w, x, y){
+      var tasks = [];
+      tasks.push(fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(w) + '&langpair=en|zh-CN')
+        .then(function(r){ return r.json(); })
+        .then(function(j){ return String((j.responseData && j.responseData.translatedText) || ''); })
+        .catch(function(){ return ''; }));
+      tasks.push(fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(w))
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){
+          if (!j || !j[0]) return null;
+          var ph = (j[0].phonetic || (j[0].phonetics && j[0].phonetics[0] && j[0].phonetics[0].text) || '').replace(/\//g, '');
+          var defs = [];
+          (j[0].meanings || []).forEach(function(m){
+            if (m.partOfSpeech && m.definitions && m.definitions[0]) defs.push(m.partOfSpeech + '. ' + m.definitions[0].definition);
+          });
+          return { ph: ph, defs: defs.slice(0, 3) };
+        })
+        .catch(function(){ return null; }));
+      Promise.all(tasks).then(function(res){
+        var zh = res[0], en = res[1];
+        var data = { defs: [], ph: en && en.ph ? en.ph : '', src: '在线' };
+        if (zh && !/^\s*$/.test(zh) && zh.toLowerCase() !== w.toLowerCase()) data.defs.push(zh);
+        if (en && en.defs) data.defs = data.defs.concat(en.defs);
+        if (!data.defs.length) data.defs = ['未查到释义'];
+        cache[w] = data; persist();
+        renderWord(w, data, x, y);
+      });
+    }
+    function lookup(raw, x, y){
+      var q = String(raw).replace(/\s+/g, ' ').trim().replace(/^[^A-Za-z]+|[^A-Za-z.']+$/g, '');
+      if (!q || !/[A-Za-z]/.test(q)) return;
+      var isWord = /^[A-Za-z][A-Za-z'.-]*$/.test(q);
+      if (isWord){
+        var key = q.toLowerCase();
+        if (DICT[key]) { renderWord(q, DICT[key], x, y); return; }
+        if (cache[key]) { renderWord(q, cache[key], x, y); return; }
+        box.innerHTML = '<div class="ld">查询 “'+esc(q)+'” …</div>';
+        place(x, y);
+        onlineWord(key, x, y);
+        return;
+      }
+      if (q.length > 120) q = q.slice(0, 120);
+      if (cache['s:' + q]) { renderSent(q, cache['s:' + q].defs[0], x, y); return; }
+      box.innerHTML = '<div class="ld">翻译中 …</div>';
+      place(x, y);
+      fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(q) + '&langpair=en|zh-CN')
+        .then(function(r){ return r.json(); })
+        .then(function(j){
+          var out = String((j.responseData && j.responseData.translatedText) || '');
+          if (!out || /MYMEMORY WARNING/i.test(out)) { box.innerHTML = '<div class="ld">翻译失败，稍后再试</div>'; return; }
+          cache['s:' + q] = { defs: [out] }; persist();
+          renderSent(q, out, x, y);
+        })
+        .catch(function(){ box.innerHTML = '<div class="ld">网络不通，翻译不可用</div>'; });
+    }
+    document.addEventListener('mouseup', function(e){
+      if (box.contains(e.target)) return;
+      var sel = window.getSelection();
+      var txt = sel ? String(sel).trim() : '';
+      if (!txt || txt.length > 120) { setTimeout(hide, 60); return; }
+      if (!/[A-Za-z]/.test(txt)) { setTimeout(hide, 60); return; }
+      setTimeout(function(){
+        var s = window.getSelection();
+        if (!s || !String(s).trim()) return;
+        var x = e.clientX, y = e.clientY;
+        lookup(String(s).trim(), x, y);
+      }, 10);
+    });
+    box.addEventListener('click', function(e){
+      var t = e.target;
+      if (t && t.getAttribute && t.getAttribute('data-say')) speak(t.getAttribute('data-say'));
+    });
+    document.addEventListener('mousedown', function(e){ if (!box.contains(e.target)) hide(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') hide(); });
+    window.addEventListener('scroll', hide, { passive: true });
+  })();
 
   function schedule(){
     clearTimeout(timer);
@@ -468,8 +778,8 @@ kbd{
       if (window.SIGNAL_DATA){ DATA = window.SIGNAL_DATA; }
       var d = document.createElement('script');
       d.src = './data/daily.js?t=' + Date.now();
-      d.onload = function(){ if (window.SIGNAL_DAILY) DAILY = window.SIGNAL_DAILY; renderAll(); d.remove(); schedule(); };
-      d.onerror = function(){ renderAll(); d.remove(); schedule(); };
+      d.onload = function(){ if (window.SIGNAL_DAILY) DAILY = window.SIGNAL_DAILY; renderAll(); d.remove(); schedule(); window.dispatchEvent(new Event('sd:loaded')); };
+      d.onerror = function(){ renderAll(); d.remove(); schedule(); window.dispatchEvent(new Event('sd:loaded')); };
       document.head.appendChild(d);
       s.remove();
     };
@@ -486,6 +796,7 @@ kbd{
   $('showDigest').onchange = function(){ S.showDigest = this.checked; save(); renderDigest(); };
   if ($('showDaily')) $('showDaily').onchange = function(){ S.showDaily = this.checked; save(); renderDaily(); };
   $('healthToggle').onclick = function(){ $('fails').classList.toggle('show'); };
+  $('mirrorToggle').onclick = function(){ $('mirrors').classList.toggle('show'); };
 
   document.addEventListener('keydown', function(e){
     if (/input|textarea/i.test((e.target && e.target.tagName) || '')) return;

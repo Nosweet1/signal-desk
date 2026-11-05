@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "信号台划词 · 英文翻译与单词释义",
+  "version": "1.0.0",
+  "description": "选中英文单词即显示音标与中文释义，选中句子即整句翻译。无账号、无跟踪。",
+  "permissions": ["storage", "contextMenus"],
+  "host_permissions": [
+    "https://dict.youdao.com/*",
+    "https://api.mymemory.translated.net/*",
+    "https://api.dictionaryapi.dev/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": { "default_title": "信号台划词：选中文本即可翻译" }
+}

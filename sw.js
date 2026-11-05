@@ -1,5 +1,5 @@
 /* 信号台 Service Worker：外壳缓存 + 数据始终走网络（失败才用缓存兜底） */
-const V = 'signal-desk-v1';
+const V = 'signal-desk-v2';
 const SHELL = ['./', './index.html', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', e => {
@@ -32,7 +32,21 @@ self.addEventListener('fetch', e => {
     return;
   }
 
-  // 外壳：缓存优先，有网时后台更新
+  // 页面（导航请求）：网络优先 —— 保证改版后刷新就能看到新界面，而不是被旧缓存卡住
+  if (e.request.mode === 'navigate' || /\.html?$/.test(url.pathname)) {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          const copy = res.clone();
+          caches.open(V).then(c => c.put(e.request, copy));
+          return res;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // 其余外壳：缓存优先，有网时后台更新
   e.respondWith(
     caches.match(e.request).then(hit => {
       const net = fetch(e.request)

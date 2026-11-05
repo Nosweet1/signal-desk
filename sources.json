@@ -1,9 +1,9 @@
 {
   "name": "信号台 Signal Desk",
   "motto": "只盯真正会改变人类生存与发展轨迹的事",
-  "maxItems": 24,
-  "maxPerCategory": 8,
-  "maxPerSource": 3,
+  "maxItems": 36,
+  "maxPerCategory": 12,
+  "maxPerSource": 5,
   "maxAgeHours": 72,
   "halfLifeHours": 30,
   "categories": [
@@ -1309,8 +1309,8 @@
       "via": "wechat2rss"
     }
   ],
-  "allItemsLimit": 60,
-  "digestCount": 5,
+  "allItemsLimit": 300,
+  "digestCount": 6,
   "authorityBoost": 0.7,
   "minWechat": 3,
   "reserveSources": [

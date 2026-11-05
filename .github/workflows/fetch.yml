@@ -12,6 +12,7 @@ on:
     paths:
       - 'sources.json'
       - 'scripts/fetch.mjs'
+      - 'scripts/build-dict.mjs'
       - 'index.html'
       - '.github/workflows/fetch.yml'
 
@@ -40,6 +41,11 @@ jobs:
       - name: Fetch public feeds
         run: node scripts/fetch.mjs
 
+      # 本地词库：把本期英文条目里的单词预先查好，页面划词零请求、离线可用
+      - name: Build local dictionary
+        run: node scripts/build-dict.mjs 500
+        continue-on-error: true
+
       # 每日报：不调模型，用最近一期存档（daily.yml 负责每天调模型生成并提交存档）
       - name: Refresh daily brief from archive
         run: node scripts/daily.mjs --reuse-latest
@@ -52,6 +58,7 @@ jobs:
           cp index.html site/
           cp data/feed.js site/data/
           [ -f data/daily.js ] && cp data/daily.js site/data/
+          [ -f data/dict.js ] && cp data/dict.js site/data/
           [ -d data/daily ] && mkdir -p site/data/daily && cp data/daily/*.json site/data/daily/
           cp manifest.json icon.svg sw.js site/
           cp .nojekyll site/
