@@ -73,23 +73,32 @@ function parseFeed(xml, src) {
     let ts = Date.parse(dateStr);
     // 没有可信发布时间的条目一律丢弃：否则停止更新的存档 feed 会被当成实时新闻顶到榜首
     if (!Number.isFinite(ts)) continue;
-    const rawDesc = text(b, 'description') || text(b, 'summary') || text(b, 'content') || text(b, 'content:encoded') || '';
-    const description = plain(rawDesc).slice(0, 1200);
+    // 公众号 feed 的 <description> 只是被截断的开头，正文在 content:encoded 里，优先取它
+    const rawDesc = src.type === 'wechat'
+      ? (text(b, 'content:encoded') || text(b, 'content') || text(b, 'description'))
+      : (text(b, 'description') || text(b, 'summary') || text(b, 'content') || text(b, 'content:encoded'));
+    let description = plain(rawDesc);
+    if (src.type === 'wechat') {
+      // 去掉正文开头的「公众号名  2026-11-05 08:30  上海」这类排版头
+      description = description.replace(/^.{0,60}?\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}\s*[\u4e00-\u9fa5]{0,12}\s*/, '');
+    }
+    description = description.slice(0, src.type === 'wechat' ? 1600 : 1200);
     out.push({
       title, link, ts, description,
       summary: description.slice(0, 220),
       source: src.name, category: src.category, weight: src.weight, lang: src.lang,
-      authority: src.authority || 3, tier: src.tier || 'core'
+      authority: src.authority || 3, tier: src.tier || 'core',
+      via: src.via || '', type: src.type || 'rss'
     });
   }
   return out;
 }
 
-async function fetchSource(src) {
+async function fetchOne(url) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), FETCH_TIMEOUT);
   try {
-    const res = await fetch(src.url, {
+    const res = await fetch(url, {
       signal: ctl.signal,
       redirect: 'follow',
       headers: {
@@ -103,12 +112,27 @@ async function fetchSource(src) {
     if (!/<\?xml|<rss[\s>]|<feed[\s>]|<rdf:RDF/i.test(xml.slice(0, 800))) {
       throw new Error('非 RSS 内容');
     }
-    const items = parseFeed(xml, src);
-    return { src, items, error: items.length ? '' : '0 条目（多为缺日期）' };
+    return xml;
   } catch (e) {
     clearTimeout(timer);
-    return { src, items: [], error: String(e.cause?.code || e.message || e).slice(0, 50) };
+    throw e;
   }
+}
+
+// 主地址失败时依次尝试镜像（RSSHub 公共实例经常单点挂掉，多备几个基址才稳定）
+async function fetchSource(src) {
+  const urls = [src.url, ...(src.mirrors || []).filter(Boolean)];
+  let lastErr = '';
+  for (let i = 0; i < urls.length; i++) {
+    try {
+      const xml = await fetchOne(urls[i]);
+      const items = parseFeed(xml, src);
+      return { src, items, error: items.length ? '' : '0 条目（多为缺日期）', via: i ? urls[i] : '' };
+    } catch (e) {
+      lastErr = String(e.cause?.code || e.message || e).slice(0, 50);
+    }
+  }
+  return { src, items: [], error: lastErr };
 }
 
 /* ---------------- 抽取式要点 ---------------- */
@@ -320,6 +344,8 @@ function evaluate(cluster, now) {
     sources: [...bySource.keys()].slice(0, 6),
     clusterSize: sourceCount,
     authority: rep.authority || 3,
+    via: rep.via || '',
+    type: rep.type || 'rss',
     tags: tags.slice(0, 3),
     score: Math.round(score * 100) / 100
   };
@@ -337,8 +363,11 @@ const health = results.map(r => ({
   category: r.src.category,
   tier: r.src.tier || 'core',
   authority: r.src.authority || 3,
+  type: r.src.type || 'rss',
+  typeLabel: r.src.type === 'wechat' ? '公众号' : '',
   ok: r.items.length > 0,
   count: r.items.length,
+  mirror: r.via || '',
   error: r.error
 }));
 
@@ -396,6 +425,45 @@ for (const it of scored) {
   if (picked.length >= CFG.maxItems) break;
   if (!used.has(it.id)) take(it);
 }
+
+// 保底席位：热度模型天然偏爱通讯社通稿和多家转载，单源快讯/公众号观点会被挤掉。
+// 这里给「明确要看的源」留固定位置，由当前最低分的普通条目让位。
+const reserved = new Set();
+function forceTake(it) {
+  if (picked.length < CFG.maxItems) { take(it); reserved.add(it.id); return true; }
+  let worst = -1;
+  picked.forEach((p, i) => {
+    if (reserved.has(p.id)) return;
+    if (worst < 0 || p.score < picked[worst].score) worst = i;
+  });
+  if (worst < 0) return false;
+  const drop = picked[worst];
+  used.delete(drop.id);
+  picked.splice(worst, 1);
+  perCat[drop.category] = (perCat[drop.category] || 1) - 1;
+  perSrc[drop.source] = (perSrc[drop.source] || 1) - 1;
+  take(it);
+  reserved.add(it.id);
+  return true;
+}
+
+const wantWechat = CFG.minWechat ?? 3;
+let haveWechat = picked.filter(x => x.type === 'wechat').length;
+for (const it of scored) {
+  if (haveWechat >= wantWechat) break;
+  if (it.type !== 'wechat' || used.has(it.id)) continue;
+  if (forceTake(it)) haveWechat++;
+}
+
+for (const rule of CFG.reserveSources || []) {
+  const re = new RegExp(rule.match);
+  const have = () => picked.filter(x => re.test(x.source)).length;
+  for (const it of scored) {
+    if (have() >= rule.min) break;
+    if (!re.test(it.source) || used.has(it.id)) continue;
+    forceTake(it);
+  }
+}
 picked.sort((a, b) => b.score - a.score);
 
 // 速览：一眼看完本轮最重要的几条，不必逐张卡片读
@@ -423,6 +491,8 @@ const payload = {
     sourcesOk: health.filter(h => h.ok).length,
     authorityTotal: health.filter(h => h.authority >= 5).length,
     authorityOk: health.filter(h => h.ok && h.authority >= 5).length,
+    wechatTotal: health.filter(h => h.type === 'wechat').length,
+    wechatOk: health.filter(h => h.ok && h.type === 'wechat').length,
     rawItems: raw.length,
     clusters: clusters.length,
     shown: picked.length,
@@ -438,6 +508,12 @@ const payload = {
 
 const outFile = path.join(ROOT, 'data', 'feed.js');
 fs.writeFileSync(outFile, 'window.SIGNAL_DATA = ' + JSON.stringify(payload, null, 2) + ';\n', 'utf8');
+
+// 排查用：DEBUG=1 时导出全部候选的得分，方便看某家媒体为什么没进榜
+if (process.env.DEBUG) {
+  fs.writeFileSync(path.join(ROOT, 'data', 'debug-scores.json'), JSON.stringify(
+    scored.map(x => ({ score: x.score, source: x.source, type: x.type, tags: x.tags, title: x.title })), null, 2), 'utf8');
+}
 
 const ok = health.filter(h => h.ok);
 const briefEmpty = payload.allItems.filter(x => !x.brief).length;

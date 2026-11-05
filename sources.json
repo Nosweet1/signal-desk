@@ -212,7 +212,22 @@
         "展销",
         "促销季",
         "展车",
-        "限时抢购"
+        "限时抢购",
+        "读书会",
+        "报名",
+        "沙龙",
+        "公开课",
+        "招聘",
+        "训练营",
+        "直播预约",
+        "活动预告",
+        "线下活动",
+        "峰会报名",
+        "白皮书下载",
+        "免费领取",
+        "入群",
+        "课程优惠",
+        "闭门会"
       ]
     }
   },
@@ -1024,9 +1039,284 @@
       "lang": "en",
       "tier": "cloud",
       "authority": 4
+    },
+    {
+      "name": "36氪 快讯",
+      "url": "https://rsshub.rssforever.com/36kr/newsflashes",
+      "mirrors": [
+        "https://rsshub.ktachibana.party/36kr/newsflashes",
+        "https://rsshub.liumingye.cn/36kr/newsflashes",
+        "https://rss.injahow.cn/36kr/newsflashes",
+        "https://rsshub.app/36kr/newsflashes"
+      ],
+      "category": "frontier",
+      "weight": 3.2,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 20
+    },
+    {
+      "name": "财新",
+      "url": "https://rsshub.rssforever.com/caixin/latest",
+      "mirrors": [
+        "https://rsshub.ktachibana.party/caixin/latest",
+        "https://rsshub.liumingye.cn/caixin/latest",
+        "https://rss.injahow.cn/caixin/latest",
+        "https://rsshub.app/caixin/latest"
+      ],
+      "category": "economy",
+      "weight": 4,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 4.5,
+      "cap": 20
+    },
+    {
+      "name": "虎嗅",
+      "url": "https://rsshub.rssforever.com/huxiu/article",
+      "mirrors": [
+        "https://rsshub.ktachibana.party/huxiu/article",
+        "https://rsshub.liumingye.cn/huxiu/article",
+        "https://rss.injahow.cn/huxiu/article",
+        "https://rsshub.app/huxiu/article"
+      ],
+      "category": "economy",
+      "weight": 3,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 20
+    },
+    {
+      "name": "华尔街见闻",
+      "url": "https://rsshub.rssforever.com/wallstreetcn/news/global",
+      "mirrors": [
+        "https://rsshub.ktachibana.party/wallstreetcn/news/global",
+        "https://rsshub.liumingye.cn/wallstreetcn/news/global",
+        "https://rss.injahow.cn/wallstreetcn/news/global",
+        "https://rsshub.app/wallstreetcn/news/global"
+      ],
+      "category": "economy",
+      "weight": 3.5,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 4,
+      "cap": 20
+    },
+    {
+      "name": "公众号 机器之心",
+      "url": "https://wechat2rss.xlab.app/feed/51e92aad2728acdd1fda7314be32b16639353001.xml",
+      "category": "frontier",
+      "weight": 3.4,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 量子位",
+      "url": "https://wechat2rss.xlab.app/feed/7131b577c61365cb47e81000738c10d872685908.xml",
+      "category": "frontier",
+      "weight": 3.2,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 新智元",
+      "url": "https://wechat2rss.xlab.app/feed/ede30346413ea70dbef5d485ea5cbb95cca446e7.xml",
+      "category": "frontier",
+      "weight": 3,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 PaperWeekly",
+      "url": "https://wechat2rss.xlab.app/feed/3be891c2f4e526629ab055a297cc2cd6c1f0a563.xml",
+      "category": "frontier",
+      "weight": 2.6,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 夕小瑶科技说",
+      "url": "https://wechat2rss.xlab.app/feed/a1cd365aa14ed7d64cabfc8aa086da40ecaba34d.xml",
+      "category": "frontier",
+      "weight": 2.6,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 集智俱乐部",
+      "url": "https://wechat2rss.xlab.app/feed/8540570d27c0bfe0a219173cf1ace83ae79445cb.xml",
+      "category": "frontier",
+      "weight": 2.6,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 差评",
+      "url": "https://wechat2rss.xlab.app/feed/8d839de8dd3290a1f1be7a94423cccb30c1b087d.xml",
+      "category": "frontier",
+      "weight": 2.4,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 傅盛",
+      "url": "https://wechat2rss.xlab.app/feed/71257003d43d39b91ff9d38b6f3330c883dc8e0c.xml",
+      "category": "frontier",
+      "weight": 2.4,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 猫笔刀",
+      "url": "https://wechat2rss.xlab.app/feed/33d986064f59be5263de2ca822fb3e0bdd59eb81.xml",
+      "category": "economy",
+      "weight": 2.8,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 思想钢印",
+      "url": "https://wechat2rss.xlab.app/feed/a55006fab25a17c43a412246fda317822609f2ea.xml",
+      "category": "economy",
+      "weight": 2.8,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 42章经",
+      "url": "https://wechat2rss.xlab.app/feed/31436fcc3bba8c2c2a9337a163afcb3b5a57a0a0.xml",
+      "category": "economy",
+      "weight": 2.6,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 奇安信威胁情报中心",
+      "url": "https://wechat2rss.xlab.app/feed/b93962f981247c0091dad08df5b7a6864ab888e9.xml",
+      "category": "order",
+      "weight": 2.8,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 慢雾科技",
+      "url": "https://wechat2rss.xlab.app/feed/9e9c3c70e598266a1ac993e50458a10a6d853eb7.xml",
+      "category": "order",
+      "weight": 2.6,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 空天防务观察",
+      "url": "https://wechat2rss.xlab.app/feed/b3da5de3b7697f10c0e22ce8909063ea84c44bbd.xml",
+      "category": "order",
+      "weight": 2.8,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 腾讯技术工程",
+      "url": "https://wechat2rss.xlab.app/feed/9685937b45fe9c7a526dbc32e4f24ba879a65b9a.xml",
+      "category": "frontier",
+      "weight": 2.2,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 阿里技术",
+      "url": "https://wechat2rss.xlab.app/feed/6e1f9b775f7a5841ac1a94310f0478b45a02ec01.xml",
+      "category": "frontier",
+      "weight": 2.2,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
+    },
+    {
+      "name": "公众号 极客公园",
+      "url": "https://wechat2rss.xlab.app/feed/1a5aec98e71c707c8ca092bc2c255b9d4bac477d.xml",
+      "category": "frontier",
+      "weight": 2.6,
+      "lang": "zh",
+      "tier": "core",
+      "authority": 3,
+      "cap": 6,
+      "type": "wechat",
+      "via": "wechat2rss"
     }
   ],
   "allItemsLimit": 60,
   "digestCount": 5,
-  "authorityBoost": 0.7
+  "authorityBoost": 0.7,
+  "minWechat": 3,
+  "reserveSources": [
+    {
+      "match": "36氪",
+      "min": 2
+    }
+  ]
 }

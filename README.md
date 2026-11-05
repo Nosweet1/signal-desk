@@ -36,19 +36,48 @@
 
 ## 信源构成
 
-87 个源，分四个维度，避免被 AI 或消费电子刷屏：
+108 个源，分四个维度，避免被 AI 或消费电子刷屏：
 
 | 栏目 | 关注什么 | 代表信源 |
 |---|---|---|
-| 文明与前沿 | AI、基础科学、航天、算力 | Nature 系列、Science、PNAS、Cell、MIT News、NIST、NASA、OpenAI、DeepMind、MIT 科技评论、量子位、Solidot |
+| 文明与前沿 | AI、基础科学、航天、算力 | Nature 系列、Science、PNAS、Cell、MIT News、NIST、NASA、OpenAI、DeepMind、MIT 科技评论、量子位、36氪快讯、Solidot |
 | 生存底线 | 气候、能源、粮食、公共卫生 | WHO、CDC、FDA、IPCC、柳叶刀、NEJM、Carbon Brief、STAT、Inside Climate News |
 | 秩序与规则 | 政策、监管、国际组织、冲突 | 联合国新闻（中/英）、中国政府网、人民网、欧盟委员会、中新网国际、NPR、BBC、Guardian |
-| 经济与分配 | 宏观、就业、产业、资本 | 美联储、ECB、IMF、FT、华尔街日报、彭博、CNBC、人民网财经、中新网财经 |
+| 经济与分配 | 宏观、就业、产业、资本 | 美联储、ECB、IMF、FT、华尔街日报、彭博、CNBC、财新、华尔街见闻、虎嗅、人民网财经 |
 
-- 本机实测约 58 家可直连（网络波动 ±1）；其余 29 家标 `tier: cloud`，本机不可达，交给 GitHub Actions 境外机器自动尝试——能通就自动生效，不通就静默降级。
+- 本机实测约 79 家可直连（网络波动 ±2）；其余标 `tier: cloud` 的境外源本机不可达，交给 GitHub Actions 境外机器自动尝试——能通就自动生效，不通就静默降级。
 - 权威级 39 家（`authority: 5`）：国际组织、央行与监管机构、顶级期刊、国家级媒体、航天机构等。这一级别会参与评分加成，并在卡片上标「权威源」。
 - 加源前先用 `node scripts/probe.mjs` 批量探测，它把结果分成 可用 / 交云端 / 死链 三类。这一轮据此剔除了 21 个死链——世界银行、OECD、WTO、FAO、IEA、UNEP、CERN、ESA、Anthropic、财新、澎湃、第一财经、界面等的 RSS 已下线或返回非 XML。
-- 高产量 feed（arXiv、OpenAI、CDC、人民网、Nature 系列…）用 `cap` 限制单源取数，避免论文流和博客归档把版面占满；抓取改成分批 12 路并发，防止 80+ 请求同时打出去被限流。
+- 高产量 feed（arXiv、OpenAI、CDC、人民网、Nature 系列…）用 `cap` 限制单源取数，避免论文流和博客归档把版面占满；抓取改成分批 12 路并发，防止 100+ 请求同时打出去被限流。
+
+### 微信公众号怎么接
+
+公众号没有官方 RSS，走 [Wechat2RSS](https://wechat2rss.xlab.app/) 的公共实例（免费覆盖 300+ 号，更新周期约 24 小时）：
+
+```
+node scripts/add-wechat.mjs 机器之心            # 按名字接入，默认放进「文明与前沿」
+node scripts/add-wechat.mjs 猫笔刀 economy      # 指定栏目
+node scripts/add-wechat.mjs --search 芯片       # 先在列表里搜一下有哪些号
+node scripts/add-wechat.mjs --list              # 看已接入的号
+node scripts/fetch.mjs                          # 立刻重抓
+```
+
+脚本会自动做三件事：在官方列表里匹配名字、抓一次确认有更新（停更号会警告）、写进 `sources.json`（`type: wechat`）。
+
+已接入 17 个：机器之心、量子位、新智元、PaperWeekly、夕小瑶科技说、集智俱乐部、极客公园、差评、傅盛、猫笔刀、思想钢印、42章经、奇安信威胁情报中心、慢雾科技、空天防务观察、腾讯技术工程、阿里技术。
+
+公众号是单源观点，纯按热度排序会被通讯社通稿挤掉，所以 `sources.json` 里设了 `minWechat: 3` 的保底席位，卡片上标「公众号」。**要接自己的号**：公共实例没收录的，需要自建 Wechat2RSS（付费私有部署或 docker 自托管），把生成的 `feed/<id>.xml` 地址按同样格式加进 `sources.json` 即可，其余逻辑完全不用改。
+
+### 36氪这类「官方 RSS 已下线」的媒体
+
+36氪、财新、虎嗅、华尔街见闻的官网 RSS 都已停掉，改走 RSSHub 路由。公共实例经常单点挂掉，所以每个源配了 `mirrors` 数组，主地址失败自动依次重试：
+
+```json
+{ "name": "36氪 快讯", "url": "https://rsshub.rssforever.com/36kr/newsflashes",
+  "mirrors": ["https://rsshub.ktachibana.party/36kr/newsflashes", "..."] }
+```
+
+另外 36氪快讯是单源短讯，天然拼不过多源转载的通稿，`sources.json` 里用 `reserveSources: [{ match: "36氪", min: 2 }]` 给它留了两个保底位置。
 
 ## 摘要是怎么来的（抽取式，不是生成式）
 
@@ -84,7 +113,7 @@ score = (信源权重 + 权威加成 + 关键词信号 + 跨源加成 + 中文�
 
 | | 谁在做 | 频率 | 怎么改 |
 |---|---|---|---|
-| 云端抓取 | GitHub Actions 抓 87 个 RSS、生成 `data/feed.js`、部署 Pages | 每 30 分钟 | 改 `.github/workflows/fetch.yml` 里的 `cron` |
+| 云端抓取 | GitHub Actions 抓 108 个 RSS/公众号、生成 `data/feed.js`、部署 Pages | 每 30 分钟 | 改 `.github/workflows/fetch.yml` 里的 `cron` |
 | 页面刷新 | 浏览器重新下载一次 `data/feed.js` | 2 / 5 / 15 / 30 分钟 / 仅手动 | 右上角 ⚙，或按 `S` |
 
 前端刷新**不会触发重新抓取**，只是把云端已生成的数据再取一遍。想立刻重抓：本机跑 `refresh.cmd`，或在 GitHub Actions 页面点 `Run workflow`。
@@ -97,6 +126,8 @@ score = (信源权重 + 权威加成 + 关键词信号 + 跨源加成 + 中文�
 sources.json                      信源 + 分类 + 关键词表（主要调参入口）
 scripts/fetch.mjs                 抓取 / 清洗 / 要点抽取 / 合并 / 评分，零第三方依赖
 scripts/probe.mjs                 批量探测信源可用性（ok / cloud / dead）
+scripts/probe-wechat.mjs          公众号批量体检（条目数 / 最新更新时间，筛停更号）
+scripts/add-wechat.mjs            按名字接入某个公众号，自动校验并写进 sources.json
 scripts/source-candidates.json    候选新源清单，探测用
 data/feed.js                      生成的数据（页面当脚本加载，避开 CORS）
 index.html                        摆件界面，无外部资源
@@ -119,9 +150,9 @@ refresh.cmd                       本机手动抓一次（离线兜底）
 
 ## 成本
 
-**0 元 / 月，不需要服务器，不需要任何 API Key。**
+**0 元 / 月，不需要服务器，不需要任何 API Key。**（公众号走 Wechat2RSS 公共实例，也免费）
 
-87 个源分 12 路并发抓一次约 1–2 分钟，每 30 分钟跑一次仍在 GitHub Actions 免费额度内（2000 分钟/月），Pages 免费托管。每次构建在云端重新抓取并把数据一起打包发布，不往仓库写回半小时一次的提交。仓库里的 `data/feed.js` 是一份快照，断网时可用 `refresh.cmd` 在本地更新。
+108 个源分 12 路并发抓一次约 1–2 分钟，每 30 分钟跑一次仍在 GitHub Actions 免费额度内（2000 分钟/月），Pages 免费托管。每次构建在云端重新抓取并把数据一起打包发布，不往仓库写回半小时一次的提交。仓库里的 `data/feed.js` 是一份快照，断网时可用 `refresh.cmd` 在本地更新。
 
 ## 已知边界
 

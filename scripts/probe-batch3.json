@@ -1,0 +1,122 @@
+[
+  {
+    "name": "36氪 快讯 镜像A",
+    "url": "https://rsshub.rssforever.com/36kr/newsflashes",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "36氪 资讯 镜像A",
+    "url": "https://rsshub.rssforever.com/36kr/information/web_news",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "36氪 快讯 镜像B",
+    "url": "https://rss.shab.fun/36kr/newsflashes",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "36氪 快讯 镜像C",
+    "url": "https://rsshub.pseudoyu.com/36kr/newsflashes",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "36氪 快讯 镜像D",
+    "url": "https://rsshub.ktachibana.party/36kr/newsflashes",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "36氪 快讯 镜像E",
+    "url": "https://rsshub.liumingye.cn/36kr/newsflashes",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "36氪 快讯 镜像F",
+    "url": "https://rss.injahow.cn/36kr/newsflashes",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "36氪 API",
+    "url": "https://36kr.com/api/newsflash?per_page=20",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "公众号 微信2RSS 首页",
+    "url": "https://wechat2rss.xlab.app/",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 2
+  },
+  {
+    "name": "公众号 feeddd 列表",
+    "url": "https://feeddd.org/list",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 2
+  },
+  {
+    "name": "虎嗅 镜像",
+    "url": "https://rsshub.rssforever.com/huxiu/article",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "机器之心 镜像",
+    "url": "https://rsshub.rssforever.com/jiqizhixin/daily",
+    "category": "ai",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 3
+  },
+  {
+    "name": "财新 镜像",
+    "url": "https://rsshub.rssforever.com/caixin/latest",
+    "category": "economy",
+    "weight": 4,
+    "lang": "zh",
+    "authority": 4
+  },
+  {
+    "name": "华尔街见闻 镜像",
+    "url": "https://rsshub.rssforever.com/wallstreetcn/news/global",
+    "category": "economy",
+    "weight": 4,
+    "lang": "zh",
+    "authority": 4
+  },
+  {
+    "name": "晚点 镜像",
+    "url": "https://rsshub.rssforever.com/latepost/async/all",
+    "category": "tech",
+    "weight": 3,
+    "lang": "zh",
+    "authority": 4
+  }
+]

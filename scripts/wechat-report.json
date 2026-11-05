@@ -1,0 +1,218 @@
+{
+  "generatedAt": "2026-11-05T10:53:58.369Z",
+  "fresh": [
+    {
+      "name": "机器之心",
+      "id": "51e92aad2728acdd1fda7314be32b16639353001",
+      "ok": true,
+      "detail": "20 条 / 最新 3h 前",
+      "ageH": 3,
+      "n": 20
+    },
+    {
+      "name": "集智俱乐部",
+      "id": "8540570d27c0bfe0a219173cf1ace83ae79445cb",
+      "ok": true,
+      "detail": "20 条 / 最新 4h 前",
+      "ageH": 4,
+      "n": 20
+    },
+    {
+      "name": "极客公园",
+      "id": "1a5aec98e71c707c8ca092bc2c255b9d4bac477d",
+      "ok": true,
+      "detail": "20 条 / 最新 10h 前",
+      "ageH": 10,
+      "n": 20
+    },
+    {
+      "name": "差评",
+      "id": "8d839de8dd3290a1f1be7a94423cccb30c1b087d",
+      "ok": true,
+      "detail": "20 条 / 最新 19h 前",
+      "ageH": 19,
+      "n": 20
+    },
+    {
+      "name": "猫笔刀",
+      "id": "33d986064f59be5263de2ca822fb3e0bdd59eb81",
+      "ok": true,
+      "detail": "20 条 / 最新 20h 前",
+      "ageH": 20,
+      "n": 20
+    },
+    {
+      "name": "夕小瑶科技说",
+      "id": "a1cd365aa14ed7d64cabfc8aa086da40ecaba34d",
+      "ok": true,
+      "detail": "20 条 / 最新 23h 前",
+      "ageH": 23,
+      "n": 20
+    },
+    {
+      "name": "傅盛",
+      "id": "71257003d43d39b91ff9d38b6f3330c883dc8e0c",
+      "ok": true,
+      "detail": "20 条 / 最新 23h 前",
+      "ageH": 23,
+      "n": 20
+    },
+    {
+      "name": "慢雾科技",
+      "id": "9e9c3c70e598266a1ac993e50458a10a6d853eb7",
+      "ok": true,
+      "detail": "20 条 / 最新 24h 前",
+      "ageH": 24,
+      "n": 20
+    },
+    {
+      "name": "新智元",
+      "id": "ede30346413ea70dbef5d485ea5cbb95cca446e7",
+      "ok": true,
+      "detail": "20 条 / 最新 25h 前",
+      "ageH": 25,
+      "n": 20
+    },
+    {
+      "name": "阿里技术",
+      "id": "6e1f9b775f7a5841ac1a94310f0478b45a02ec01",
+      "ok": true,
+      "detail": "20 条 / 最新 25h 前",
+      "ageH": 25,
+      "n": 20
+    },
+    {
+      "name": "奇安信威胁情报中心",
+      "id": "b93962f981247c0091dad08df5b7a6864ab888e9",
+      "ok": true,
+      "detail": "20 条 / 最新 27h 前",
+      "ageH": 27,
+      "n": 20
+    },
+    {
+      "name": "量子位",
+      "id": "7131b577c61365cb47e81000738c10d872685908",
+      "ok": true,
+      "detail": "20 条 / 最新 29h 前",
+      "ageH": 29,
+      "n": 20
+    },
+    {
+      "name": "腾讯技术工程",
+      "id": "9685937b45fe9c7a526dbc32e4f24ba879a65b9a",
+      "ok": true,
+      "detail": "20 条 / 最新 29h 前",
+      "ageH": 29,
+      "n": 20
+    },
+    {
+      "name": "PaperWeekly",
+      "id": "3be891c2f4e526629ab055a297cc2cd6c1f0a563",
+      "ok": true,
+      "detail": "20 条 / 最新 31h 前",
+      "ageH": 31,
+      "n": 20
+    },
+    {
+      "name": "空天防务观察",
+      "id": "b3da5de3b7697f10c0e22ce8909063ea84c44bbd",
+      "ok": true,
+      "detail": "20 条 / 最新 45h 前",
+      "ageH": 45,
+      "n": 20
+    },
+    {
+      "name": "思想钢印",
+      "id": "a55006fab25a17c43a412246fda317822609f2ea",
+      "ok": true,
+      "detail": "20 条 / 最新 48h 前",
+      "ageH": 48,
+      "n": 20
+    },
+    {
+      "name": "字节跳动技术团队",
+      "id": "4025ea55575daf8bfd8227e68b28d9638b073267",
+      "ok": true,
+      "detail": "20 条 / 最新 49h 前",
+      "ageH": 49,
+      "n": 20
+    },
+    {
+      "name": "美团技术团队",
+      "id": "eb4d04149424a874693a51c6fdda0dba8673f5e4",
+      "ok": true,
+      "detail": "20 条 / 最新 80h 前",
+      "ageH": 80,
+      "n": 20
+    },
+    {
+      "name": "42章经",
+      "id": "31436fcc3bba8c2c2a9337a163afcb3b5a57a0a0",
+      "ok": true,
+      "detail": "20 条 / 最新 94h 前",
+      "ageH": 94,
+      "n": 20
+    },
+    {
+      "name": "逻辑与现实经济",
+      "id": "07cd3971227a35b5c35cd94d1961790dad9a87c7",
+      "ok": true,
+      "detail": "20 条 / 最新 169h 前",
+      "ageH": 169,
+      "n": 20
+    },
+    {
+      "name": "也谈钱",
+      "id": "f2fd5af8dc3590b99509f0c501de09066d063028",
+      "ok": true,
+      "detail": "20 条 / 最新 173h 前",
+      "ageH": 173,
+      "n": 20
+    }
+  ],
+  "stale": [
+    {
+      "name": "卢瑟经济学安生杂谈",
+      "id": "62ec8c2ba29a16a45c8418a6ecd1945cc80eb380",
+      "ok": false,
+      "detail": "HTTP 404"
+    },
+    {
+      "name": "老高的互联网杂谈",
+      "id": "574587b13c6f60617fc74605702258ddf4aefac6",
+      "ok": false,
+      "detail": "20 条 / 最新 7711h 前",
+      "ageH": 7711,
+      "n": 20
+    },
+    {
+      "name": "长赢指数投资",
+      "id": "1f35edb36dfda13906f958fc3047e59ce9c234fe",
+      "ok": false,
+      "detail": "20 条 / 最新 1755h 前",
+      "ageH": 1755,
+      "n": 20
+    },
+    {
+      "name": "小火箭",
+      "id": "ebbf3f8891e7d70626c75dca7b92dd6c075663d5",
+      "ok": false,
+      "detail": "20 条 / 最新 52628h 前",
+      "ageH": 52628,
+      "n": 20
+    }
+  ],
+  "missing": [
+    "微软研究院",
+    "爱范儿",
+    "少数派",
+    "36氪",
+    "虎嗅",
+    "晚点LatePost",
+    "InfoQ",
+    "硅星人",
+    "甲子光年",
+    "DeepTech深科技",
+    "机器之能"
+  ]
+}

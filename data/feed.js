@@ -1,15 +1,17 @@
 window.SIGNAL_DATA = {
   "version": 2,
-  "generatedAt": "2026-11-05T10:34:37.779Z",
+  "generatedAt": "2026-11-05T11:02:56.787Z",
   "name": "信号台 Signal Desk",
   "motto": "只盯真正会改变人类生存与发展轨迹的事",
   "stats": {
-    "sourcesTotal": 87,
-    "sourcesOk": 58,
+    "sourcesTotal": 108,
+    "sourcesOk": 79,
     "authorityTotal": 39,
     "authorityOk": 29,
-    "rawItems": 636,
-    "clusters": 629,
+    "wechatTotal": 17,
+    "wechatOk": 17,
+    "rawItems": 789,
+    "clusters": 774,
     "shown": 24,
     "allItems": 60
   },
@@ -41,12 +43,267 @@ window.SIGNAL_DATA = {
   ],
   "health": [
     {
+      "name": "36氪 快讯",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
+      "ok": true,
+      "count": 20,
+      "mirror": "",
+      "error": ""
+    },
+    {
       "name": "爱范儿",
       "category": "frontier",
       "tier": "core",
       "authority": 2,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "财新",
+      "category": "economy",
+      "tier": "core",
+      "authority": 4.5,
+      "type": "rss",
+      "typeLabel": "",
+      "ok": true,
+      "count": 20,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 42章经",
+      "category": "economy",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 阿里技术",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 差评",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 傅盛",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 机器之心",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 极客公园",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 集智俱乐部",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 空天防务观察",
+      "category": "order",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 量子位",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 慢雾科技",
+      "category": "order",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 猫笔刀",
+      "category": "economy",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 奇安信威胁情报中心",
+      "category": "order",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 思想钢印",
+      "category": "economy",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 腾讯技术工程",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 夕小瑶科技说",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 新智元",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "公众号 PaperWeekly",
+      "category": "frontier",
+      "tier": "core",
+      "authority": 3,
+      "type": "wechat",
+      "typeLabel": "公众号",
+      "ok": true,
+      "count": 6,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "虎嗅",
+      "category": "economy",
+      "tier": "core",
+      "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
+      "ok": true,
+      "count": 20,
+      "mirror": "",
+      "error": ""
+    },
+    {
+      "name": "华尔街见闻",
+      "category": "economy",
+      "tier": "core",
+      "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
+      "ok": true,
+      "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -54,8 +311,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -63,8 +323,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -72,8 +335,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 30,
+      "mirror": "",
       "error": ""
     },
     {
@@ -81,8 +347,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -90,8 +359,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 30,
+      "mirror": "",
       "error": ""
     },
     {
@@ -99,8 +371,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 9,
+      "mirror": "",
       "error": ""
     },
     {
@@ -108,8 +383,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 12,
+      "mirror": "",
       "error": ""
     },
     {
@@ -117,8 +395,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -126,8 +407,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -135,8 +419,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 12,
+      "mirror": "",
       "error": ""
     },
     {
@@ -144,8 +431,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 12,
+      "mirror": "",
       "error": ""
     },
     {
@@ -153,8 +443,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 2,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -162,8 +455,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "core",
       "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
-      "count": 17,
+      "count": 15,
+      "mirror": "",
       "error": ""
     },
     {
@@ -171,8 +467,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 12,
+      "mirror": "",
       "error": ""
     },
     {
@@ -180,8 +479,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 12,
+      "mirror": "",
       "error": ""
     },
     {
@@ -189,8 +491,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 30,
+      "mirror": "",
       "error": ""
     },
     {
@@ -198,8 +503,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 30,
+      "mirror": "",
       "error": ""
     },
     {
@@ -207,8 +515,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 30,
+      "mirror": "",
       "error": ""
     },
     {
@@ -216,8 +527,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -225,8 +539,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 6,
+      "mirror": "",
       "error": ""
     },
     {
@@ -234,8 +551,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 6,
+      "mirror": "",
       "error": ""
     },
     {
@@ -243,8 +563,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 12,
+      "mirror": "",
       "error": ""
     },
     {
@@ -252,8 +575,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -261,8 +587,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 12,
+      "mirror": "",
       "error": ""
     },
     {
@@ -270,8 +599,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 30,
+      "mirror": "",
       "error": ""
     },
     {
@@ -279,8 +611,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 15,
+      "mirror": "",
       "error": ""
     },
     {
@@ -288,8 +623,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -297,8 +635,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 24,
+      "mirror": "",
       "error": ""
     },
     {
@@ -306,8 +647,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -315,8 +659,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 15,
+      "mirror": "",
       "error": ""
     },
     {
@@ -324,8 +671,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -333,8 +683,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -342,8 +695,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -351,8 +707,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -360,8 +719,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -369,8 +731,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 40,
+      "mirror": "",
       "error": ""
     },
     {
@@ -378,8 +743,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -387,8 +755,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 15,
+      "mirror": "",
       "error": ""
     },
     {
@@ -396,8 +767,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 8,
+      "mirror": "",
       "error": ""
     },
     {
@@ -405,8 +779,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 8,
+      "mirror": "",
       "error": ""
     },
     {
@@ -414,8 +791,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 8,
+      "mirror": "",
       "error": ""
     },
     {
@@ -423,8 +803,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 8,
+      "mirror": "",
       "error": ""
     },
     {
@@ -432,8 +815,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 8,
+      "mirror": "",
       "error": ""
     },
     {
@@ -441,8 +827,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 15,
+      "mirror": "",
       "error": ""
     },
     {
@@ -450,8 +839,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -459,8 +851,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 8,
+      "mirror": "",
       "error": ""
     },
     {
@@ -468,8 +863,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 30,
+      "mirror": "",
       "error": ""
     },
     {
@@ -477,8 +875,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 12,
+      "mirror": "",
       "error": ""
     },
     {
@@ -486,8 +887,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 5,
+      "mirror": "",
       "error": ""
     },
     {
@@ -495,8 +899,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -504,8 +911,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 15,
+      "mirror": "",
       "error": ""
     },
     {
@@ -513,8 +923,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -522,8 +935,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 20,
+      "mirror": "",
       "error": ""
     },
     {
@@ -531,8 +947,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 3,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 10,
+      "mirror": "",
       "error": ""
     },
     {
@@ -540,8 +959,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 30,
+      "mirror": "",
       "error": ""
     },
     {
@@ -549,8 +971,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "core",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 40,
+      "mirror": "",
       "error": ""
     },
     {
@@ -558,8 +983,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "core",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": true,
       "count": 40,
+      "mirror": "",
       "error": ""
     },
     {
@@ -567,8 +995,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -576,8 +1007,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -585,8 +1019,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -594,8 +1031,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -603,8 +1043,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -612,8 +1055,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -621,8 +1067,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -630,8 +1079,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -639,8 +1091,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -648,8 +1103,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -657,8 +1115,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -666,8 +1127,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -675,8 +1139,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -684,8 +1151,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -693,8 +1163,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -702,8 +1175,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -711,8 +1187,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -720,8 +1199,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -729,8 +1211,11 @@ window.SIGNAL_DATA = {
       "category": "order",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     },
     {
@@ -738,8 +1223,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
     },
     {
@@ -747,8 +1235,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "HTTP 403"
     },
     {
@@ -756,8 +1247,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "HTTP 403"
     },
     {
@@ -765,8 +1259,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "HTTP 403"
     },
     {
@@ -774,8 +1271,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "HTTP 403"
     },
     {
@@ -783,8 +1283,11 @@ window.SIGNAL_DATA = {
       "category": "survival",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "HTTP 403"
     },
     {
@@ -792,8 +1295,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "ECONNRESET"
     },
     {
@@ -801,8 +1307,11 @@ window.SIGNAL_DATA = {
       "category": "economy",
       "tier": "cloud",
       "authority": 5,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "HTTP 403"
     },
     {
@@ -810,8 +1319,11 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "HTTP 403"
     },
     {
@@ -819,13 +1331,16 @@ window.SIGNAL_DATA = {
       "category": "frontier",
       "tier": "cloud",
       "authority": 4,
+      "type": "rss",
+      "typeLabel": "",
       "ok": false,
       "count": 0,
+      "mirror": "",
       "error": "UND_ERR_CONNECT_TIMEOUT"
     }
   ],
   "digest": {
-    "summaryLine": "扫描 636 条 · 合并 629 个事件 · 1 条被多家同时报道 · 「war」最集中",
+    "summaryLine": "扫描 789 条 · 合并 774 个事件 · 1 条被多家同时报道 · 「war」最集中",
     "points": [
       {
         "id": "Q2VudHVyaWVz",
@@ -858,23 +1373,23 @@ window.SIGNAL_DATA = {
         "clusterSize": 1
       },
       {
-        "id": "Q09QMzHliY3n",
-        "title": "COP31前瞻：今年联合国气候变化大会有哪些重要议题？",
-        "brief": "如今，全球拥有比以往更多的技术和手段来应对气候变化，但仍有数百万人无法从中受益。 随着清洁能源技术以前所未有的速度发展，各国在第31届联合国气候变化大会上面临的挑战，已不再只是寻找解决方案，而是如何让所有人都有能力负担这些方案的成本。",
+        "id": "5LiH5pav55u0",
+        "title": "万斯直言对伊战争就是共和党败选主因 媒体称万斯“开始弃船自保”",
+        "brief": "”万斯说 【财新网】 在美国共和党和美国总统特朗普的声势，在11月3日举行的美国中期选举遭遇重挫之后，当地时间11月4日中午，美国副总统万斯在其个人社交媒体X账号上发表了一篇长文，将共和党此次败选的主因归咎于美国对伊朗的战争，并引用未具名的数据分析师的观点指出，许多曾在2024年大选中支持共和党特朗普─万斯组合的选民，这次仍纷纷出门投票，只不过他们把自己的票投给了民主党。",
         "briefLang": "zh",
-        "category": "order",
-        "source": "联合国新闻",
-        "url": "https://news.un.org/feed/view/zh/story/2026/11/1143132",
+        "category": "economy",
+        "source": "财新",
+        "url": "https://international.caixin.com/2026-11-05/102501257.html",
         "clusterSize": 1
       },
       {
-        "id": "5LiH5pav5Y-R",
-        "title": "万斯发长文分析共和党中期选举失利：就是因为这场战争",
-        "brief": "综合报道，美国副总统万斯当地时间11月4日通过社交媒体发布长文，分析共和党在中期选举中失利的原因。 万斯称，共和党失利的原因“几乎所有人都明白”，“就是这场战争”。",
-        "briefLang": "zh",
+        "id": "QWZ0ZXIgbWlk",
+        "title": "After midterm stinging defeat, Trump is left to weigh his next move in Iran war",
+        "brief": "As he takes stock of his Republican Party's midterm drubbing, US President Donald Trump now faces the difficult question of what to do about his unpopular war against Iran. Trump…",
+        "briefLang": "en",
         "category": "order",
-        "source": "中新网国际",
-        "url": "https://www.chinanews.com.cn/gj/2026/11-05/10726432.shtml",
+        "source": "France 24",
+        "url": "https://www.france24.com/en/video/20261105-after-midterm-stinging-defeat-trump-is-left-to-weigh-his-next-move-in-iran-war",
         "clusterSize": 1
       }
     ]
@@ -897,11 +1412,13 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "climate",
         "trial"
       ],
-      "score": 8.34
+      "score": 8.28
     },
     {
       "id": "SW5zaWRlIHRo",
@@ -920,11 +1437,13 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "war",
         "chip"
       ],
-      "score": 8.19
+      "score": 8.13
     },
     {
       "id": "5YWo55CD5Y2H",
@@ -947,11 +1466,65 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "升温",
         "突破"
       ],
-      "score": 8.16
+      "score": 8.11
+    },
+    {
+      "id": "5LiH5pav55u0",
+      "title": "万斯直言对伊战争就是共和党败选主因 媒体称万斯“开始弃船自保”",
+      "url": "https://international.caixin.com/2026-11-05/102501257.html",
+      "summary": "”万斯说 【财新网】 在美国共和党和美国总统特朗普的声势，在11月3日举行的美国中期选举遭遇重挫之后，当地时间11月4日中午，美国副总统万斯在其个人社交媒体X账号上发表了一篇长文，将共和党此次败选的主因归咎于美国对伊朗的战争，并引用未具名的数据分析师的观点指出，许多曾在2024年大选中支持共和党特朗普─万斯组合的选民，这次仍纷纷出门投票，只不过他们把自己的票投给了民主党。",
+      "brief": "”万斯说 【财新网】 在美国共和党和美国总统特朗普的声势，在11月3日举行的美国中期选举遭遇重挫之后，当地时间11月4日中午，美国副总统万斯在其个人社交媒体X账号上发表了一篇长文，将共和党此次败选的主因归咎于美国对伊朗的战争，并引用未具名的数据分析师的观点指出，许多曾在2024年大选中支持共和党特朗普─万斯组合的选民，这次仍纷纷出门投票，只不过他们把自己的票投给了民主党。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "2024年",
+        "11月",
+        "2026年"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T04:23:56.000Z",
+      "source": "财新",
+      "sources": [
+        "财新"
+      ],
+      "clusterSize": 1,
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "战争"
+      ],
+      "score": 7.88
+    },
+    {
+      "id": "QWZ0ZXIgbWlk",
+      "title": "After midterm stinging defeat, Trump is left to weigh his next move in Iran war",
+      "url": "https://www.france24.com/en/video/20261105-after-midterm-stinging-defeat-trump-is-left-to-weigh-his-next-move-in-iran-war",
+      "summary": "As he takes stock of his Republican Party's midterm drubbing, US President Donald Trump now faces the difficult question of what to do about his unpopular war against Iran. Trump…",
+      "brief": "As he takes stock of his Republican Party's midterm drubbing, US President Donald Trump now faces the difficult question of what to do about his unpopular war against Iran. Trump…",
+      "briefLang": "en",
+      "briefFallback": false,
+      "facts": [],
+      "category": "order",
+      "publishedAt": "2026-11-05T10:27:32.000Z",
+      "source": "France 24",
+      "sources": [
+        "France 24"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "war"
+      ],
+      "score": 7.82
     },
     {
       "id": "Q09QMzHliY3n",
@@ -970,11 +1543,37 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "气候",
         "联合国"
       ],
-      "score": 7.57
+      "score": 7.53
+    },
+    {
+      "id": "RXVyb3BlYW4g",
+      "title": "European Innovation Council launches €1.8 billion in funding for 2027",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2352",
+      "summary": "该信源未提供摘要，点标题看原文。",
+      "brief": "该信源未提供摘要，点标题看原文。",
+      "briefLang": "zh",
+      "briefFallback": true,
+      "facts": [],
+      "category": "order",
+      "publishedAt": "2026-11-05T09:45:37.000Z",
+      "source": "欧盟委员会",
+      "sources": [
+        "欧盟委员会"
+      ],
+      "clusterSize": 1,
+      "authority": 5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "launch"
+      ],
+      "score": 7.52
     },
     {
       "id": "5LiH5pav5Y-R",
@@ -997,10 +1596,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "战争"
       ],
-      "score": 7.36
+      "score": 7.31
     },
     {
       "id": "SXNhYmVsIFNj",
@@ -1019,10 +1620,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "policy"
       ],
-      "score": 7.35
+      "score": 7.29
     },
     {
       "id": "44CQ5LiT6aKY",
@@ -1044,10 +1647,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "气候"
       ],
-      "score": 7.23
+      "score": 7.19
     },
     {
       "id": "4oCYVGhlIHdv",
@@ -1066,11 +1671,13 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "climate",
         "warming"
       ],
-      "score": 7.15
+      "score": 7.11
     },
     {
       "id": "Q2xlYXJpbmcg",
@@ -1089,10 +1696,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "robot"
       ],
-      "score": 6.98
+      "score": 6.93
     },
     {
       "id": "QSBuZXcgYmls",
@@ -1111,10 +1720,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "bill"
       ],
-      "score": 6.93
+      "score": 6.87
     },
     {
       "id": "576O5Y-C6K6u",
@@ -1137,10 +1748,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "战争"
       ],
-      "score": 6.89
+      "score": 6.84
     },
     {
       "id": "QSBwcm9sb25n",
@@ -1159,54 +1772,64 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
-      "tags": [
-        "war"
-      ],
-      "score": 6.87
-    },
-    {
-      "id": "Q09QMzEgZXhw",
-      "title": "COP31 explained: What’s at stake at this year’s UN climate summit?",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168735",
-      "summary": "The world has more tools than ever to tackle climate change, yet millions remain unable to benefit from them. As clean energy technologies advance faster than ever, the challenge facing…",
-      "brief": "The world has more tools than ever to tackle climate change, yet millions remain unable to benefit from them. As clean energy technologies advance faster than ever, the challenge facing…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "order",
-      "publishedAt": "2026-11-04T12:00:00.000Z",
-      "source": "UN News",
-      "sources": [
-        "UN News"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "climate"
-      ],
-      "score": 6.81
-    },
-    {
-      "id": "U3lyaWHigJlz",
-      "title": "Syria’s undocumented children ‘pay the price’ of war and a law that shuts out mothers",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168737",
-      "summary": "Many children born in Syria since the war began in 2011 have no legal identity because nationality passes only through fathers – many of whom are dead or missing – a member of the…",
-      "brief": "Many children born in Syria since the war began in 2011 have no legal identity because nationality passes only through fathers – many of whom are dead or missing – a member of the…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "order",
-      "publishedAt": "2026-11-04T12:00:00.000Z",
-      "source": "UN News",
-      "sources": [
-        "UN News"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "war"
       ],
       "score": 6.81
+    },
+    {
+      "id": "5r2Y5Yqf6IOc",
+      "title": "潘功胜：实施好支持资本市场的货币政策工具",
+      "url": "https://finance.caixin.com/2026-11-05/102501396.html",
+      "summary": "《报告》首次提到“探索人工智能在金融管理和服务领域的应用，防范模型应用风险”； ”2026年11月3日，中国人民银行行长潘功胜在《国务院关于金融工作情况的报告》（下称《报告》）中，讲到“稳妥化解重点领域风险，守住不发生系统性金融风险底线”的下一步考虑时提到。",
+      "brief": "《报告》首次提到“探索人工智能在金融管理和服务领域的应用，防范模型应用风险”； ”2026年11月3日，中国人民银行行长潘功胜在《国务院关于金融工作情况的报告》（下称《报告》）中，讲到“稳妥化解重点领域风险，守住不发生系统性金融风险底线”的下一步考虑时提到。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "2026年",
+        "11月",
+        "3日"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T09:15:10.000Z",
+      "source": "财新",
+      "sources": [
+        "财新"
+      ],
+      "clusterSize": 1,
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "政策"
+      ],
+      "score": 6.78
+    },
+    {
+      "id": "QUnlronlhajo",
+      "title": "AI安全背后的哲学思想，有效利他主义如何影响硅谷？（上篇）",
+      "url": "https://www.tmtpost.com/8194754.html",
+      "summary": "从哲学思想到AI主导权之战",
+      "brief": "从哲学思想到AI主导权之战",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [],
+      "category": "economy",
+      "publishedAt": "2026-11-05T10:30:32.000Z",
+      "source": "钛媒体",
+      "sources": [
+        "钛媒体"
+      ],
+      "clusterSize": 1,
+      "authority": 3,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "AI安全"
+      ],
+      "score": 6.74
     },
     {
       "id": "55m-5bqm5byA",
@@ -1230,212 +1853,175 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 2,
       "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [
         "开源"
       ],
-      "score": 6.79
+      "score": 6.73
     },
     {
-      "id": "5aSp5rSl5pys",
-      "title": "天津本外币贷款余额首破5万亿元",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726759.shtml",
-      "summary": "记者5日从中国人民银行天津市分行获悉，截至今年9月末，天津本外币各项贷款余额达5.03万亿元，同比增长4.4%，首次突破5万亿元。",
-      "brief": "记者5日从中国人民银行天津市分行获悉，截至今年9月末，天津本外币各项贷款余额达5.03万亿元，同比增长4.4%，首次突破5万亿元。",
+      "id": "5YWo55CD6ZW_",
+      "title": "全球长债利率的“战国时代”",
+      "url": "https://opinion.caixin.com/2026-11-05/102501377.html",
+      "summary": "2008年国际金融危机以来全球政策制定者之间形成的、以金融压抑为基调的共识与协作正走向终结 2026年以来，主要发达经济体长期国债收益率普遍升至多年以来的高位。",
+      "brief": "2008年国际金融危机以来全球政策制定者之间形成的、以金融压抑为基调的共识与协作正走向终结 2026年以来，主要发达经济体长期国债收益率普遍升至多年以来的高位。",
       "briefLang": "zh",
       "briefFallback": false,
       "facts": [
-        "5日",
-        "5.03万",
-        "4.4%"
+        "2008年",
+        "2026年"
       ],
       "category": "economy",
-      "publishedAt": "2026-11-05T10:13:33.000Z",
-      "source": "中新网财经",
+      "publishedAt": "2026-11-05T08:43:20.000Z",
+      "source": "财新",
       "sources": [
-        "中新网财经"
+        "财新"
       ],
       "clusterSize": 1,
-      "authority": 4,
-      "tags": [],
-      "score": 6.46
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "利率"
+      ],
+      "score": 6.71
     },
     {
-      "id": "5YWo5Zu96aaW",
-      "title": "全国首个“电力鸿蒙”兆瓦级液冷超充重卡补能示范站落地昆明",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726772.shtml",
-      "summary": "记者5日从南方电网云南昆明供电局获悉，全国首个“电力鸿蒙”兆瓦级液冷超充重卡补能示范站近日在云南省昆明市寻甸县正式投产运行。 标志着重卡充电站不再只是单一用能终端，而成为兼具绿电消纳、储能调节、车网互动和便民服务的综合能源节点。",
-      "brief": "记者5日从南方电网云南昆明供电局获悉，全国首个“电力鸿蒙”兆瓦级液冷超充重卡补能示范站近日在云南省昆明市寻甸县正式投产运行。 标志着重卡充电站不再只是单一用能终端，而成为兼具绿电消纳、储能调节、车网互动和便民服务的综合能源节点。",
+      "id": "576O5Zu9MTDm",
+      "title": "美国10月挑战者企业裁员人数43994人",
+      "url": "https://www.36kr.com/newsflashes/4056722893329545",
+      "summary": "美国就业咨询公司“挑战者企业”发布报告显示，美国雇主10月宣布的裁员人数为43,994人。",
+      "brief": "美国就业咨询公司“挑战者企业”发布报告显示，美国雇主10月宣布的裁员人数为43,994人。",
       "briefLang": "zh",
       "briefFallback": false,
       "facts": [
-        "5日",
-        "11月"
+        "43,994人",
+        "10月"
       ],
-      "category": "economy",
-      "publishedAt": "2026-11-05T10:27:33.000Z",
-      "source": "中新网财经",
-      "sources": [
-        "中新网财经"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [],
-      "score": 6.44
-    },
-    {
-      "id": "VXJhbml1bSBj",
-      "title": "Uranium cubes reveal why the German nuclear project failed",
-      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
-      "summary": "\"Our calculations suggest Heisenberg significantly underestimated the materials required.\"",
-      "brief": "\"Our calculations suggest Heisenberg significantly underestimated the materials required.\"",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
       "category": "frontier",
-      "publishedAt": "2026-11-04T21:56:29.000Z",
-      "source": "Ars Technica",
+      "publishedAt": "2026-11-05T10:31:55.000Z",
+      "source": "36氪 快讯",
       "sources": [
-        "Ars Technica"
+        "36氪 快讯"
       ],
       "clusterSize": 1,
-      "authority": 4,
+      "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [
-        "nuclear"
+        "裁员"
       ],
-      "score": 6.41
+      "score": 5.1
     },
     {
-      "id": "Q1JJU1BSIG11",
-      "title": "CRISPR mutagenesis of the MYC locus reveals a druggable ultraconserved RNA element",
-      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01213-4?rss=yes",
-      "summary": "CRISPR tiling mutagenesis of the 10-kb human MYC locus mapped the fitness landscape of an entire human gene at base-pair resolution. This unbiased interrogation revealed that 67% of…",
-      "brief": "CRISPR tiling mutagenesis of the 10-kb human MYC locus mapped the fitness landscape of an entire human gene at base-pair resolution. This unbiased interrogation revealed that 67% of…",
-      "briefLang": "en",
+      "id": "5pif5rqQ5p2Q",
+      "title": "星源材质：子公司与大众旗下动力电池子公司签订定点协议，供应锂离子电池隔膜材料",
+      "url": "https://www.36kr.com/newsflashes/4056736327832455",
+      "summary": "36氪获悉，星源材质公告，公司全资子公司欧洲星源与大众集团旗下动力电池子公司签订《定点协议》，约定2027年至2034年期间供应约15.58亿平方米湿法涂覆锂离子电池隔膜材料。",
+      "brief": "36氪获悉，星源材质公告，公司全资子公司欧洲星源与大众集团旗下动力电池子公司签订《定点协议》，约定2027年至2034年期间供应约15.58亿平方米湿法涂覆锂离子电池隔膜材料。",
+      "briefLang": "zh",
       "briefFallback": false,
       "facts": [
-        "67%"
+        "15.58亿",
+        "2027年",
+        "2034年"
       ],
       "category": "frontier",
-      "publishedAt": "2026-11-04T00:00:00.000Z",
-      "source": "Cell",
+      "publishedAt": "2026-11-05T10:56:29.000Z",
+      "source": "36氪 快讯",
       "sources": [
-        "Cell"
+        "36氪 快讯"
       ],
       "clusterSize": 1,
-      "authority": 5,
+      "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [
-        "CRISPR"
+        "电池"
       ],
-      "score": 6.29
+      "score": 5.09
     },
     {
-      "id": "Q3J1ZGUgb2ls",
-      "title": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
-      "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
-      "summary": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
-      "brief": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
-      "briefLang": "en",
+      "id": "5Yia5Yia77yM",
+      "title": "刚刚，百度开源全新预训练基模，还是主打效率的Flash",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651072404&idx=2&sn=4dafbecc77de04a45e65aa78c40e6b16",
+      "summary": "11 月 5 日，百度文心系列正式发布新一代基座模型文心 5.5 Flash Base（ERNIE 5.5 Flash Base），并开放了权重。 这次发布的是一个稀疏 MoE 语言模型，总参数量 280B，每 token 激活 14B，其在 33.5T tokens 上从零完成预训练，最长的训练上下文为 128K， 微调与推理阶段外扩到 1M tokens 的长上下文。",
+      "brief": "11 月 5 日，百度文心系列正式发布新一代基座模型文心 5.5 Flash Base（ERNIE 5.5 Flash Base），并开放了权重。 这次发布的是一个稀疏 MoE 语言模型，总参数量 280B，每 token 激活 14B，其在 33.5T tokens 上从零完成预训练，最长的训练上下文为 128K， 微调与推理阶段外扩到 1M tokens 的长上下文。",
+      "briefLang": "zh",
       "briefFallback": false,
-      "facts": [],
-      "category": "economy",
-      "publishedAt": "2026-11-04T20:14:52.000Z",
-      "source": "CNBC",
-      "sources": [
-        "CNBC"
+      "facts": [
+        "11月",
+        "5日"
       ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "war"
-      ],
-      "score": 6.25
-    },
-    {
-      "id": "U1RBVCs6IElu",
-      "title": "STAT+: In China, a flood of controversial clinical trials slows to a trickle",
-      "url": "https://www.statnews.com/2026/11/05/china-biotech-restrictions-impact-rare-disease-investigator-initiated-trial/?utm_campaign=rss",
-      "summary": "Following patient deaths, China restricts investigator-initiated biotech trials, leaving rare disease families and US investors facing an uncertain future.",
-      "brief": "Following patient deaths, China restricts investigator-initiated biotech trials, leaving rare disease families and US investors facing an uncertain future.",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "survival",
-      "publishedAt": "2026-11-05T09:30:00.000Z",
-      "source": "STAT News",
-      "sources": [
-        "STAT News"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "trial"
-      ],
-      "score": 5.88
-    },
-    {
-      "id": "RnJhY3RhbCBw",
-      "title": "Fractal patterns reveal hidden limits to AI predictability",
-      "url": "https://phys.org/news/2026-11-fractal-patterns-reveal-hidden-limits.html",
-      "summary": "Researchers at the University of Sydney have identified a fundamental mathematical reason why artificial intelligence systems can learn different behaviors even when trained under almost…",
-      "brief": "Researchers at the University of Sydney have identified a fundamental mathematical reason why artificial intelligence systems can learn different behaviors even when trained under almost…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
       "category": "frontier",
-      "publishedAt": "2026-11-05T10:00:04.000Z",
-      "source": "Phys.org",
+      "publishedAt": "2026-11-05T08:21:00.000Z",
+      "source": "公众号 机器之心",
       "sources": [
-        "Phys.org"
+        "公众号 机器之心"
       ],
       "clusterSize": 1,
-      "authority": 4,
-      "tags": [],
-      "score": 5.79
+      "authority": 3,
+      "via": "wechat2rss",
+      "type": "wechat",
+      "tags": [
+        "开源"
+      ],
+      "score": 5.05
     },
     {
-      "id": "TkFTQSBBbm5v",
-      "title": "NASA Announces X-70 Experimental Aircraft to Advance Flight Research",
-      "url": "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research/",
-      "summary": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida. This high-performance, highly adaptable…",
-      "brief": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida. This high-performance, highly adaptable…",
-      "briefLang": "en",
+      "id": "576O5Zu9IE9G",
+      "title": "美国 OFAC 制裁朝鲜 IT 人员网络相关人员与实体",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU4ODQ3NTM2OA==&mid=2247506559&idx=1&sn=a663061445a71eccc81168b1baecd6f0",
+      "summary": "公告披露了几组加密货币相关活动： 俄罗斯籍 Vitold Viktorovich Obertas 被指自 2025 年 1 月以来，为朝鲜官员进行了近 200 万美元的加密货币兑换，以及至少 125 万美元的其他货币交易。",
+      "brief": "公告披露了几组加密货币相关活动： 俄罗斯籍 Vitold Viktorovich Obertas 被指自 2025 年 1 月以来，为朝鲜官员进行了近 200 万美元的加密货币兑换，以及至少 125 万美元的其他货币交易。",
+      "briefLang": "zh",
       "briefFallback": false,
-      "facts": [],
+      "facts": [
+        "2025年",
+        "2024年",
+        "200万"
+      ],
+      "category": "order",
+      "publishedAt": "2026-11-04T10:35:00.000Z",
+      "source": "公众号 慢雾科技",
+      "sources": [
+        "公众号 慢雾科技"
+      ],
+      "clusterSize": 1,
+      "authority": 3,
+      "via": "wechat2rss",
+      "type": "wechat",
+      "tags": [
+        "制裁"
+      ],
+      "score": 4.44
+    },
+    {
+      "id": "5oqK6buE5LuB",
+      "title": "把黄仁勋的小黄鸭训练放在本地！国产端侧600T算力即将到来",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651072104&idx=1&sn=f11fab2e4f1f7e5c4204f3524123f1ee",
+      "summary": "斯坦福 HAI《2025 AI Index》记录了一个变化：在 MMLU 上跨过 60% 得分门槛的最小模型，参数规模从 2022 年的 5400 亿，降至 2024 年的 38 亿。 TY1200 运行 Qwen3.8-27B-AWQ 的生成吞吐，达到 Thor T5000 对照方案的 1.38 倍 。",
+      "brief": "斯坦福 HAI《2025 AI Index》记录了一个变化：在 MMLU 上跨过 60% 得分门槛的最小模型，参数规模从 2022 年的 5400 亿，降至 2024 年的 38 亿。 TY1200 运行 Qwen3.8-27B-AWQ 的生成吞吐，达到 Thor T5000 对照方案的 1.38 倍 。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "1月"
+      ],
       "category": "frontier",
-      "publishedAt": "2026-11-05T01:43:21.000Z",
-      "source": "NASA",
+      "publishedAt": "2026-11-04T04:00:00.000Z",
+      "source": "公众号 机器之心",
       "sources": [
-        "NASA"
+        "公众号 机器之心"
       ],
       "clusterSize": 1,
-      "authority": 5,
+      "authority": 3,
+      "via": "wechat2rss",
+      "type": "wechat",
       "tags": [
-        "research"
+        "算力"
       ],
-      "score": 5.76
-    },
-    {
-      "id": "WmVybyBlbWlz",
-      "title": "Zero emissions commitment depends on warming level",
-      "url": "https://www.nature.com/articles/s41558-026-02776-w",
-      "summary": "Nature Climate Change, Published online: 03 November 2026;",
-      "brief": "Nature Climate Change, Published online: 03 November 2026;",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "survival",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "source": "Nature 气候变化",
-      "sources": [
-        "Nature 气候变化"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "warming",
-        "emissions"
-      ],
-      "score": 5.32
+      "score": 3.42
     }
   ],
   "allItems": [
@@ -1456,11 +2042,13 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "climate",
         "trial"
       ],
-      "score": 8.34
+      "score": 8.28
     },
     {
       "id": "SW5zaWRlIHRo",
@@ -1479,11 +2067,13 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "war",
         "chip"
       ],
-      "score": 8.19
+      "score": 8.13
     },
     {
       "id": "5YWo55CD5Y2H",
@@ -1506,11 +2096,65 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "升温",
         "突破"
       ],
-      "score": 8.16
+      "score": 8.11
+    },
+    {
+      "id": "5LiH5pav55u0",
+      "title": "万斯直言对伊战争就是共和党败选主因 媒体称万斯“开始弃船自保”",
+      "url": "https://international.caixin.com/2026-11-05/102501257.html",
+      "summary": "”万斯说 【财新网】 在美国共和党和美国总统特朗普的声势，在11月3日举行的美国中期选举遭遇重挫之后，当地时间11月4日中午，美国副总统万斯在其个人社交媒体X账号上发表了一篇长文，将共和党此次败选的主因归咎于美国对伊朗的战争，并引用未具名的数据分析师的观点指出，许多曾在2024年大选中支持共和党特朗普─万斯组合的选民，这次仍纷纷出门投票，只不过他们把自己的票投给了民主党。",
+      "brief": "”万斯说 【财新网】 在美国共和党和美国总统特朗普的声势，在11月3日举行的美国中期选举遭遇重挫之后，当地时间11月4日中午，美国副总统万斯在其个人社交媒体X账号上发表了一篇长文，将共和党此次败选的主因归咎于美国对伊朗的战争，并引用未具名的数据分析师的观点指出，许多曾在2024年大选中支持共和党特朗普─万斯组合的选民，这次仍纷纷出门投票，只不过他们把自己的票投给了民主党。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "2024年",
+        "11月",
+        "2026年"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T04:23:56.000Z",
+      "source": "财新",
+      "sources": [
+        "财新"
+      ],
+      "clusterSize": 1,
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "战争"
+      ],
+      "score": 7.88
+    },
+    {
+      "id": "QWZ0ZXIgbWlk",
+      "title": "After midterm stinging defeat, Trump is left to weigh his next move in Iran war",
+      "url": "https://www.france24.com/en/video/20261105-after-midterm-stinging-defeat-trump-is-left-to-weigh-his-next-move-in-iran-war",
+      "summary": "As he takes stock of his Republican Party's midterm drubbing, US President Donald Trump now faces the difficult question of what to do about his unpopular war against Iran. Trump…",
+      "brief": "As he takes stock of his Republican Party's midterm drubbing, US President Donald Trump now faces the difficult question of what to do about his unpopular war against Iran. Trump…",
+      "briefLang": "en",
+      "briefFallback": false,
+      "facts": [],
+      "category": "order",
+      "publishedAt": "2026-11-05T10:27:32.000Z",
+      "source": "France 24",
+      "sources": [
+        "France 24"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "war"
+      ],
+      "score": 7.82
     },
     {
       "id": "Q09QMzHliY3n",
@@ -1529,11 +2173,37 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "气候",
         "联合国"
       ],
-      "score": 7.57
+      "score": 7.53
+    },
+    {
+      "id": "RXVyb3BlYW4g",
+      "title": "European Innovation Council launches €1.8 billion in funding for 2027",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2352",
+      "summary": "该信源未提供摘要，点标题看原文。",
+      "brief": "该信源未提供摘要，点标题看原文。",
+      "briefLang": "zh",
+      "briefFallback": true,
+      "facts": [],
+      "category": "order",
+      "publishedAt": "2026-11-05T09:45:37.000Z",
+      "source": "欧盟委员会",
+      "sources": [
+        "欧盟委员会"
+      ],
+      "clusterSize": 1,
+      "authority": 5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "launch"
+      ],
+      "score": 7.52
     },
     {
       "id": "5LiH5pav5Y-R",
@@ -1556,10 +2226,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "战争"
       ],
-      "score": 7.36
+      "score": 7.31
     },
     {
       "id": "SXNhYmVsIFNj",
@@ -1578,10 +2250,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "policy"
       ],
-      "score": 7.35
+      "score": 7.29
     },
     {
       "id": "44CQ5LiT6aKY",
@@ -1603,10 +2277,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "气候"
       ],
-      "score": 7.23
+      "score": 7.19
     },
     {
       "id": "5LiW5Y2r57uE",
@@ -1627,10 +2303,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "气候"
       ],
-      "score": 7.23
+      "score": 7.19
     },
     {
       "id": "4oCYVGhlIHdv",
@@ -1649,11 +2327,13 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "climate",
         "warming"
       ],
-      "score": 7.15
+      "score": 7.11
     },
     {
       "id": "Q2xlYXJpbmcg",
@@ -1672,10 +2352,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "robot"
       ],
-      "score": 6.98
+      "score": 6.93
     },
     {
       "id": "QSBuZXcgYmls",
@@ -1694,10 +2376,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "bill"
       ],
-      "score": 6.93
+      "score": 6.87
     },
     {
       "id": "576O5Y-C6K6u",
@@ -1720,10 +2404,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "战争"
       ],
-      "score": 6.89
+      "score": 6.84
     },
     {
       "id": "QSBwcm9sb25n",
@@ -1742,10 +2428,40 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "war"
       ],
-      "score": 6.87
+      "score": 6.81
+    },
+    {
+      "id": "5r2Y5Yqf6IOc",
+      "title": "潘功胜：实施好支持资本市场的货币政策工具",
+      "url": "https://finance.caixin.com/2026-11-05/102501396.html",
+      "summary": "《报告》首次提到“探索人工智能在金融管理和服务领域的应用，防范模型应用风险”； ”2026年11月3日，中国人民银行行长潘功胜在《国务院关于金融工作情况的报告》（下称《报告》）中，讲到“稳妥化解重点领域风险，守住不发生系统性金融风险底线”的下一步考虑时提到。",
+      "brief": "《报告》首次提到“探索人工智能在金融管理和服务领域的应用，防范模型应用风险”； ”2026年11月3日，中国人民银行行长潘功胜在《国务院关于金融工作情况的报告》（下称《报告》）中，讲到“稳妥化解重点领域风险，守住不发生系统性金融风险底线”的下一步考虑时提到。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "2026年",
+        "11月",
+        "3日"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T09:15:10.000Z",
+      "source": "财新",
+      "sources": [
+        "财新"
+      ],
+      "clusterSize": 1,
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "政策"
+      ],
+      "score": 6.78
     },
     {
       "id": "Q09QMzEgZXhw",
@@ -1764,10 +2480,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "climate"
       ],
-      "score": 6.81
+      "score": 6.77
     },
     {
       "id": "U3lyaWHigJlz",
@@ -1786,10 +2504,36 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "war"
       ],
-      "score": 6.81
+      "score": 6.77
+    },
+    {
+      "id": "QUnlronlhajo",
+      "title": "AI安全背后的哲学思想，有效利他主义如何影响硅谷？（上篇）",
+      "url": "https://www.tmtpost.com/8194754.html",
+      "summary": "从哲学思想到AI主导权之战",
+      "brief": "从哲学思想到AI主导权之战",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [],
+      "category": "economy",
+      "publishedAt": "2026-11-05T10:30:32.000Z",
+      "source": "钛媒体",
+      "sources": [
+        "钛媒体"
+      ],
+      "clusterSize": 1,
+      "authority": 3,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "AI安全"
+      ],
+      "score": 6.74
     },
     {
       "id": "55m-5bqm5byA",
@@ -1813,10 +2557,66 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 2,
       "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [
         "开源"
       ],
-      "score": 6.79
+      "score": 6.73
+    },
+    {
+      "id": "5YWo55CD6ZW_",
+      "title": "全球长债利率的“战国时代”",
+      "url": "https://opinion.caixin.com/2026-11-05/102501377.html",
+      "summary": "2008年国际金融危机以来全球政策制定者之间形成的、以金融压抑为基调的共识与协作正走向终结 2026年以来，主要发达经济体长期国债收益率普遍升至多年以来的高位。",
+      "brief": "2008年国际金融危机以来全球政策制定者之间形成的、以金融压抑为基调的共识与协作正走向终结 2026年以来，主要发达经济体长期国债收益率普遍升至多年以来的高位。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "2008年",
+        "2026年"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T08:43:20.000Z",
+      "source": "财新",
+      "sources": [
+        "财新"
+      ],
+      "clusterSize": 1,
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "利率"
+      ],
+      "score": 6.71
+    },
+    {
+      "id": "5aSa5Zy65pmv",
+      "title": "多场景“上岗” 安徽机器人“新员工”加速就位",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726779.shtml",
+      "summary": "在安徽，机器人正成为越来越多场景里的“新员工”：工厂车间、商场柜台、交通枢纽、养老机构里都有它们运转的身影。",
+      "brief": "在安徽，机器人正成为越来越多场景里的“新员工”：工厂车间、商场柜台、交通枢纽、养老机构里都有它们运转的身影。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "11月",
+        "5日"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T10:52:49.000Z",
+      "source": "中新网财经",
+      "sources": [
+        "中新网财经"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "机器人"
+      ],
+      "score": 6.58
     },
     {
       "id": "5aSp5rSl5pys",
@@ -1839,8 +2639,63 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 6.46
+      "score": 6.41
+    },
+    {
+      "id": "54ix56uL5L-h",
+      "title": "爱立信：AI智能体和机器人联网需求扩张 通信网络该如何改变？",
+      "url": "https://www.caixin.com/2026-11-05/102501327.html",
+      "summary": "11月4日进博会开幕前夕，瑞典通信设备供应商爱立信中国区技术部副总经理张永涛在媒体交流会上表示，这一变化将对通信网络的带宽、时延和算力资源调度能力提出新的要求。 爱立信对27个市场超过4.3万名智能手机用户开展调研，调研报告预计，到2030年，全球约三成智能手机用户将成为重度AI用户，贡献AI总用量的80%；",
+      "brief": "11月4日进博会开幕前夕，瑞典通信设备供应商爱立信中国区技术部副总经理张永涛在媒体交流会上表示，这一变化将对通信网络的带宽、时延和算力资源调度能力提出新的要求。 爱立信对27个市场超过4.3万名智能手机用户开展调研，调研报告预计，到2030年，全球约三成智能手机用户将成为重度AI用户，贡献AI总用量的80%；",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "2030年",
+        "4.3万",
+        "11月"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T06:21:45.000Z",
+      "source": "财新",
+      "sources": [
+        "财新"
+      ],
+      "clusterSize": 1,
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "机器人"
+      ],
+      "score": 6.4
+    },
+    {
+      "id": "77yI57uP5rWO",
+      "title": "（经济观察）20余城落地“现房销售制” 房地产发展新模式加速构建",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726776.shtml",
+      "summary": "商品住房销售制度改革正在中国多地加快落地。 从规范预售到推行现房销售，从强化资金监管到完善融资机制，改革正向房地产开发、融资、销售全链条延伸，推动房地产基础性制度重构和发展模式转型。",
+      "brief": "商品住房销售制度改革正在中国多地加快落地。 从规范预售到推行现房销售，从强化资金监管到完善融资机制，改革正向房地产开发、融资、销售全链条延伸，推动房地产基础性制度重构和发展模式转型。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "11月",
+        "5日"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T10:31:18.000Z",
+      "source": "中新网财经",
+      "sources": [
+        "中新网财经"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [],
+      "score": 6.39
     },
     {
       "id": "5YWo5Zu96aaW",
@@ -1862,8 +2717,10 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 6.44
+      "score": 6.39
     },
     {
       "id": "VXJhbml1bSBj",
@@ -1882,10 +2739,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "nuclear"
       ],
-      "score": 6.41
+      "score": 6.36
     },
     {
       "id": "Q1JJU1BSIG11",
@@ -1906,10 +2765,36 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "CRISPR"
       ],
-      "score": 6.29
+      "score": 6.26
+    },
+    {
+      "id": "Q3J1ZGUgb2ls",
+      "title": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
+      "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
+      "summary": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
+      "brief": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
+      "briefLang": "en",
+      "briefFallback": false,
+      "facts": [],
+      "category": "economy",
+      "publishedAt": "2026-11-04T20:14:52.000Z",
+      "source": "CNBC",
+      "sources": [
+        "CNBC"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "war"
+      ],
+      "score": 6.21
     },
     {
       "id": "5Lit6Z-p5YW3",
@@ -1932,52 +2817,197 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 6.25
+      "score": 6.19
     },
     {
-      "id": "Q3J1ZGUgb2ls",
-      "title": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
-      "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
-      "summary": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
-      "brief": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
-      "briefLang": "en",
+      "id": "5Lq66Lqr6Zmp",
+      "title": "人身险预定利率研究值回落1.9%，暂未触及产品调价条件",
+      "url": "https://wallstreetcn.com/articles/3785273",
+      "summary": "11月4日，中国保险行业协会发布公告称，人身保险业利率研究专家咨询委员会已于10月30日召开2026年三季度例会，研究提出当前普通型人身保险产品预定利率研究值为1.9%，较二季度的1.94%回落4个基点。 2025年7月，研究值降至1.99%，当时在售普通型产品2.5%的预定利率上限高出研究值51个基点，远超触发线。",
+      "brief": "11月4日，中国保险行业协会发布公告称，人身保险业利率研究专家咨询委员会已于10月30日召开2026年三季度例会，研究提出当前普通型人身保险产品预定利率研究值为1.9%，较二季度的1.94%回落4个基点。 2025年7月，研究值降至1.99%，当时在售普通型产品2.5%的预定利率上限高出研究值51个基点，远超触发线。",
+      "briefLang": "zh",
       "briefFallback": false,
-      "facts": [],
+      "facts": [
+        "2025年",
+        "1.9%",
+        "2026年"
+      ],
       "category": "economy",
-      "publishedAt": "2026-11-04T20:14:52.000Z",
-      "source": "CNBC",
+      "publishedAt": "2026-11-05T09:43:29.000Z",
+      "source": "华尔街见闻",
       "sources": [
-        "CNBC"
+        "华尔街见闻"
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
-        "war"
+        "研究",
+        "利率"
       ],
-      "score": 6.25
+      "score": 6.15
     },
     {
-      "id": "8J-UtCBMaXZl",
-      "title": "🔴 Live: Trump says going to war in Iran was worth it, despite midterm rout",
-      "url": "https://www.france24.com/en/americas/20261103-live-americans-head-to-the-polls-to-vote-in-us-midterm-elections",
-      "summary": "该信源未提供摘要，点标题看原文。",
-      "brief": "该信源未提供摘要，点标题看原文。",
+      "id": "5Y-N5by56IO9",
+      "title": "反弹能自我维持吗",
+      "url": "https://opinion.caixin.com/2026-11-05/102501256.html",
+      "summary": "政策脉冲可以反复制造“反弹”，但很难制造出一次不需要政策不断加码就能自我维持的“反转” 11月4日，A股迎来一波放量反弹：沪指涨2.16%收复3600点，创业板指暴涨6.40%，科创50更是以接近涨停的姿态飙升9.92%； 沪深京三市成交额重返2.05万亿元，较前一日放量逾3300亿元。",
+      "brief": "政策脉冲可以反复制造“反弹”，但很难制造出一次不需要政策不断加码就能自我维持的“反转” 11月4日，A股迎来一波放量反弹：沪指涨2.16%收复3600点，创业板指暴涨6.40%，科创50更是以接近涨停的姿态飙升9.92%； 沪深京三市成交额重返2.05万亿元，较前一日放量逾3300亿元。",
       "briefLang": "zh",
-      "briefFallback": true,
+      "briefFallback": false,
+      "facts": [
+        "2.16%",
+        "6.40%",
+        "9.92%"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T04:21:49.000Z",
+      "source": "财新",
+      "sources": [
+        "财新"
+      ],
+      "clusterSize": 1,
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [],
+      "score": 6.06
+    },
+    {
+      "id": "6K6w6ICF5omL",
+      "title": "记者手记｜香港为富人钱袋子开启一场新试验",
+      "url": "https://www.caixin.com/2026-11-05/102501171.html",
+      "summary": "图：财新 王端 https://weekly.caixin.com/2026-10-31/102499329.html 【财新网】 香港SKYTOPIA滨水展区，国际机场的航班起落声不绝于耳，财政司司长陈茂波观赏着停泊在此的一排排超级游艇。 它是政府斥资1亿港元专项拨款的首个项目，真金白银的投入，并非只为打造一场奢华展演，而是香港正主动调整财富服务模式的试探。",
+      "brief": "图：财新 王端 https://weekly.caixin.com/2026-10-31/102499329.html 【财新网】 香港SKYTOPIA滨水展区，国际机场的航班起落声不绝于耳，财政司司长陈茂波观赏着停泊在此的一排排超级游艇。 它是政府斥资1亿港元专项拨款的首个项目，真金白银的投入，并非只为打造一场奢华展演，而是香港正主动调整财富服务模式的试探。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "1亿",
+        "11月",
+        "4日"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T03:01:27.000Z",
+      "source": "财新",
+      "sources": [
+        "财新"
+      ],
+      "clusterSize": 1,
+      "authority": 4.5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "试验"
+      ],
+      "score": 6.05
+    },
+    {
+      "id": "5Liw55Sw5LiO",
+      "title": "丰田与清华合研镍氢储能系统，瞄准火电厂调频",
+      "url": "https://wallstreetcn.com/articles/3785276",
+      "summary": "丰田预计，这套设备将从2027年底起用于火电厂，帮助机组调节出力。 今年7月，股东方云储循环披露，云储斯蔚普为金驰能源投资、建设并运营的分布式储能电站已投入运行，规模为10兆瓦、40兆瓦时。",
+      "brief": "丰田预计，这套设备将从2027年底起用于火电厂，帮助机组调节出力。 今年7月，股东方云储循环披露，云储斯蔚普为金驰能源投资、建设并运营的分布式储能电站已投入运行，规模为10兆瓦、40兆瓦时。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "2027年",
+        "11月",
+        "5日"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T10:00:03.000Z",
+      "source": "华尔街见闻",
+      "sources": [
+        "华尔街见闻"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "储能"
+      ],
+      "score": 6.03
+    },
+    {
+      "id": "U3VkYW4gYWNj",
+      "title": "Sudan accuses Ethiopia of allowing RSF drone launches from its territory",
+      "url": "https://www.france24.com/en/video/20261105-sudan-accuses-ethiopia-of-allowing-rsf-drone-launches-from-its-territory",
+      "summary": "FRANCE 24 spoke to Ali Mahmoud Ali, a Sudan researcher at ACLED, the Armed Conflict Location & Event Data Project, which monitors conflicts worldwide.",
+      "brief": "FRANCE 24 spoke to Ali Mahmoud Ali, a Sudan researcher at ACLED, the Armed Conflict Location & Event Data Project, which monitors conflicts worldwide.",
+      "briefLang": "en",
+      "briefFallback": false,
       "facts": [],
       "category": "order",
-      "publishedAt": "2026-11-04T18:32:56.000Z",
+      "publishedAt": "2026-11-05T10:42:55.000Z",
       "source": "France 24",
       "sources": [
         "France 24"
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
-        "war"
+        "launch"
       ],
-      "score": 6.1
+      "score": 5.97
+    },
+    {
+      "id": "5LuOM0TnlJ_m",
+      "title": "从3D生成到世界模型，这家AI公司想和年轻人一起定义问题",
+      "url": "https://www.qbitai.com/2026/11/507675.html",
+      "summary": "近日，半年不到就拿到约50亿元融资的人工智能公司 VAST（三启万物） ，发布了新一期 V·STAR顶尖人才计划 ，将邀请年轻研究者聚焦三类明确的研究任务： 3D生成基础模型、三维理解与智能体、世界模型。",
+      "brief": "近日，半年不到就拿到约50亿元融资的人工智能公司 VAST（三启万物） ，发布了新一期 V·STAR顶尖人才计划 ，将邀请年轻研究者聚焦三类明确的研究任务： 3D生成基础模型、三维理解与智能体、世界模型。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "50亿"
+      ],
+      "category": "frontier",
+      "publishedAt": "2026-11-05T00:41:34.000Z",
+      "source": "量子位",
+      "sources": [
+        "量子位",
+        "公众号 量子位"
+      ],
+      "clusterSize": 2,
+      "authority": 3,
+      "via": "",
+      "type": "rss",
+      "tags": [],
+      "score": 5.92
+    },
+    {
+      "id": "5LiW55WM5LqS",
+      "title": "世界互联网大会领先科技奖背后，Qoder 凭什么拿下中国 AI 编程市场第一",
+      "url": "http://www.geekpark.net/news/373542",
+      "summary": "论资历，这款 2025 年 8 月才首次上线的产品还很年轻； IDC 发布的 2025 年中国 AI 编程市场份额报告中，阿里以 47.6%的份额位居第一，超过第二至第五名之和；",
+      "brief": "论资历，这款 2025 年 8 月才首次上线的产品还很年轻； IDC 发布的 2025 年中国 AI 编程市场份额报告中，阿里以 47.6%的份额位居第一，超过第二至第五名之和；",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "2026年",
+        "11月",
+        "7年"
+      ],
+      "category": "frontier",
+      "publishedAt": "2026-11-05T09:19:17.000Z",
+      "source": "极客公园",
+      "sources": [
+        "极客公园",
+        "公众号 极客公园"
+      ],
+      "clusterSize": 2,
+      "authority": 3,
+      "via": "",
+      "type": "rss",
+      "tags": [],
+      "score": 5.87
     },
     {
       "id": "U1RBVCs6IElu",
@@ -1996,10 +3026,40 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "trial"
       ],
-      "score": 5.88
+      "score": 5.84
+    },
+    {
+      "id": "5b635bee5aSn",
+      "title": "德州大翻车！蓝潮压境下，AI算力如何重新定价？",
+      "url": "https://wallstreetcn.com/member/articles/3785171",
+      "summary": "截至目前，民主、共和两党在参众两院席位分别为54:44、232:139，民主党在国会席位均已过半。 亚太市场波动更为剧烈：MSCI亚太指数盘中跌超2%后收窄，日经225指数一度跌逾4.8%后反弹，韩国KOSPI由盘初下跌4%转涨，三星电子、SK海力士等芯片股跌幅收敛。",
+      "brief": "截至目前，民主、共和两党在参众两院席位分别为54:44、232:139，民主党在国会席位均已过半。 亚太市场波动更为剧烈：MSCI亚太指数盘中跌超2%后收窄，日经225指数一度跌逾4.8%后反弹，韩国KOSPI由盘初下跌4%转涨，三星电子、SK海力士等芯片股跌幅收敛。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [
+        "4.8%",
+        "11月",
+        "2%"
+      ],
+      "category": "economy",
+      "publishedAt": "2026-11-05T08:23:04.000Z",
+      "source": "华尔街见闻",
+      "sources": [
+        "华尔街见闻"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "算力"
+      ],
+      "score": 5.82
     },
     {
       "id": "5aaC5L2V5Y-R",
@@ -2022,28 +3082,10 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 5.82
-    },
-    {
-      "id": "RnJhY3RhbCBw",
-      "title": "Fractal patterns reveal hidden limits to AI predictability",
-      "url": "https://phys.org/news/2026-11-fractal-patterns-reveal-hidden-limits.html",
-      "summary": "Researchers at the University of Sydney have identified a fundamental mathematical reason why artificial intelligence systems can learn different behaviors even when trained under almost…",
-      "brief": "Researchers at the University of Sydney have identified a fundamental mathematical reason why artificial intelligence systems can learn different behaviors even when trained under almost…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-05T10:00:04.000Z",
-      "source": "Phys.org",
-      "sources": [
-        "Phys.org"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [],
-      "score": 5.79
+      "score": 5.77
     },
     {
       "id": "5rW35Zyw6buR",
@@ -2062,10 +3104,58 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "联合国"
       ],
-      "score": 5.78
+      "score": 5.76
+    },
+    {
+      "id": "RnJhY3RhbCBw",
+      "title": "Fractal patterns reveal hidden limits to AI predictability",
+      "url": "https://phys.org/news/2026-11-fractal-patterns-reveal-hidden-limits.html",
+      "summary": "Researchers at the University of Sydney have identified a fundamental mathematical reason why artificial intelligence systems can learn different behaviors even when trained under almost…",
+      "brief": "Researchers at the University of Sydney have identified a fundamental mathematical reason why artificial intelligence systems can learn different behaviors even when trained under almost…",
+      "briefLang": "en",
+      "briefFallback": false,
+      "facts": [],
+      "category": "frontier",
+      "publishedAt": "2026-11-05T10:00:04.000Z",
+      "source": "Phys.org",
+      "sources": [
+        "Phys.org"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [],
+      "score": 5.75
+    },
+    {
+      "id": "6L2v6ZO26ZuG",
+      "title": "软银集团收购瑞士-瑞典合资企业机器人业务将被中国发改委阻挠？外交部回应",
+      "url": "https://wallstreetcn.com/livenews/3194845",
+      "summary": "法新社记者提问，据报道，中国已告知日本软银集团（SoftBank），不会批准其收购瑞士-瑞典合资企业ABB旗下的机器人业务。 报道称，软银近期获悉该交易将被中国国家发展和改革委员会阻挠。",
+      "brief": "法新社记者提问，据报道，中国已告知日本软银集团（SoftBank），不会批准其收购瑞士-瑞典合资企业ABB旗下的机器人业务。 报道称，软银近期获悉该交易将被中国国家发展和改革委员会阻挠。",
+      "briefLang": "zh",
+      "briefFallback": false,
+      "facts": [],
+      "category": "economy",
+      "publishedAt": "2026-11-05T07:31:19.000Z",
+      "source": "华尔街见闻",
+      "sources": [
+        "华尔街见闻"
+      ],
+      "clusterSize": 1,
+      "authority": 4,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "机器人"
+      ],
+      "score": 5.73
     },
     {
       "id": "TkFTQSBBbm5v",
@@ -2084,10 +3174,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "research"
       ],
-      "score": 5.76
+      "score": 5.72
     },
     {
       "id": "4oKsNTI1IG1p",
@@ -2106,10 +3198,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "chip"
       ],
-      "score": 5.69
+      "score": 5.66
     },
     {
       "id": "5YWo55CD5aqS",
@@ -2131,8 +3225,32 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 5.68
+      "score": 5.64
+    },
+    {
+      "id": "U2V0dGluZyBh",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "brief": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "briefLang": "en",
+      "briefFallback": false,
+      "facts": [],
+      "category": "frontier",
+      "publishedAt": "2026-11-05T02:00:00.000Z",
+      "source": "OpenAI",
+      "sources": [
+        "OpenAI"
+      ],
+      "clusterSize": 1,
+      "authority": 5,
+      "via": "",
+      "type": "rss",
+      "tags": [],
+      "score": 5.62
     },
     {
       "id": "R29vZ2xlIOWS",
@@ -2151,8 +3269,32 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 5.59
+      "score": 5.55
+    },
+    {
+      "id": "UXVlc3Rpb25z",
+      "title": "Questions and Answers on the 2027 fishing opportunities in the Atlantic, Kattegat and Skagerrak",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/qanda_26_2354",
+      "summary": "European Commission Press release Brussels, 05 Nov 2026 Today, the European Commission adopted its proposal for the 2027 fishing opportunities for 11 fish stocks managed by the EU in the…",
+      "brief": "European Commission Press release Brussels, 05 Nov 2026 Today, the European Commission adopted its proposal for the 2027 fishing opportunities for 11 fish stocks managed by the EU in the…",
+      "briefLang": "en",
+      "briefFallback": false,
+      "facts": [],
+      "category": "order",
+      "publishedAt": "2026-11-05T10:28:43.000Z",
+      "source": "欧盟委员会",
+      "sources": [
+        "欧盟委员会"
+      ],
+      "clusterSize": 1,
+      "authority": 5,
+      "via": "",
+      "type": "rss",
+      "tags": [],
+      "score": 5.54
     },
     {
       "id": "5a-M6ZK-55uQ",
@@ -2175,8 +3317,10 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 5.54
+      "score": 5.49
     },
     {
       "id": "5Lu75aSp5aCC",
@@ -2198,30 +3342,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [
         "芯片"
       ],
-      "score": 5.53
-    },
-    {
-      "id": "S2V5bm90ZSBh",
-      "title": "Keynote address by Commissioner Kubilius at the Konrad Adenauer Stiftung's Global Security Forum",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2350",
-      "summary": "European Commission Speech Brussels, 05 Nov 2026 It's a big honour for me to be invited to give the opening speech at the first ever Global Security Forum, organized by the Konrad Adenauer…",
-      "brief": "European Commission Speech Brussels, 05 Nov 2026 It's a big honour for me to be invited to give the opening speech at the first ever Global Security Forum, organized by the Konrad Adenauer…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "order",
-      "publishedAt": "2026-11-05T09:05:13.000Z",
-      "source": "欧盟委员会",
-      "sources": [
-        "欧盟委员会"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [],
-      "score": 5.45
+      "score": 5.48
     },
     {
       "id": "TWFycmllZCBv",
@@ -2240,10 +3366,34 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [
         "war"
       ],
-      "score": 5.44
+      "score": 5.42
+    },
+    {
+      "id": "S2V5bm90ZSBh",
+      "title": "Keynote address by Commissioner Kubilius at the Konrad Adenauer Stiftung's Global Security Forum",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2350",
+      "summary": "European Commission Speech Brussels, 05 Nov 2026 It's a big honour for me to be invited to give the opening speech at the first ever Global Security Forum, organized by the Konrad Adenauer…",
+      "brief": "European Commission Speech Brussels, 05 Nov 2026 It's a big honour for me to be invited to give the opening speech at the first ever Global Security Forum, organized by the Konrad Adenauer…",
+      "briefLang": "en",
+      "briefFallback": false,
+      "facts": [],
+      "category": "order",
+      "publishedAt": "2026-11-05T09:05:13.000Z",
+      "source": "欧盟委员会",
+      "sources": [
+        "欧盟委员会"
+      ],
+      "clusterSize": 1,
+      "authority": 5,
+      "via": "",
+      "type": "rss",
+      "tags": [],
+      "score": 5.41
     },
     {
       "id": "5Lul4oCc55yf",
@@ -2262,10 +3412,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [
         "机器人"
       ],
-      "score": 5.39
+      "score": 5.35
     },
     {
       "id": "Q29tbWlzc2lv",
@@ -2284,8 +3436,35 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 5,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 5.35
+      "score": 5.31
+    },
+    {
+      "id": "WmVybyBlbWlz",
+      "title": "Zero emissions commitment depends on warming level",
+      "url": "https://www.nature.com/articles/s41558-026-02776-w",
+      "summary": "Nature Climate Change, Published online: 03 November 2026;",
+      "brief": "Nature Climate Change, Published online: 03 November 2026;",
+      "briefLang": "en",
+      "briefFallback": false,
+      "facts": [],
+      "category": "survival",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "source": "Nature 气候变化",
+      "sources": [
+        "Nature 气候变化"
+      ],
+      "clusterSize": 1,
+      "authority": 5,
+      "via": "",
+      "type": "rss",
+      "tags": [
+        "warming",
+        "emissions"
+      ],
+      "score": 5.31
     },
     {
       "id": "5r2Y5Yqf6IOc",
@@ -2307,30 +3486,12 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [
         "政策"
       ],
-      "score": 5.34
-    },
-    {
-      "id": "5paw5Z6L54mZ",
-      "title": "新型牙刷通过产生电对抗牙菌斑病原体",
-      "url": "https://www.solidot.org/story?sid=85800",
-      "summary": "在为期 3 个月、涉及 115 名志愿者的试验中，牙刷在减少口腔中导致龋齿和牙周炎的细菌方面的效果优于常规的机械刷牙法。 他们将这种牙刷分发给总计 115 名志愿者，这些人都接受了相同的刷牙指导。",
-      "brief": "在为期 3 个月、涉及 115 名志愿者的试验中，牙刷在减少口腔中导致龋齿和牙周炎的细菌方面的效果优于常规的机械刷牙法。 他们将这种牙刷分发给总计 115 名志愿者，这些人都接受了相同的刷牙指导。",
-      "briefLang": "zh",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-05T06:05:56.000Z",
-      "source": "Solidot",
-      "sources": [
-        "Solidot"
-      ],
-      "clusterSize": 1,
-      "authority": 3,
-      "tags": [],
-      "score": 5.32
+      "score": 5.29
     },
     {
       "id": "5rOw5Zu95oC7",
@@ -2353,458 +3514,32 @@ window.SIGNAL_DATA = {
       ],
       "clusterSize": 1,
       "authority": 4,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 5.32
+      "score": 5.28
     },
     {
-      "id": "WmVybyBlbWlz",
-      "title": "Zero emissions commitment depends on warming level",
-      "url": "https://www.nature.com/articles/s41558-026-02776-w",
-      "summary": "Nature Climate Change, Published online: 03 November 2026;",
-      "brief": "Nature Climate Change, Published online: 03 November 2026;",
-      "briefLang": "en",
+      "id": "5paw5Z6L54mZ",
+      "title": "新型牙刷通过产生电对抗牙菌斑病原体",
+      "url": "https://www.solidot.org/story?sid=85800",
+      "summary": "在为期 3 个月、涉及 115 名志愿者的试验中，牙刷在减少口腔中导致龋齿和牙周炎的细菌方面的效果优于常规的机械刷牙法。 他们将这种牙刷分发给总计 115 名志愿者，这些人都接受了相同的刷牙指导。",
+      "brief": "在为期 3 个月、涉及 115 名志愿者的试验中，牙刷在减少口腔中导致龋齿和牙周炎的细菌方面的效果优于常规的机械刷牙法。 他们将这种牙刷分发给总计 115 名志愿者，这些人都接受了相同的刷牙指导。",
+      "briefLang": "zh",
       "briefFallback": false,
       "facts": [],
-      "category": "survival",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "source": "Nature 气候变化",
+      "category": "frontier",
+      "publishedAt": "2026-11-05T06:05:56.000Z",
+      "source": "Solidot",
       "sources": [
-        "Nature 气候变化"
+        "Solidot"
       ],
       "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "warming",
-        "emissions"
-      ],
-      "score": 5.32
-    },
-    {
-      "id": "UGllcm8gQ2lw",
-      "title": "Piero Cipollone: Shaping the future of money",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
-      "summary": "该信源未提供摘要，点标题看原文。",
-      "brief": "该信源未提供摘要，点标题看原文。",
-      "briefLang": "zh",
-      "briefFallback": true,
-      "facts": [],
-      "category": "economy",
-      "publishedAt": "2026-11-05T07:30:00.000Z",
-      "source": "ECB 欧洲央行",
-      "sources": [
-        "ECB 欧洲央行"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
+      "authority": 3,
+      "via": "",
+      "type": "rss",
       "tags": [],
-      "score": 5.3
-    },
-    {
-      "id": "V2hhdOKAmXMg",
-      "title": "What’s next for US energy policy after the midterm elections?",
-      "url": "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/",
-      "summary": "I’ve been locked in to my various screens since results from midterm elections started to roll in last night. And it didn’t take long to see the beginning of the blue wave: Democrats took…",
-      "brief": "I’ve been locked in to my various screens since results from midterm elections started to roll in last night. And it didn’t take long to see the beginning of the blue wave: Democrats took…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-04T17:08:00.000Z",
-      "source": "MIT 科技评论",
-      "sources": [
-        "MIT 科技评论"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "policy"
-      ],
-      "score": 5.3
-    },
-    {
-      "id": "VUsgY2xpbWF0",
-      "title": "UK climate minister Katie White: COP31 must respond to ‘really scary’ science",
-      "url": "https://www.carbonbrief.org/uk-climate-minister-katie-white-cop31-must-respond-to-really-scary-science",
-      "summary": "该信源未提供摘要，点标题看原文。",
-      "brief": "该信源未提供摘要，点标题看原文。",
-      "briefLang": "zh",
-      "briefFallback": true,
-      "facts": [],
-      "category": "survival",
-      "publishedAt": "2026-11-03T16:50:09.000Z",
-      "source": "Carbon Brief",
-      "sources": [
-        "Carbon Brief"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "climate"
-      ],
-      "score": 5.22
-    },
-    {
-      "id": "SmFwYW4ncyBB",
-      "title": "Japan's ALS community is ready to become research partners, nationwide survey suggests",
-      "url": "https://phys.org/news/2026-11-japan-als-community-ready-partners.html",
-      "summary": "People living with ALS and their families in Japan are eager to help shape research on the disease, even though most have never heard of patient and public involvement (PPI), according to a…",
-      "brief": "People living with ALS and their families in Japan are eager to help shape research on the disease, even though most have never heard of patient and public involvement (PPI), according to a…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-05T01:40:01.000Z",
-      "source": "Phys.org",
-      "sources": [
-        "Phys.org"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "research"
-      ],
-      "score": 5.15
-    },
-    {
-      "id": "5LmM5YWL5YWw",
-      "title": "乌克兰：联合国援助400多名撤离围困的民众，呼吁保障冬季能源供应",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143119",
-      "summary": "联合国世界粮食计划署周一表示，在乌克兰赫尔松地区短暂停火期间，400多名民众得以从俄罗斯控制的奥莱什基市撤离。 与此同时，联合国开发计划署呼吁国际社会继续提供资金支持，帮助乌克兰在严冬来临前恢复能源供应。",
-      "brief": "联合国世界粮食计划署周一表示，在乌克兰赫尔松地区短暂停火期间，400多名民众得以从俄罗斯控制的奥莱什基市撤离。 与此同时，联合国开发计划署呼吁国际社会继续提供资金支持，帮助乌克兰在严冬来临前恢复能源供应。",
-      "briefLang": "zh",
-      "briefFallback": false,
-      "facts": [],
-      "category": "order",
-      "publishedAt": "2026-11-02T12:00:00.000Z",
-      "source": "联合国新闻",
-      "sources": [
-        "联合国新闻"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "联合国"
-      ],
-      "score": 5.12
-    },
-    {
-      "id": "6IGU5ZCI5Zu9",
-      "title": "联合国推出保险计划，为灾前援助提供资金保障",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143118",
-      "summary": "联合国周一宣布推出一项首创的保险计划。 在多场灾害同时构成威胁、现有援助资源面临巨大压力时，可提供最多4000万美元的额外资金，帮助更多家庭在失去住所、食物或生计之前获得援助。",
-      "brief": "联合国周一宣布推出一项首创的保险计划。 在多场灾害同时构成威胁、现有援助资源面临巨大压力时，可提供最多4000万美元的额外资金，帮助更多家庭在失去住所、食物或生计之前获得援助。",
-      "briefLang": "zh",
-      "briefFallback": false,
-      "facts": [
-        "4000万"
-      ],
-      "category": "order",
-      "publishedAt": "2026-11-02T12:00:00.000Z",
-      "source": "联合国新闻",
-      "sources": [
-        "联合国新闻"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "联合国"
-      ],
-      "score": 5.12
-    },
-    {
-      "id": "5LiW5Y2r57uE",
-      "title": "世卫组织警告：埃塞俄比亚北部暴力冲突使卫生系统濒临崩溃",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143117",
-      "summary": "埃塞俄比亚北部上周末发生致命无人机袭击后，世界卫生组织总干事谭德塞周一呼吁加强对受冲突影响平民的保护。 他警告，持续的暴力正将本已脆弱的卫生系统推向崩溃边缘。",
-      "brief": "埃塞俄比亚北部上周末发生致命无人机袭击后，世界卫生组织总干事谭德塞周一呼吁加强对受冲突影响平民的保护。 他警告，持续的暴力正将本已脆弱的卫生系统推向崩溃边缘。",
-      "briefLang": "zh",
-      "briefFallback": false,
-      "facts": [],
-      "category": "order",
-      "publishedAt": "2026-11-02T12:00:00.000Z",
-      "source": "联合国新闻",
-      "sources": [
-        "联合国新闻"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "冲突"
-      ],
-      "score": 5.12
-    },
-    {
-      "id": "5Zu96ZmF5YiR",
-      "title": "国际刑事法院院长呼吁联合国会员国捍卫司法独立，抵制针对国际刑事司法的施压",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143115",
-      "summary": "联合国大会周一（11月2日）听取了国际刑事法院院长赤根智子（Tomoko Akane）提交的法院年度工作报告。 赤根表示，国际刑事法院正面临前所未有的制裁和施压，但法院将继续独立、公正地履行职责。",
-      "brief": "联合国大会周一（11月2日）听取了国际刑事法院院长赤根智子（Tomoko Akane）提交的法院年度工作报告。 赤根表示，国际刑事法院正面临前所未有的制裁和施压，但法院将继续独立、公正地履行职责。",
-      "briefLang": "zh",
-      "briefFallback": false,
-      "facts": [
-        "11月",
-        "2日"
-      ],
-      "category": "order",
-      "publishedAt": "2026-11-02T12:00:00.000Z",
-      "source": "联合国新闻",
-      "sources": [
-        "联合国新闻"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "联合国"
-      ],
-      "score": 5.12
-    },
-    {
-      "id": "U3RhdGUgb2Yg",
-      "title": "State of the climate: 2026 likely to tie with 2024 as the warmest year on record",
-      "url": "https://www.carbonbrief.org/state-of-the-climate-2026-likely-to-tie-with-2024-as-the-warmest-year-on-record",
-      "summary": "该信源未提供摘要，点标题看原文。",
-      "brief": "该信源未提供摘要，点标题看原文。",
-      "briefLang": "zh",
-      "briefFallback": true,
-      "facts": [],
-      "category": "survival",
-      "publishedAt": "2026-11-03T13:48:04.000Z",
-      "source": "Carbon Brief",
-      "sources": [
-        "Carbon Brief"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "climate"
-      ],
-      "score": 5.11
-    },
-    {
-      "id": "QnJhemls4oCZ",
-      "title": "Brazil’s data-driven plan for climate-resilient healthcare",
-      "url": "https://www.nature.com/articles/s41558-026-02779-7",
-      "summary": "Nature Climate Change, Published online: 03 November 2026;",
-      "brief": "Nature Climate Change, Published online: 03 November 2026;",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "survival",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "source": "Nature 气候变化",
-      "sources": [
-        "Nature 气候变化"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "climate"
-      ],
-      "score": 5.07
-    },
-    {
-      "id": "5Yay56qB44CB",
-      "title": "冲突、埃博拉疫情和气候冲击加剧刚果（金）饥饿危机",
-      "url": "https://news.un.org/feed/view/zh/story/2026/10/1143104",
-      "summary": "联合国粮农组织粮食安全阶段综合分类周五发布最新预警显示，刚果民主共和国（刚果（金））目前有超过2800万人面临食物短缺问题。 这一数字预计在未来几个月内将持续增加。",
-      "brief": "联合国粮农组织粮食安全阶段综合分类周五发布最新预警显示，刚果民主共和国（刚果（金））目前有超过2800万人面临食物短缺问题。 这一数字预计在未来几个月内将持续增加。",
-      "briefLang": "zh",
-      "briefFallback": false,
-      "facts": [
-        "2800万"
-      ],
-      "category": "order",
-      "publishedAt": "2026-10-30T12:00:00.000Z",
-      "source": "联合国新闻",
-      "sources": [
-        "联合国新闻"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "气候",
-        "疫情"
-      ],
-      "score": 5.07
-    },
-    {
-      "id": "V2hlbiBjdXN0",
-      "title": "When customers cross the line: Study reveals hidden toll of harassment on gig workers",
-      "url": "https://phys.org/news/2026-11-customers-line-reveals-hidden-toll.html",
-      "summary": "A rideshare driver picks up a passenger who makes repeated unwanted sexual comments. The ride ends, but the experience doesn't.",
-      "brief": "A rideshare driver picks up a passenger who makes repeated unwanted sexual comments. The ride ends, but the experience doesn't.",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-05T00:00:03.000Z",
-      "source": "Phys.org",
-      "sources": [
-        "Phys.org"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "study"
-      ],
-      "score": 5.02
-    },
-    {
-      "id": "6I-y5b6L5a6-",
-      "title": "菲律宾10月通胀率升至7.8% 创2023年2月以来新高",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-05/10726499.shtml",
-      "summary": "菲律宾统计局5日公布的数据显示，菲律宾10月通胀率升至7.8%，高于9月的7.2%，连续第二个月上升，创2023年2月以来新高。",
-      "brief": "菲律宾统计局5日公布的数据显示，菲律宾10月通胀率升至7.8%，高于9月的7.2%，连续第二个月上升，创2023年2月以来新高。",
-      "briefLang": "zh",
-      "briefFallback": false,
-      "facts": [
-        "5日",
-        "2023年",
-        "7.8%"
-      ],
-      "category": "order",
-      "publishedAt": "2026-11-05T04:13:21.000Z",
-      "source": "中新网",
-      "sources": [
-        "中新网"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "通胀"
-      ],
-      "score": 5.01
-    },
-    {
-      "id": "VXNpbmcgQ2hh",
-      "title": "Using ChatGPT at work? Your boss may trust you less, new study finds",
-      "url": "https://phys.org/news/2026-11-chatgpt-boss.html",
-      "summary": "Artificial intelligence may be making employees faster and more productive, but it could also be quietly damaging their careers. A new study led by Samuel Meyers, a Ph.D. student, together…",
-      "brief": "Artificial intelligence may be making employees faster and more productive, but it could also be quietly damaging their careers. A new study led by Samuel Meyers, a Ph.D. student, together…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-04T23:50:02.000Z",
-      "source": "Phys.org",
-      "sources": [
-        "Phys.org"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "study"
-      ],
-      "score": 5.01
-    },
-    {
-      "id": "QSBuZXcgcm91",
-      "title": "A new route to calculating gluon production in proton–nucleus collisions",
-      "url": "https://phys.org/news/2026-11-route-gluon-production-protonnucleus-collisions.html",
-      "summary": "In the theoretical study of proton-nucleus collisions, the colliding projectiles can be described as streams of color charges moving along their respective trajectories. These color charges…",
-      "brief": "In the theoretical study of proton-nucleus collisions, the colliding projectiles can be described as streams of color charges moving along their respective trajectories. These color charges…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-05T01:20:01.000Z",
-      "source": "Phys.org",
-      "sources": [
-        "Phys.org"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [],
-      "score": 5
-    },
-    {
-      "id": "4oCYSeKAmW0g",
-      "title": "‘I’m 100 Percent at War With Trump’: MAGA Revolts After Midterms Wipeout",
-      "url": "https://www.wired.com/story/im-100-percent-at-war-with-trump-maga-revolts-after-midterms-wipeout/",
-      "summary": "While some of Donald Trump’s closest allies have remained silent, much of MAGA is blaming him for historic losses.",
-      "brief": "While some of Donald Trump’s closest allies have remained silent, much of MAGA is blaming him for historic losses.",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-04T13:48:28.000Z",
-      "source": "Wired",
-      "sources": [
-        "Wired"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "war"
-      ],
-      "score": 5
-    },
-    {
-      "id": "RW50cmVwcmVu",
-      "title": "Entrepreneurs who struggle to understand their emotions are less committed to their business goals, study finds",
-      "url": "https://phys.org/news/2026-11-entrepreneurs-struggle-emotions-committed-business.html",
-      "summary": "Entrepreneurs who struggle to recognize and make sense of their own emotions are less likely to feel attached to their businesses and less committed to achieving their goals, particularly…",
-      "brief": "Entrepreneurs who struggle to recognize and make sense of their own emotions are less likely to feel attached to their businesses and less committed to achieving their goals, particularly…",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-04T23:40:06.000Z",
-      "source": "Phys.org",
-      "sources": [
-        "Phys.org"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "study"
-      ],
-      "score": 4.99
-    },
-    {
-      "id": "QSBjYXJlZnVs",
-      "title": "A carefully timed pair of light pulses can amplify the motion of atomic layers in a quantum material",
-      "url": "https://phys.org/news/2026-11-pair-pulses-amplify-motion-atomic.html",
-      "summary": "The principle \"Work smarter, not harder!",
-      "brief": "The principle \"Work smarter, not harder!",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-11-04T23:20:09.000Z",
-      "source": "Phys.org",
-      "sources": [
-        "Phys.org"
-      ],
-      "clusterSize": 1,
-      "authority": 4,
-      "tags": [
-        "quantum"
-      ],
-      "score": 4.97
-    },
-    {
-      "id": "U3R1ZHkgcGlu",
-      "title": "Study pinpoints states with steepest warming trends since 1980",
-      "url": "https://news.mit.edu/2026/study-pinpoints-states-with-steepest-warming-trends-1030",
-      "summary": "The findings indicate where adaptive measures are needed most around the United States.",
-      "brief": "The findings indicate where adaptive measures are needed most around the United States.",
-      "briefLang": "en",
-      "briefFallback": false,
-      "facts": [],
-      "category": "frontier",
-      "publishedAt": "2026-10-30T19:15:00.000Z",
-      "source": "MIT News",
-      "sources": [
-        "MIT News"
-      ],
-      "clusterSize": 1,
-      "authority": 5,
-      "tags": [
-        "warming",
-        "study"
-      ],
-      "score": 4.97
+      "score": 5.27
     }
   ],
   "view": {
