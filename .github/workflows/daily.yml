@@ -1,0 +1,75 @@
+name: Daily Brief
+
+on:
+  # 北京时间每天 07:20 生成前一天的日报（UTC 23:20）
+  schedule:
+    - cron: '20 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: signal-desk-pages
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch public feeds
+        run: node scripts/fetch.mjs
+
+      # 大模型按优先级自动选：
+      #   secrets.DAILY_LLM_KEY/BASE/MODEL（任意 OpenAI 兼容接口，如 SiliconFlow/DeepSeek）
+      #   → secrets.GEMINI_API_KEY（Gemini 免费层）
+      #   → GITHUB_TOKEN（GitHub Models，免费、零配置，默认 openai/gpt-4o-mini）
+      #   → 全都没有则规则模板兜底，日报照常出
+      - name: Generate daily brief
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DAILY_MODEL: ${{ secrets.DAILY_MODEL }}
+          LLM_BASE_URL: ${{ secrets.DAILY_LLM_BASE }}
+          LLM_API_KEY: ${{ secrets.DAILY_LLM_KEY }}
+          LLM_MODEL: ${{ secrets.DAILY_LLM_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/daily.mjs --force
+
+      # 存档写回仓库，这样半小时一次的 Fetch & Deploy 也能带上当天日报
+      - name: Commit archive
+        continue-on-error: true
+        run: |
+          git config user.name "signal-desk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/daily data/daily.js
+          git diff --cached --quiet || git commit -m "daily brief $(date -u +%F)"
+          git push
+
+      - name: Assemble site bundle
+        run: |
+          mkdir -p site/data
+          cp index.html site/
+          cp data/feed.js site/data/
+          [ -f data/daily.js ] && cp data/daily.js site/data/
+          [ -d data/daily ] && mkdir -p site/data/daily && cp data/daily/*.json site/data/daily/
+          cp manifest.json icon.svg sw.js site/
+          cp .nojekyll site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: './site'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -79,6 +79,23 @@ node scripts/fetch.mjs                          # 立刻重抓
 
 另外 36氪快讯是单源短讯，天然拼不过多源转载的通稿，`sources.json` 里用 `reserveSources: [{ match: "36氪", min: 2 }]` 给它留了两个保底位置。
 
+## 每日报（选重要 + 判影响）
+
+每天早上 07:20（北京时间）由 GitHub Actions 自动生成一份要报：从当天扫描的全部信号里挑 4–6 条真正重要的，逐条写清「为什么重要 / 会有什么影响 / 影响 horizon / 置信度」，末尾附 3 条「接下来盯什么」。页面顶部固定展示，存档在 `data/daily/YYYY-MM-DD.json`。
+
+**大模型怎么接（都有免费档，按优先级自动选，全不配就退规则模板）：**
+
+| 方案 | 配置 | 成本 |
+|---|---|---|
+| 任意 OpenAI 兼容接口 | Secrets: `DAILY_LLM_BASE` `DAILY_LLM_KEY` `DAILY_LLM_MODEL`（SiliconFlow 免费模型 / DeepSeek / 智谱 / Groq / OpenRouter 均可） | 免费或每次约 ¥0.001 |
+| Google Gemini 免费层 | Secrets: `GEMINI_API_KEY` | 免费（1500 次/天，只用 1 次） |
+| **GitHub Models（默认）** | 不用配任何东西，Actions 自带 `GITHUB_TOKEN` | 免费 |
+| 规则模板 | 什么都不配 | 0 元，判断是模板句 |
+
+**反幻觉约束**：模型只能从给定的 10 条候选里用编号选条目，编号越界的直接丢弃；why/impact 长度截断校验；可用条目不足 3 条整篇回退规则版——模型挂了日报照出，只是判断变保守。
+
+本地手动生成：`node scripts/daily.mjs`（有环境变量就走模型，没有就走规则）。排查生成质量：`node scripts/daily.mjs --rules` 只看规则版。
+
 ## 摘要是怎么来的（抽取式，不是生成式）
 
 零依赖、零 API Key，所以要点是规则抽取的：
@@ -128,6 +145,9 @@ scripts/fetch.mjs                 抓取 / 清洗 / 要点抽取 / 合并 / 评�
 scripts/probe.mjs                 批量探测信源可用性（ok / cloud / dead）
 scripts/probe-wechat.mjs          公众号批量体检（条目数 / 最新更新时间，筛停更号）
 scripts/add-wechat.mjs            按名字接入某个公众号，自动校验并写进 sources.json
+scripts/daily.mjs                 每日报生成（模型 / 规则双引擎 + 反幻觉校验）
+.github/workflows/daily.yml       每天 07:20 生成日报并存档、部署
+manifest.json / sw.js / icon.svg  PWA：手机加到桌面当 App 用
 scripts/source-candidates.json    候选新源清单，探测用
 data/feed.js                      生成的数据（页面当脚本加载，避开 CORS）
 index.html                        摆件界面，无外部资源
@@ -141,6 +161,8 @@ refresh.cmd                       本机手动抓一次（离线兜底）
 **1. 桌面摆件**：双击 `desk.cmd`。它会用独立配置目录启动一个无边框 Chrome 窗口（440×820），不干扰你日常浏览器。窗口位置在 `desk.cmd` 里的 `POS` 变量，按屏幕分辨率改。
 
 **2. 浏览器**：直接开在线地址，手机也能用。
+
+**2.5 手机当 App 用（PWA，无需装任何东西）**：手机浏览器（Chrome / Edge / Safari）打开在线地址 → 菜单里选「添加到主屏幕」。之后从桌面图标启动就是全屏独立窗口，有离线兜底（断网也能看上一份数据），图标是信号台雷达标。安卓、iPhone 都行。
 
 **3. 快捷键**：`R` 刷新，`V` 切重点/全集，`S` 打开设置，`0` 看全部栏目，`1`–`4` 切栏目。所有卡片默认显示要点，点标题或「原文 ↗」跳原文。
 

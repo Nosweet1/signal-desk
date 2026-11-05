@@ -2,7 +2,13 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0e14">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>信号台 · Signal Desk</title>
 <style>
 :root{
@@ -117,6 +123,33 @@ main{padding:10px 12px 4px}
 .dt:hover{color:var(--accent)}
 .db{color:var(--dim);font-size:10.5px;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
+/* 每日报 */
+.daily{
+  background:linear-gradient(180deg,rgba(122,162,247,.07),rgba(122,162,247,0)) var(--panel);
+  border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:8px;padding:11px 12px 4px;margin-bottom:10px;
+}
+.daily[hidden]{display:none}
+.dh{display:flex;align-items:baseline;gap:7px;margin-bottom:2px}
+.dh b{font-size:12px;color:var(--text);letter-spacing:.02em}
+.dh em{font-style:normal;font-size:10px;color:var(--faint);font-variant-numeric:tabular-nums}
+.dh .eng{margin-left:auto;font-size:9px;color:var(--faint);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+.dlead{font-size:12.5px;line-height:1.5;color:var(--accent);font-weight:600;margin:6px 0 9px}
+.ditem{padding:8px 0;border-top:1px dashed var(--line)}
+.ditem .t{font-size:12px;font-weight:600;line-height:1.45;color:var(--text);text-decoration:none;display:block}
+.ditem .t:hover{color:var(--accent)}
+.ditem .meta2{font-size:9.5px;color:var(--faint);margin-top:3px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.ditem .why{font-size:11px;color:var(--dim);line-height:1.6;margin-top:5px}
+.ditem .why b{color:var(--good);font-weight:600}
+.ditem ul{list-style:none;margin:4px 0 0}
+.ditem ul li{position:relative;padding-left:11px;font-size:10.5px;color:var(--dim);line-height:1.6}
+.ditem ul li::before{content:"→";position:absolute;left:0;color:var(--accent);font-size:9px}
+.dwatch{margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+.dwatch b{font-size:10px;color:var(--warn);letter-spacing:.04em}
+.dwatch ul{list-style:none;margin-top:4px}
+.dwatch li{position:relative;padding-left:10px;font-size:10.5px;color:var(--dim);line-height:1.65}
+.dwatch li::before{content:"·";position:absolute;left:2px;color:var(--faint)}
+
 .card{
   display:block;position:relative;background:var(--panel);border:1px solid var(--line);
   border-left:3px solid var(--c);border-radius:8px;
@@ -206,11 +239,18 @@ kbd{
   <div class="srow"><b>刷新模式</b><small id="nextRefresh">—</small></div>
   <div class="modes" id="modes"></div>
   <label class="chk"><input type="checkbox" id="pauseHidden"> 窗口隐藏时暂停自动刷新</label>
+  <label class="chk"><input type="checkbox" id="showDaily"> 显示每日报</label>
   <label class="chk"><input type="checkbox" id="showDigest"> 显示顶部速览</label>
   <div class="snote">云端每 30 分钟重新抓取一次公开 RSS 并生成数据文件；这里设置的是本页多久去取一次新数据，不会触发重新抓取。想立刻重抓，在本机运行 <b>refresh.cmd</b>，或在 GitHub Actions 里手动触发。</div>
 </div>
 
 <main id="main">
+  <section class="daily" id="daily" hidden>
+    <div class="dh"><b>每日报</b><em id="ddate">—</em><span class="eng" id="dengine"></span></div>
+    <div class="dlead" id="dlead">—</div>
+    <div id="ditems"></div>
+    <div class="dwatch" id="dwatch" hidden><b>后面盯什么</b><ul id="dwatchlist"></ul></div>
+  </section>
   <section class="digest" id="digest">
     <div class="dhead">⚡ 本轮速览 <span id="dsummary">—</span></div>
     <ol class="dlist" id="dpoints"></ol>
@@ -224,14 +264,16 @@ kbd{
   <div class="hint">公开 RSS 聚合 · 每条直接给要点 · 点标题看原文 · <kbd>R</kbd> 刷新 <kbd>V</kbd> 切范围 <kbd>S</kbd> 设置 <kbd>0</kbd>-<kbd>4</kbd> 切栏目</div>
 </footer>
 
+<script src="./data/daily.js"></script>
 <script src="./data/feed.js"></script>
 <script>
 (function(){
   var DATA = window.SIGNAL_DATA || null;
+  var DAILY = window.SIGNAL_DAILY || null;
   var KEY = 'signal-desk-settings-v2';
   var MODES = { '2m':120000, '5m':300000, '15m':900000, '30m':1800000, 'manual':0 };
   var MODE_LABELS = [['2m','2 分钟'],['5m','5 分钟'],['15m','15 分钟'],['30m','30 分钟'],['manual','仅手动']];
-  var DEF = { mode:'5m', pauseHidden:true, showDigest:true, view:'focus' };
+  var DEF = { mode:'5m', pauseHidden:true, showDaily:true, showDigest:true, view:'focus' };
   var S = DEF;
   try { var saved = JSON.parse(localStorage.getItem(KEY) || 'null'); if (saved) for (var k in DEF) if (saved[k] !== undefined) S[k] = saved[k]; } catch(e){}
   function save(){ try { localStorage.setItem(KEY, JSON.stringify(S)); } catch(e){} }
@@ -310,6 +352,37 @@ kbd{
     }).join('');
   }
 
+  function renderDaily(){
+    var box = $('daily');
+    if (!DAILY || !DAILY.items || !DAILY.items.length || !S.showDaily){ box.hidden = true; return; }
+    box.hidden = false;
+    $('ddate').textContent = DAILY.date || '';
+    $('dengine').textContent = DAILY.engine === 'rules' ? '规则生成' : (DAILY.engine || '');
+    $('dlead').textContent = DAILY.headline || '';
+    $('ditems').innerHTML = DAILY.items.map(function(it){
+      var c = catOf(it.category);
+      var imp = (it.impact || []).map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('');
+      var title = it.url
+        ? '<a class="t" href="'+safeUrl(it.url)+'" target="_blank" rel="noopener noreferrer">'+esc(it.title)+'</a>'
+        : '<span class="t">'+esc(it.title)+'</span>';
+      return '<div class="ditem">' + title
+        + '<div class="meta2"><span style="color:'+c.color+'">'+esc(c.name)+'</span>'
+        + '<span>'+esc(it.source||'')+'</span><span>'+esc(it.horizon||'')+'</span>'
+        + (it.confidence ? '<span>置信 '+(it.confidence==='high'?'高':it.confidence==='low'?'低':'中')+'</span>' : '')
+        + '</div>'
+        + '<div class="why"><b>为什么重要</b>　'+esc(it.why||'')+'</div>'
+        + (imp ? '<ul>'+imp+'</ul>' : '')
+        + '</div>';
+    }).join('');
+    var w = DAILY.watch || [];
+    $('dwatch').hidden = !w.length;
+    $('dwatchlist').innerHTML = w.map(function(x){
+      if (typeof x === 'string') return '<li>'+esc(x)+'</li>';
+      if (x.text) return '<li>'+esc(x.text)+'</li>';
+      return '<li>'+esc(x.title||'')+(x.source?'　<span style="color:var(--faint)">'+esc(x.source)+'</span>':'')+'</li>';
+    }).join('');
+  }
+
   function renderHealth(){
     if (!DATA) return;
     var hs = DATA.health || [], ok = hs.filter(function(x){return x.ok;}).length;
@@ -368,11 +441,12 @@ kbd{
       S.mode = this.getAttribute('data-m'); save(); renderSettings(); schedule();
     };
     $('pauseHidden').checked = !!S.pauseHidden;
+    if ($('showDaily')) $('showDaily').checked = !!S.showDaily;
     $('showDigest').checked = !!S.showDigest;
     $('settingsBtn').className = 'iconbtn' + ($('settings').classList.contains('show') ? ' on' : '');
   }
 
-  function renderAll(){ renderStatus(); renderTabs(); renderViewSwitch(); renderDigest(); renderHealth(); renderList(); }
+  function renderAll(){ renderStatus(); renderTabs(); renderViewSwitch(); renderDaily(); renderDigest(); renderHealth(); renderList(); }
 
   function schedule(){
     clearTimeout(timer);
@@ -390,7 +464,15 @@ kbd{
     if (manual) $('stxt').textContent = '刷新中';
     var s = document.createElement('script');
     s.src = './data/feed.js?t=' + Date.now();
-    s.onload = function(){ if (window.SIGNAL_DATA){ DATA = window.SIGNAL_DATA; renderAll(); } s.remove(); schedule(); };
+    s.onload = function(){
+      if (window.SIGNAL_DATA){ DATA = window.SIGNAL_DATA; }
+      var d = document.createElement('script');
+      d.src = './data/daily.js?t=' + Date.now();
+      d.onload = function(){ if (window.SIGNAL_DAILY) DAILY = window.SIGNAL_DAILY; renderAll(); d.remove(); schedule(); };
+      d.onerror = function(){ renderAll(); d.remove(); schedule(); };
+      document.head.appendChild(d);
+      s.remove();
+    };
     s.onerror = function(){ $('dot').className='dot bad'; $('stxt').textContent='离线'; s.remove(); schedule(); };
     document.head.appendChild(s);
   }
@@ -402,6 +484,7 @@ kbd{
   };
   $('pauseHidden').onchange = function(){ S.pauseHidden = this.checked; save(); };
   $('showDigest').onchange = function(){ S.showDigest = this.checked; save(); renderDigest(); };
+  if ($('showDaily')) $('showDaily').onchange = function(){ S.showDaily = this.checked; save(); renderDaily(); };
   $('healthToggle').onclick = function(){ $('fails').classList.toggle('show'); };
 
   document.addEventListener('keydown', function(e){
@@ -426,6 +509,11 @@ kbd{
   schedule();
   setInterval(renderStatus, 1000);
 })();
+</script>
+<script>
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', function(){ navigator.serviceWorker.register('./sw.js').catch(function(){}); });
+}
 </script>
 </body>
 </html>
