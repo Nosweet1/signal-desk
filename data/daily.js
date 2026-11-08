@@ -1,32 +1,32 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-08",
-  "generatedAt": "2026-11-07T23:51:03.366Z",
-  "headline": "主线：央行 / nuclear / war｜首条「10月中国黄金储备增加26吨 央行连续购金已满…」",
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-08T23:52:39.969Z",
+  "headline": "主线：气候 / climate / nuclear｜首条「泰国职业安全机构警示气候变化威胁劳动者健康与安全」",
   "items": [
     {
-      "id": "MTDmnIjkuK3l",
-      "title": "10月中国黄金储备增加26吨 央行连续购金已满两年",
-      "url": "https://finance.caixin.com/2026-11-07/102502280.html",
-      "source": "财新",
-      "category": "economy",
-      "score": 8.21,
-      "brief": "本轮中国增持黄金持续了24个月，黄金增持规模累计达到550万盎司，约合171吨，相当于超过1.3万块标准交割金锭 【财新网】 最新出炉的官方储备数据显示，10月金价回落未减央行增持积极性，外汇储备小幅增加。 2026年11月7日，国家外汇管理局发布最新官方储备数据显示，截至10月末，中国官方持有黄金规模7830万盎司，较上月末增加83万盎司，约合26吨。",
-      "why": "本轮影响度最高的一档，命中「央行」。",
+      "id": "5rOw5Zu96IGM",
+      "title": "泰国职业安全机构警示气候变化威胁劳动者健康与安全",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-08/10728474.shtml",
+      "source": "中新网国际",
+      "category": "order",
+      "score": 7.88,
+      "brief": "泰国职业安全、职业健康与工作环境促进研究所所长南猜8日表示，气候变化导致全球气温升高、天气状况日趋不稳定，给劳动者健康和职业安全带来风险，其中户外工作者及高风险环境中的劳动者面临的威胁尤为突出。",
+      "why": "本轮影响度最高的一档，命中「气候」。",
       "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "量化信号：550万、171吨"
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：8日、11月"
       ],
       "horizon": "短期"
     },
     {
-      "id": "VVMgb2ZmZXJz",
-      "title": "US offers $20m reward for information about Iran's nuclear programme",
-      "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
+      "id": "Q2xpbWF0ZSBh",
+      "title": "Climate always comes second: are green issues slipping down Burnham’s agenda?",
+      "url": "https://www.theguardian.com/environment/2026/nov/08/andy-burnham-uk-climate-crisis-rosebank-jackdaw",
+      "source": "Guardian",
       "category": "order",
-      "score": 7.8,
-      "brief": "Donald Trump has repeatedly raised the prospecting of renewing strikes against Iran's nuclear facilities.",
-      "why": "本轮影响度最高的一档，命中「nuclear」，来源权威。",
+      "score": 7.77,
+      "brief": "Prime minister says he’s committed to meeting climate targets, but some believe his actions suggest otherwise Labour expected to cut EV targets for car industry despite MPs’ climate…",
+      "why": "本轮影响度最高的一档，命中「climate」，来源权威。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
         "一手来源，可信度高，可直接引用"
@@ -34,57 +34,57 @@ window.SIGNAL_DAILY = {
       "horizon": "短期"
     },
     {
-      "id": "UmlzayBvZiBJ",
-      "title": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
-      "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
-      "source": "CNBC",
-      "category": "economy",
-      "score": 7.69,
-      "brief": "The U.S. and Iran are on a collision course as tensions in the Middle East simmer.",
-      "why": "本轮影响度最高的一档，命中「war」。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "W1dvcmxkIFJl",
-      "title": "[World Report] Bundibugyo vaccine trial begins",
-      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02239-7/fulltext?rss=yes",
-      "source": "柳叶刀",
-      "category": "survival",
+      "id": "QSBudWNsZWFy",
+      "title": "A nuclear blast could save Earth from an asteroid, but there's a catch",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261106174532.htm",
+      "source": "ScienceDaily",
+      "category": "frontier",
       "score": 7.62,
-      "brief": "The Tumaini trial is hoping to find effective vaccines against Bundibugyo virus infection, which has killed more than 5000 people in DR Congo. Talha Burki reports.",
-      "why": "本轮影响度最高的一档，命中「vaccine、trial」，来源权威。",
+      "brief": "A nuclear explosion might save Earth from a deadly asteroid, but new research suggests that hitting the wrong side could make the difference between success and disaster. Scientists found…",
+      "why": "本轮影响度最高的一档，命中「nuclear、asteroid」。",
       "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度",
-        "一手来源，可信度高，可直接引用"
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
       ],
-      "horizon": "长期"
+      "horizon": "中期"
     },
     {
-      "id": "RWJvbGE6IFdo",
-      "title": "Ebola: Why is there still no vaccine?",
-      "url": "https://www.dw.com/en/ebola-why-is-there-still-no-vaccine/a-79888134?maca=en-rss-en-all-1573-rdf",
-      "source": "德国之声",
-      "category": "order",
-      "score": 7.52,
-      "brief": "Ebola has been known about for decades, but there is still no vaccine against the Bundibugyo strain of the virus causing the current outbreak. New research raises hopes of protection…",
-      "why": "本轮影响度最高的一档，命中「vaccine」。",
+      "id": "5omn5rOV5qOA",
+      "title": "执法检查报告：建议设立农田耕地专项督察、探索县级粮食产销区划分",
+      "url": "https://china.caixin.com/2026-11-08/102502394.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 7.27,
+      "brief": "执法检查报告表示，目前，粮食生产在高位基础上再创新高，在连续多年稳定在1.3万亿斤以上的基础上，实现了连续两年超1.4万亿斤，2025年粮食人均占有量超过500公斤，做到谷物基本自给、口粮绝对安全； 大豆油料扩种成果持续巩固，大豆产量达2091万吨，连续4年稳定在2000万吨以上。",
+      "why": "本轮影响度最高的一档，命中「粮食」。",
       "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变"
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2025年、500公斤"
       ],
       "horizon": "短期"
     },
     {
-      "id": "SG93IGRvIHlv",
-      "title": "How do you broker UN climate talks when your own country is a big coal and gas exporter? Chris Bowen is about to find out",
-      "url": "https://www.theguardian.com/environment/2026/nov/08/chris-bowen-cop31-experts-condemn-australia-coal-gas-approvals",
-      "source": "卫报 环境",
-      "category": "survival",
-      "score": 7.26,
-      "brief": "Ahead of Cop31, climate change minister dismisses concerns about whether Australia as a major producer can keep the world moving away from fossil fuels Listen to the podcast: Chris Bowen on…",
+      "id": "QXVzdHJhbGlh",
+      "title": "Australia’s climate minister is about to walk a diplomatic tightrope at COP31",
+      "url": "https://theconversation.com/australias-climate-minister-is-about-to-walk-a-diplomatic-tightrope-at-cop31-294565",
+      "source": "The Conversation",
+      "category": "frontier",
+      "score": 7.22,
+      "brief": "Australia cannot feasibly claim climate credentials while driving global warming through its fossil fuel exports.",
       "why": "本轮影响度最高的一档，命中「climate」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "V2h5IHRoZSBJ",
+      "title": "Why the Iran War Has Spurred Both Clean Energy and Fossil Fuels",
+      "url": "https://www.nytimes.com/2026/11/08/business/cop-31-iran-war-oil.html",
+      "source": "纽约时报 气候",
+      "category": "survival",
+      "score": 6.86,
+      "brief": "The shock to global oil prices has caused a surge in demand for electric vehicles while propelling a race for immediate, secure power supplies.",
+      "why": "影响度靠前，命中「war」。",
       "impact": [
         "公共健康与资源约束：影响的是成本曲线和监管强度"
       ],
@@ -93,26 +93,26 @@ window.SIGNAL_DAILY = {
   ],
   "watch": [
     {
-      "title": "泰国强调粮食和能源安全 以多元供应体系应对外部风险",
-      "source": "中新网国际",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-07/10728192.shtml"
+      "title": "Iran threatens to ‘rain down hell’ if US escalates war",
+      "source": "半岛电视台",
+      "url": "https://www.aljazeera.com/news/2026/11/8/iran-threatens-to-rain-down-hell-if-us-escalates-war?traffic_source=rss"
     },
     {
-      "title": "第10届联合国教科文组织国际生命科学研究奖颁奖仪式举行",
-      "source": "中新网国际",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-07/10727775.shtml"
+      "title": "How women bore the consequences of the First World War in British India",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/how-women-bore-the-consequences-of-the-first-world-war-in-british-india-289672"
     },
     {
-      "title": "中原农谷这场会议，为全国粮食增产开出“良方”",
-      "source": "中新网",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10728068.shtml"
+      "title": "We face paying £9,000 tax even though our second home is in a war zone",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c674pk4klp7no?at_medium=RSS&at_campaign=rss"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1230,
-    "events": 1208,
-    "sources": "96/108",
+    "scanned": 1247,
+    "events": 1222,
+    "sources": "100/108",
     "candidates": 10
   }
 };
