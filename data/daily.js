@@ -1,118 +1,119 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-10",
-  "generatedAt": "2026-11-09T23:54:18.837Z",
-  "headline": "主线：冲突 / 联合国 / war｜首条「Russell Brand sentenced…」",
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-10T23:51:15.012Z",
+  "headline": "主线：emissions / 央行 / 通胀｜首条「Governments are failing…」",
   "items": [
     {
-      "id": "UnVzc2VsbCBC",
-      "title": "Russell Brand sentenced to more than 10 years in prison for rape and sexual assault",
-      "url": "https://www.theguardian.com/news/2026/nov/09/russell-brand-sentenced-rape-sexual-assault",
-      "source": "Guardian",
-      "category": "order",
-      "score": 8.81,
-      "brief": "A London judge said the former comedy star, who was convicted of rape and sexual assault last week, had shown a “casual, arrogant disregard” for women’s wishes.",
-      "why": "本轮影响度最高的一档，5 家媒体同时报道，来源权威。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "5L-E5bi46am7",
-      "title": "俄常驻联合国代表称不接受“冻结”乌克兰冲突",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729163.shtml",
-      "source": "中新网国际",
-      "category": "order",
-      "score": 8.65,
-      "brief": "当地时间11月9日，俄罗斯常驻联合国代表涅边贾当天在联合国安理会乌克兰问题会议上说，俄方不接受“冻结”乌克兰冲突，这种方案将使俄罗斯面临的现有安全威胁继续存在并为新一轮冲突升级创造条件。 俄方这一立场“坚定不移”。",
-      "why": "本轮影响度最高的一档，命中「冲突、联合国」。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "量化信号：11月、9日"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "VHJ1bXAgaGFp",
-      "title": "Trump hails ‘positive momentum’ towards ending Iran war",
-      "url": "https://www.ft.com/content/4a75299e-a705-493f-91a7-07d3b87ecc4e?syn-25a6b1a6=1",
-      "source": "FT",
-      "category": "economy",
-      "score": 8.42,
-      "brief": "Comments by US president come after calls with regional leaders and a meeting with the Qatari prime minister",
-      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "SGlnaCBmb3Nz",
-      "title": "High fossil fuel prices spread inflation ‘like a cancer’, UN climate chief tells Cop31",
-      "url": "https://www.theguardian.com/environment/2026/nov/09/high-fossil-fuel-prices-spread-inflation-like-cancer-cop31egotiator-tells-cop31",
-      "source": "卫报 环境",
-      "category": "survival",
-      "score": 8.27,
-      "brief": "Simon Stiell makes opening address at summit in Turkey, where talks are under way about speeding up shift to electrification A global fossil fuel price crisis is “spreading inflation like a…",
-      "why": "本轮影响度最高的一档，命中「climate、inflation」。",
-      "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度"
-      ],
-      "horizon": "长期"
-    },
-    {
-      "id": "VHJ1bXAsIFB1",
-      "title": "Trump, Putin and the short war illusion",
-      "url": "https://www.ft.com/content/fa36233a-1ee0-4bd3-9521-c3defe10c173?syn-25a6b1a6=1",
-      "source": "FT",
-      "category": "economy",
-      "score": 8.05,
-      "brief": "The American and Russian leaders have both launched failed wars. Will Xi Jinping learn the right lesson?",
-      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "VGhlIERvd25s",
-      "title": "The Download: empty AI climate claims, and an Nvidia investigation",
-      "url": "https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/",
-      "source": "MIT 科技评论",
+      "id": "R292ZXJubWVu",
+      "title": "Governments are failing to rein in emissions from their own power plants, analysis finds",
+      "url": "https://phys.org/news/2026-11-rein-emissions-power-analysis.html",
+      "source": "Phys.org",
       "category": "frontier",
-      "score": 7.44,
-      "brief": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Opinion: The climate case for AI has not been made…",
-      "why": "本轮影响度最高的一档，命中「climate」。",
+      "score": 10.32,
+      "brief": "A new study compared power plants’ carbon emissions and found government-owned plants’ emissions were much higher and less responsive to climate policies.",
+      "why": "本轮影响度最高的一档，2 家媒体同时报道，命中「emissions」。",
       "impact": [
         "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "6Iux5Zu95aSu",
+      "title": "英国央行副行长警示通胀有持续风险 释放进一步加息信号",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729870.shtml",
+      "source": "中新网国际",
+      "category": "order",
+      "score": 9.53,
+      "brief": "英国央行负责货币政策的副行长克莱尔·隆巴代利10日在一场央行会议上表示，英国通胀持续风险正在显现，若无通胀降温的明确证据，短期内大概率需要再度加息。",
+      "why": "本轮影响度最高的一档，命中「央行、通胀」。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：10日、11月"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5YWo55CDMTXk",
+      "title": "全球15亿妇女和女童生活在气候高风险地区",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143171",
+      "source": "联合国新闻",
+      "category": "order",
+      "score": 9.32,
+      "brief": "联合国妇女署周二指出，全球超过三分之一的妇女和女童、至少15亿人生活在气候高风险地区。 气候灾害、就业不稳定和严重的性别不平等相互叠加，使她们面临更大的生计和安全压力。",
+      "why": "本轮影响度最高的一档，命中「气候」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：15亿"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "VVMsIFJ1c3Np",
+      "title": "US, Russia and Ukraine resume talks on ending war",
+      "url": "https://www.ft.com/content/352539b3-41fd-4418-a171-43975897ec0e?syn-25a6b1a6=1",
+      "source": "FT",
+      "category": "economy",
+      "score": 8.48,
+      "brief": "Expectations of a breakthrough are low because Vladimir Putin shows no sign of wanting to halt the conflict",
+      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "6ams6b6Z77ya",
+      "title": "马龙：应对气候变化不是少数国家的选择题",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729802.shtml",
+      "source": "中新网财经",
+      "category": "economy",
+      "score": 8.17,
+      "brief": "当地时间11月10日，普华永道中国税收政策服务主管合伙人马龙在土耳其安塔利亚表示，中国近年来的一系列财税政策，正用税收杠杆推动绿色承诺转化为企业的实际行动。",
+      "why": "本轮影响度最高的一档，命中「气候」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：11月、10日"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5qyn5rSy5aSu",
+      "title": "欧洲央行内格尔：显然不得不在12月加息",
+      "url": "https://www.36kr.com/newsflashes/4064071014568832",
+      "source": "36氪 快讯",
+      "category": "frontier",
+      "score": 8.08,
+      "brief": "11月10日，据报道，欧洲央行管委内格尔表示，很明显，我们不得不在12月加息。 我们将采取必要措施，使通胀率回归2%。",
+      "why": "本轮影响度最高的一档，命中「央行」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "量化信号：11月、10日"
       ],
       "horizon": "中期"
     }
   ],
   "watch": [
     {
-      "title": "联合国：乌克兰平民伤亡持续增加 冬季人道主义风险加剧",
-      "source": "联合国新闻",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143163"
-    },
-    {
-      "title": "New trilateral talks on Ukraine war in Abu Dhabi: What to expect?",
-      "source": "德国之声",
-      "url": "https://www.dw.com/en/new-trilateral-talks-on-ukraine-war-in-abu-dhabi-what-to-expect/a-79905734?maca=en-rss-en-all-1573-rdf"
-    },
-    {
-      "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+      "title": "Sudan war: First ‘suicide’ drone attacks, now long-range strikes are the norm",
       "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168763"
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168771"
+    },
+    {
+      "title": "Climate crisis could push 141 million more women into extreme poverty",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168770"
+    },
+    {
+      "title": "2026 年全球化石燃料碳排放量预计下降 0.4%",
+      "source": "Solidot",
+      "url": "https://www.solidot.org/story?sid=85850"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1270,
-    "events": 1234,
+    "scanned": 1280,
+    "events": 1255,
     "sources": "100/108",
     "candidates": 10
   }

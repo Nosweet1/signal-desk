@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-10T23:51:15.012Z",
+  "headline": "主线：emissions / 央行 / 通胀｜首条「Governments are failing…」",
+  "items": [
+    {
+      "id": "R292ZXJubWVu",
+      "title": "Governments are failing to rein in emissions from their own power plants, analysis finds",
+      "url": "https://phys.org/news/2026-11-rein-emissions-power-analysis.html",
+      "source": "Phys.org",
+      "category": "frontier",
+      "score": 10.32,
+      "brief": "A new study compared power plants’ carbon emissions and found government-owned plants’ emissions were much higher and less responsive to climate policies.",
+      "why": "本轮影响度最高的一档，2 家媒体同时报道，命中「emissions」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "6Iux5Zu95aSu",
+      "title": "英国央行副行长警示通胀有持续风险 释放进一步加息信号",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729870.shtml",
+      "source": "中新网国际",
+      "category": "order",
+      "score": 9.53,
+      "brief": "英国央行负责货币政策的副行长克莱尔·隆巴代利10日在一场央行会议上表示，英国通胀持续风险正在显现，若无通胀降温的明确证据，短期内大概率需要再度加息。",
+      "why": "本轮影响度最高的一档，命中「央行、通胀」。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：10日、11月"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5YWo55CDMTXk",
+      "title": "全球15亿妇女和女童生活在气候高风险地区",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143171",
+      "source": "联合国新闻",
+      "category": "order",
+      "score": 9.32,
+      "brief": "联合国妇女署周二指出，全球超过三分之一的妇女和女童、至少15亿人生活在气候高风险地区。 气候灾害、就业不稳定和严重的性别不平等相互叠加，使她们面临更大的生计和安全压力。",
+      "why": "本轮影响度最高的一档，命中「气候」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：15亿"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "VVMsIFJ1c3Np",
+      "title": "US, Russia and Ukraine resume talks on ending war",
+      "url": "https://www.ft.com/content/352539b3-41fd-4418-a171-43975897ec0e?syn-25a6b1a6=1",
+      "source": "FT",
+      "category": "economy",
+      "score": 8.48,
+      "brief": "Expectations of a breakthrough are low because Vladimir Putin shows no sign of wanting to halt the conflict",
+      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "6ams6b6Z77ya",
+      "title": "马龙：应对气候变化不是少数国家的选择题",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729802.shtml",
+      "source": "中新网财经",
+      "category": "economy",
+      "score": 8.17,
+      "brief": "当地时间11月10日，普华永道中国税收政策服务主管合伙人马龙在土耳其安塔利亚表示，中国近年来的一系列财税政策，正用税收杠杆推动绿色承诺转化为企业的实际行动。",
+      "why": "本轮影响度最高的一档，命中「气候」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：11月、10日"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5qyn5rSy5aSu",
+      "title": "欧洲央行内格尔：显然不得不在12月加息",
+      "url": "https://www.36kr.com/newsflashes/4064071014568832",
+      "source": "36氪 快讯",
+      "category": "frontier",
+      "score": 8.08,
+      "brief": "11月10日，据报道，欧洲央行管委内格尔表示，很明显，我们不得不在12月加息。 我们将采取必要措施，使通胀率回归2%。",
+      "why": "本轮影响度最高的一档，命中「央行」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "量化信号：11月、10日"
+      ],
+      "horizon": "中期"
+    }
+  ],
+  "watch": [
+    {
+      "title": "Sudan war: First ‘suicide’ drone attacks, now long-range strikes are the norm",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168771"
+    },
+    {
+      "title": "Climate crisis could push 141 million more women into extreme poverty",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168770"
+    },
+    {
+      "title": "2026 年全球化石燃料碳排放量预计下降 0.4%",
+      "source": "Solidot",
+      "url": "https://www.solidot.org/story?sid=85850"
+    }
+  ],
+  "engine": "rules",
+  "stats": {
+    "scanned": 1280,
+    "events": 1255,
+    "sources": "100/108",
+    "candidates": 10
+  }
+}
