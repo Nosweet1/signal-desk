@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-12T23:59:51.266Z",
+  "headline": "主线：emissions / climate / drought｜首条「Energy, prosperity, emi…」",
+  "items": [
+    {
+      "id": "RW5lcmd5LCBw",
+      "title": "Energy, prosperity, emissions, and innovation: A decarbonization progress report",
+      "url": "https://news.mit.edu/2026/energy-prosperity-emissions-innovation-decarbonization-progress-report-1112",
+      "source": "MIT News",
+      "category": "frontier",
+      "score": 10.29,
+      "brief": "Eric Toone, CTO of Breakthrough Energy, assessed global decarbonization, and the opportunities and challenges that remain, at MITEI’s annual research conference.",
+      "why": "本轮影响度最高的一档，命中「emissions」，来源权威。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "QW5jaWVudCBj",
+      "title": "Ancient climate records reveal how East Asian monsoon shifted abruptly into cold and drought",
+      "url": "https://phys.org/news/2026-11-ancient-climate-reveal-east-asian.html",
+      "source": "Phys.org",
+      "category": "frontier",
+      "score": 9.43,
+      "brief": "How does climate change affect the East Asian monsoon?",
+      "why": "本轮影响度最高的一档，命中「climate、drought」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "6IKv5bC85Lqa",
+      "title": "肯尼亚最后一名埃博拉患者出院，疫情结束进入倒计时",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143184",
+      "source": "联合国新闻",
+      "category": "order",
+      "score": 8.36,
+      "brief": "肯尼亚周四开始为期42天的埃博拉疫情结束倒计时。 此前一天，最后一名在院治疗的患者康复出院，最后11名隔离观察人员也已解除隔离。",
+      "why": "本轮影响度最高的一档，命中「疫情」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "Tm9yd2F5IGZv",
+      "title": "Norway follows Finland in barring Russian athletes from entering country over Ukraine war",
+      "url": "https://www.theguardian.com/sport/2026/nov/12/finland-bars-russian-athletes-ukraine",
+      "source": "Guardian",
+      "category": "order",
+      "score": 8.16,
+      "brief": "Move by Norway ‘a further tightening’ of current rules Russians ‘have no business’ in Finland, says minister Norway’s government announced that it would prevent Russian and Belarusian…",
+      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "4oCcQUnlpK7o",
+      "title": "“AI央行”大地震，冲击会沿融资链传多远？",
+      "url": "https://www.huxiu.com/article/4905199.html",
+      "source": "虎嗅",
+      "category": "economy",
+      "score": 7.9,
+      "brief": "监管者关注风险敞口 分析师以及现任和前任金融官员认为，2007至2008年金融危机重演的可能性不大。 Wu是IMF于10月发布的《全球金融稳定报告》中一个章节的主",
+      "why": "本轮影响度最高的一档，命中「央行」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2008年、7月"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "R2xvYmFsIFdh",
+      "title": "Global Warming Remains Unchecked, Experts Warn at UN’s COP31 Climate Summit",
+      "url": "https://insideclimatenews.org/news/12112026/cop31-global-warming-warnings/",
+      "source": "Inside Climate News",
+      "category": "survival",
+      "score": 7.74,
+      "brief": "ANTALYA, Turkey—Amid upbeat green-tech pep talks and notices for happy hours at the annual United Nations COP31 climate change conference on Thursday, two new reports offered a stark…",
+      "why": "本轮影响度最高的一档，命中「climate、warming」。",
+      "impact": [
+        "公共健康与资源约束：影响的是成本曲线和监管强度"
+      ],
+      "horizon": "长期"
+    }
+  ],
+  "watch": [
+    {
+      "title": "Women suffer more from climate change. Policymakers must recognise this",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/women-suffer-more-from-climate-change-policymakers-must-recognise-this-295879"
+    },
+    {
+      "title": "Far from farms and cities, dry climates are boosting river nitrate pollution",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/far-from-farms-and-cities-dry-climates-are-boosting-river-nitrate-pollution-294558"
+    },
+    {
+      "title": "New research could lead to faster, trustworthy AI models for climate prediction",
+      "source": "MIT News",
+      "url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112"
+    }
+  ],
+  "engine": "rules",
+  "stats": {
+    "scanned": 1233,
+    "events": 1210,
+    "sources": "97/108",
+    "candidates": 10
+  }
+}
