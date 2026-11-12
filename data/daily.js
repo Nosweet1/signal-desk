@@ -1,120 +1,119 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-11",
-  "generatedAt": "2026-11-10T23:51:15.012Z",
-  "headline": "主线：emissions / 央行 / 通胀｜首条「Governments are failing…」",
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T00:02:49.366Z",
+  "headline": "主线：央行 / 利率 / war｜首条「央行解释利率体系：中国贷款利率相对较低，债券信…」",
   "items": [
     {
-      "id": "R292ZXJubWVu",
-      "title": "Governments are failing to rein in emissions from their own power plants, analysis finds",
-      "url": "https://phys.org/news/2026-11-rein-emissions-power-analysis.html",
+      "id": "5aSu6KGM6Kej",
+      "title": "央行解释利率体系：中国贷款利率相对较低，债券信用利差较窄",
+      "url": "https://finance.caixin.com/2026-11-12/102503774.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 10.03,
+      "brief": "人民银行在最新发布的报告中予以阐释。 11月11日，中国人民银行发布的2026年第三季度《中国货币政策执行报告》（下称《报告》）专设专栏文章，解释了一国利率体系中多个利率的关系：不同金融工具的期限、风险、流动性等属性不同，导致各类利率水平存在一定差异；",
+      "why": "本轮影响度最高的一档，命中「央行、利率」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2026年、11月"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "UnVzc2lhLVVr",
+      "title": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
+      "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "order",
+      "score": 8.93,
+      "brief": "Talks in Abu Dhabi centred around Europe's security framework, with US envoys due to meet Putin and Zelensky on Thursday.",
+      "why": "本轮影响度最高的一档，命中「war、breakthrough」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "QXN0ZXJvaWQg",
+      "title": "Asteroid mining will crash the platinum market, but that's good news for Earth",
+      "url": "https://phys.org/news/2026-11-asteroid-platinum-good-news-earth.html",
       "source": "Phys.org",
       "category": "frontier",
-      "score": 10.32,
-      "brief": "A new study compared power plants’ carbon emissions and found government-owned plants’ emissions were much higher and less responsive to climate policies.",
-      "why": "本轮影响度最高的一档，2 家媒体同时报道，命中「emissions」。",
+      "score": 8.79,
+      "brief": "A pair of system dynamicists from MIT directly tackled that question with a new paper titled Will AstroForge Collapse the PGM Market?",
+      "why": "本轮影响度最高的一档，命中「asteroid」。",
       "impact": [
         "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
       ],
       "horizon": "中期"
     },
     {
-      "id": "6Iux5Zu95aSu",
-      "title": "英国央行副行长警示通胀有持续风险 释放进一步加息信号",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729870.shtml",
-      "source": "中新网国际",
+      "id": "VUsgYXBwb2lu",
+      "title": "UK appoints world’s first special representative for climate security",
+      "url": "https://www.theguardian.com/politics/2026/nov/11/uk-appoints-worlds-first-special-representative-for-climate-security",
+      "source": "Guardian",
       "category": "order",
-      "score": 9.53,
-      "brief": "英国央行负责货币政策的副行长克莱尔·隆巴代利10日在一场央行会议上表示，英国通胀持续风险正在显现，若无通胀降温的明确证据，短期内大概率需要再度加息。",
-      "why": "本轮影响度最高的一档，命中「央行、通胀」。",
+      "score": 8.37,
+      "brief": "Exclusive: Madeleine Alessandri, chair of the joint intelligence committee, will take on the role of advising No 10 on climate-related national security risks The UK government has…",
+      "why": "本轮影响度最高的一档，命中「climate」，来源权威。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
-        "量化信号：10日、11月"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "5YWo55CDMTXk",
-      "title": "全球15亿妇女和女童生活在气候高风险地区",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143171",
-      "source": "联合国新闻",
-      "category": "order",
-      "score": 9.32,
-      "brief": "联合国妇女署周二指出，全球超过三分之一的妇女和女童、至少15亿人生活在气候高风险地区。 气候灾害、就业不稳定和严重的性别不平等相互叠加，使她们面临更大的生计和安全压力。",
-      "why": "本轮影响度最高的一档，命中「气候」，来源权威。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "量化信号：15亿"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "VVMsIFJ1c3Np",
-      "title": "US, Russia and Ukraine resume talks on ending war",
-      "url": "https://www.ft.com/content/352539b3-41fd-4418-a171-43975897ec0e?syn-25a6b1a6=1",
-      "source": "FT",
-      "category": "economy",
-      "score": 8.48,
-      "brief": "Expectations of a breakthrough are low because Vladimir Putin shows no sign of wanting to halt the conflict",
-      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
         "一手来源，可信度高，可直接引用"
       ],
       "horizon": "短期"
     },
     {
-      "id": "6ams6b6Z77ya",
-      "title": "马龙：应对气候变化不是少数国家的选择题",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729802.shtml",
+      "id": "RXZlbiBDYWN0",
+      "title": "Even Cacti Are Threatened by Heat and Drought From Global Warming",
+      "url": "https://insideclimatenews.org/news/11112026/cactus-heat-drought-global-warming/",
+      "source": "Inside Climate News",
+      "category": "survival",
+      "score": 8.21,
+      "brief": "Cacti are among the toughest plants on the planet, withstanding scorching temperatures and parched conditions that would wilt a more sensitive sprout. But climate change may threaten these…",
+      "why": "本轮影响度最高的一档，命中「warming、drought」。",
+      "impact": [
+        "公共健康与资源约束：影响的是成本曲线和监管强度"
+      ],
+      "horizon": "长期"
+    },
+    {
+      "id": "Q09QMzHlvIDl",
+      "title": "COP31开幕，中国以实干诠释气候治理担当",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-11/10730478.shtml",
       "source": "中新网财经",
       "category": "economy",
-      "score": 8.17,
-      "brief": "当地时间11月10日，普华永道中国税收政策服务主管合伙人马龙在土耳其安塔利亚表示，中国近年来的一系列财税政策，正用税收杠杆推动绿色承诺转化为企业的实际行动。",
+      "score": 8.01,
+      "brief": "在埃塞俄比亚，如果想了解气候变化的细微动向，一颗小卫星正默默为你工作。",
       "why": "本轮影响度最高的一档，命中「气候」。",
       "impact": [
         "资本与就业：资金流向和用工需求会先动",
-        "量化信号：11月、10日"
+        "量化信号：11月、11日"
       ],
       "horizon": "短期"
-    },
-    {
-      "id": "5qyn5rSy5aSu",
-      "title": "欧洲央行内格尔：显然不得不在12月加息",
-      "url": "https://www.36kr.com/newsflashes/4064071014568832",
-      "source": "36氪 快讯",
-      "category": "frontier",
-      "score": 8.08,
-      "brief": "11月10日，据报道，欧洲央行管委内格尔表示，很明显，我们不得不在12月加息。 我们将采取必要措施，使通胀率回归2%。",
-      "why": "本轮影响度最高的一档，命中「央行」。",
-      "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
-        "量化信号：11月、10日"
-      ],
-      "horizon": "中期"
     }
   ],
   "watch": [
     {
-      "title": "Sudan war: First ‘suicide’ drone attacks, now long-range strikes are the norm",
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168771"
+      "title": "现在是决定成败的关键时刻：古特雷斯倡导达成气候正义契约",
+      "source": "联合国新闻",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143175"
     },
     {
-      "title": "Climate crisis could push 141 million more women into extreme poverty",
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168770"
+      "title": "Speech by President von der Leyen at the United Nations Climate Change Conference (COP31)",
+      "source": "欧盟委员会",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2410"
     },
     {
-      "title": "2026 年全球化石燃料碳排放量预计下降 0.4%",
-      "source": "Solidot",
-      "url": "https://www.solidot.org/story?sid=85850"
+      "title": "【钛晨报】维护股票、债券、外汇等金融市场平稳运行，央行发布重要报告；腾讯全新搜索产品元宝搜索正式上线；苹果支持社区将于11月20日永久关闭",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8201636.html"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1280,
-    "events": 1255,
-    "sources": "100/108",
+    "scanned": 1278,
+    "events": 1249,
+    "sources": "101/108",
     "candidates": 10
   }
 };
