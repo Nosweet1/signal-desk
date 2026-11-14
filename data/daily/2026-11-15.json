@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-14T23:53:01.403Z",
+  "headline": "主线：drought / war / 疫苗｜首条「When the rains fail: Pr…」",
+  "items": [
+    {
+      "id": "V2hlbiB0aGUg",
+      "title": "When the rains fail: Preparing for drought in Central America",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168776",
+      "source": "UN News",
+      "category": "order",
+      "score": 7.88,
+      "brief": "该信源未提供摘要，点标题看原文。",
+      "why": "本轮影响度最高的一档，命中「drought」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "TWFjcm9uIHNh",
+      "title": "Macron says limiting Ukraine aid would pave way to 'another war'",
+      "url": "https://www.france24.com/en/europe/20261114-macron-says-limiting-ukraine-aid-would-pave-way-to-another-war",
+      "source": "France 24",
+      "category": "order",
+      "score": 7.41,
+      "brief": "该信源未提供摘要，点标题看原文。",
+      "why": "本轮影响度最高的一档，命中「war」。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "44CQ5ZGo5YiK",
+      "title": "【周刊提前读】一类肿瘤疫苗取得突破 mRNA赛道重获重视",
+      "url": "https://database.caixin.com/2026-11-14/102504750.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 7.36,
+      "brief": "【本文系数据通用户提前专享】Moderna的个体化新抗原肿瘤疫苗收获首个三期临床阳性结果，首次“破局”之后，行业仍有哪些挑战？",
+      "why": "本轮影响度最高的一档，命中「疫苗、突破」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "4oCcQUnlpK7o",
+      "title": "“AI央行”失去掌舵人，华尔街警告：黄仁勋离开将引爆“AI版量化紧缩”！",
+      "url": "https://wallstreetcn.com/articles/3785942",
+      "source": "华尔街见闻",
+      "category": "economy",
+      "score": 7.27,
+      "brief": "此外还有1085亿美元的担保承诺，以及560亿美元的AI云回购协议和第三方租约。 将英伟达10-Q报告脚注中的全部承诺加总，可以得出以下数字： 3660亿美元的未来承诺 （其中供应与产能采购承诺为2790亿美元，仅三个月内即从1190亿美元激增）、 560亿美元的\"额外\"承诺 ， 以及1085亿美元的担保——三项合计5305亿美元。",
+      "why": "本轮影响度最高的一档，命中「央行」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：5000亿、5300亿"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "6Iux5Zu95aSu",
+      "title": "英国央行首席经济学家：需进一步加息",
+      "url": "https://www.36kr.com/newsflashes/4069148906787968",
+      "source": "36氪 快讯",
+      "category": "frontier",
+      "score": 6.34,
+      "brief": "休·皮尔表示，上周加息25个基点至4%，是让货币政策回归合理状态的“重要一步”，但“我们还有更多工作要做”。 他释放信号，鉴于存在第二轮效应风险——高能源成本传导至薪资以及更广范围的企业定价，除货币政策委员会12月17日下次会议的加息外，他目前预计2027年仍有必要继续加息。",
+      "why": "影响度靠前，命中「央行」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "量化信号：12月、2027年"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "QSBXaWxkbGFu",
+      "title": "A Wildland Firefighter Ends Montana Democrats’ Three-Decade Drought in the US House",
+      "url": "https://insideclimatenews.org/news/14112026/sam-forstag-ends-montana-democrat-us-rep-drought/",
+      "source": "Inside Climate News",
+      "category": "survival",
+      "score": 6.29,
+      "brief": "For three decades, Montana voters had not elected a Democrat to the U.S. House of Representatives. That changed earlier this month when Sam Forstag, a former wildland firefighter and union…",
+      "why": "影响度靠前，命中「drought」。",
+      "impact": [
+        "公共健康与资源约束：影响的是成本曲线和监管强度"
+      ],
+      "horizon": "长期"
+    }
+  ],
+  "watch": [
+    {
+      "title": "WWF气候负责人：气候行动走向落实 中国发挥关键桥梁作用",
+      "source": "中新网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-14/10732198.shtml"
+    },
+    {
+      "title": "联合国警告：也门塔伊兹省面临人道主义危机",
+      "source": "中新网国际",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-14/10732148.shtml"
+    },
+    {
+      "title": "The Stadium Bidding War Shaking Up the Midwest",
+      "source": "彭博社 市场",
+      "url": "https://www.bloomberg.com/news/videos/2026-11-14/the-stadium-bidding-war-shaking-up-the-midwest-video"
+    }
+  ],
+  "engine": "rules",
+  "stats": {
+    "scanned": 1303,
+    "events": 1280,
+    "sources": "100/108",
+    "candidates": 10
+  }
+}
