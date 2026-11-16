@@ -1,17 +1,32 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-15",
-  "generatedAt": "2026-11-14T23:53:01.403Z",
-  "headline": "主线：drought / war / 疫苗｜首条「When the rains fail: Pr…」",
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T00:00:32.496Z",
+  "headline": "主线：卫星 / war / climate｜首条「美国“火神”火箭未能将亚马逊卫星送入预定轨道」",
   "items": [
     {
-      "id": "V2hlbiB0aGUg",
-      "title": "When the rains fail: Preparing for drought in Central America",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168776",
-      "source": "UN News",
+      "id": "576O5Zu94oCc",
+      "title": "美国“火神”火箭未能将亚马逊卫星送入预定轨道",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-16/10732548.shtml",
+      "source": "中新网国际",
       "category": "order",
-      "score": 7.88,
-      "brief": "该信源未提供摘要，点标题看原文。",
-      "why": "本轮影响度最高的一档，命中「drought」，来源权威。",
+      "score": 9.24,
+      "brief": "美国联合发射联盟公司的“火神”运载火箭11月15日首次执行亚马逊低地轨道卫星发射任务，但升空约10分钟后出现异常，未能将搭载的40颗宽带通信卫星送入预定轨道。 该公司发射负责人根据飞行数据确认，火箭在发射升空约10分钟后出现异常，未能将亚马逊卫星送入低地轨道。",
+      "why": "本轮影响度最高的一档，3 家媒体同时报道，命中「卫星」。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：15日、11月"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "UHJpbmNlIEhh",
+      "title": "Prince Harry tells Ukrainians they are ‘going to win war’ on surprise trip to Lviv",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/15/prince-harry-ukraine-war-surprise-trip-invictus-games",
+      "source": "Guardian",
+      "category": "order",
+      "score": 8.3,
+      "brief": "Duke of Sussex meets wounded veterans in city and says country could one day host Invictus Games Prince Harry has told Ukrainian soldiers they are going to win the war with Russia, during a…",
+      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
         "一手来源，可信度高，可直接引用"
@@ -19,100 +34,86 @@ window.SIGNAL_DAILY = {
       "horizon": "短期"
     },
     {
-      "id": "TWFjcm9uIHNh",
-      "title": "Macron says limiting Ukraine aid would pave way to 'another war'",
-      "url": "https://www.france24.com/en/europe/20261114-macron-says-limiting-ukraine-aid-would-pave-way-to-another-war",
-      "source": "France 24",
-      "category": "order",
-      "score": 7.41,
-      "brief": "该信源未提供摘要，点标题看原文。",
-      "why": "本轮影响度最高的一档，命中「war」。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "44CQ5ZGo5YiK",
-      "title": "【周刊提前读】一类肿瘤疫苗取得突破 mRNA赛道重获重视",
-      "url": "https://database.caixin.com/2026-11-14/102504750.html",
-      "source": "财新",
-      "category": "economy",
-      "score": 7.36,
-      "brief": "【本文系数据通用户提前专享】Moderna的个体化新抗原肿瘤疫苗收获首个三期临床阳性结果，首次“破局”之后，行业仍有哪些挑战？",
-      "why": "本轮影响度最高的一档，命中「疫苗、突破」。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "4oCcQUnlpK7o",
-      "title": "“AI央行”失去掌舵人，华尔街警告：黄仁勋离开将引爆“AI版量化紧缩”！",
-      "url": "https://wallstreetcn.com/articles/3785942",
-      "source": "华尔街见闻",
-      "category": "economy",
-      "score": 7.27,
-      "brief": "此外还有1085亿美元的担保承诺，以及560亿美元的AI云回购协议和第三方租约。 将英伟达10-Q报告脚注中的全部承诺加总，可以得出以下数字： 3660亿美元的未来承诺 （其中供应与产能采购承诺为2790亿美元，仅三个月内即从1190亿美元激增）、 560亿美元的\"额外\"承诺 ， 以及1085亿美元的担保——三项合计5305亿美元。",
-      "why": "本轮影响度最高的一档，命中「央行」。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "量化信号：5000亿、5300亿"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "6Iux5Zu95aSu",
-      "title": "英国央行首席经济学家：需进一步加息",
-      "url": "https://www.36kr.com/newsflashes/4069148906787968",
-      "source": "36氪 快讯",
+      "id": "VW5pdmVyc2l0",
+      "title": "Universities should follow communities’ lead on climate research",
+      "url": "https://theconversation.com/universities-should-follow-communities-lead-on-climate-research-294848",
+      "source": "The Conversation",
       "category": "frontier",
-      "score": 6.34,
-      "brief": "休·皮尔表示，上周加息25个基点至4%，是让货币政策回归合理状态的“重要一步”，但“我们还有更多工作要做”。 他释放信号，鉴于存在第二轮效应风险——高能源成本传导至薪资以及更广范围的企业定价，除货币政策委员会12月17日下次会议的加息外，他目前预计2027年仍有必要继续加息。",
-      "why": "影响度靠前，命中「央行」。",
+      "score": 7.72,
+      "brief": "Climate change has been accelerated, in large part, by technologies developed at universities.",
+      "why": "本轮影响度最高的一档，命中「climate、research」。",
       "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
-        "量化信号：12月、2027年"
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
       ],
       "horizon": "中期"
     },
     {
-      "id": "QSBXaWxkbGFu",
-      "title": "A Wildland Firefighter Ends Montana Democrats’ Three-Decade Drought in the US House",
-      "url": "https://insideclimatenews.org/news/14112026/sam-forstag-ends-montana-democrat-us-rep-drought/",
-      "source": "Inside Climate News",
-      "category": "survival",
-      "score": 6.29,
-      "brief": "For three decades, Montana voters had not elected a Democrat to the U.S. House of Representatives. That changed earlier this month when Sam Forstag, a former wildland firefighter and union…",
-      "why": "影响度靠前，命中「drought」。",
+      "id": "Q2xpbWF0ZSBy",
+      "title": "Climate response: Why previous warming makes all the difference",
+      "url": "https://phys.org/news/2026-11-climate-response-previous-difference.html",
+      "source": "Phys.org",
+      "category": "frontier",
+      "score": 7.25,
+      "brief": "Global temperatures may continue to rise even after human CO₂ emissions stop. The temperature change that follows is known as the zero emissions commitment (ZEC), and it is often assumed to…",
+      "why": "本轮影响度最高的一档，命中「climate、warming」。",
       "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度"
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
       ],
-      "horizon": "长期"
+      "horizon": "中期"
+    },
+    {
+      "id": "RnJvbSBjdWx0",
+      "title": "From culture war to class war: US Democrats ditch woke politics",
+      "url": "https://www.ft.com/content/82e2d624-65aa-4a8c-86ec-f99c0ce785ac?syn-25a6b1a6=1",
+      "source": "FT",
+      "category": "economy",
+      "score": 6.94,
+      "brief": "The newly emboldened party shifts gears after its sweeping midterm election victory",
+      "why": "影响度靠前，命中「war」，来源权威。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5YyX5Lqs6KeE",
+      "title": "北京规范女性灵活就业者退休年龄 告别“50岁退休”",
+      "url": "https://www.caixin.com/2026-11-16/102505082.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 6.9,
+      "brief": "财新获悉，今年11月1日起，北京开始规范女性灵活就业退休年龄，原有的“50岁退休”政策将逐步退出：符合过渡条件的人员仍可以50岁为基础，领取基本养老金年龄按照每2个月延1个月； 2025年1月起，按照十四届全国人大常委会审议通过的《关于实施渐进式延迟法定退休年龄的决定》，男职工法定退休年龄延迟至63岁，女干部、女工人的退休年龄分别延迟至58岁、55岁；",
+      "why": "影响度靠前，命中「就业」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2001年、2025年"
+      ],
+      "horizon": "短期"
     }
   ],
   "watch": [
     {
-      "title": "WWF气候负责人：气候行动走向落实 中国发挥关键桥梁作用",
-      "source": "中新网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-14/10732198.shtml"
+      "title": "Yemen’s Houthis unilaterally release 600 war detainees",
+      "source": "半岛电视台",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/yemens-houthis-unilaterally-release-600-war-detainees?traffic_source=rss"
     },
     {
-      "title": "联合国警告：也门塔伊兹省面临人道主义危机",
-      "source": "中新网国际",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-14/10732148.shtml"
+      "title": "Africa CDC says Ebola outbreak in DR Congo ‘still not under control’",
+      "source": "半岛电视台",
+      "url": "https://www.aljazeera.com/news/2026/11/15/africa-cdc-says-ebola-outbreak-in-dr-congo-still-not-under-control?traffic_source=rss"
     },
     {
-      "title": "The Stadium Bidding War Shaking Up the Midwest",
-      "source": "彭博社 市场",
-      "url": "https://www.bloomberg.com/news/videos/2026-11-14/the-stadium-bidding-war-shaking-up-the-midwest-video"
+      "title": "财经早知道｜12位APEC经济体领导人将出席APEC工商领导人峰会",
+      "source": "财新",
+      "url": "https://finance.caixin.com/2026-11-16/102505080.html"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1303,
-    "events": 1280,
-    "sources": "100/108",
+    "scanned": 1240,
+    "events": 1225,
+    "sources": "99/108",
     "candidates": 10
   }
 };
