@@ -1,16 +1,31 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-17",
-  "generatedAt": "2026-11-16T23:58:59.499Z",
-  "headline": "主线：climate / war / 央行｜首条「Why marine climate refu…」",
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T00:04:40.565Z",
+  "headline": "主线：nuclear / launch / climate｜首条「NASA Launches Nuclear P…」",
   "items": [
     {
-      "id": "V2h5IG1hcmlu",
-      "title": "Why marine climate refugia matter for safeguarding the world's oceans",
-      "url": "https://phys.org/news/2026-11-marine-climate-refugia-safeguarding-world.html",
-      "source": "Phys.org",
+      "id": "TkFTQSBMYXVu",
+      "title": "NASA Launches Nuclear Power Systems Student Contest",
+      "url": "https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest/",
+      "source": "NASA",
       "category": "frontier",
-      "score": 8.99,
-      "brief": "“Climate refugia” plays a key role in ocean conservation by providing safe havens for the biodiversity which underpins the health of our seas.",
+      "score": 9.55,
+      "brief": "NASA’s Power to Explore Student Challenge kicked off Tuesday, Nov. 17. The science, engineering, technology, and mathematics (STEM) challenge invites kindergarten through 12th grade…",
+      "why": "本轮影响度最高的一档，命中「nuclear、launch」，来源权威。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "SG91c2UgRGVt",
+      "title": "House Democrats promise a US return to global climate talks",
+      "url": "https://arstechnica.com/tech-policy/2026/11/house-democrats-promise-a-us-return-to-global-climate-talks/",
+      "source": "Ars Technica",
+      "category": "frontier",
+      "score": 8.95,
+      "brief": "A new House majority can push climate policy, but a full US return remains uncertain.",
       "why": "本轮影响度最高的一档，2 家媒体同时报道，命中「climate」。",
       "impact": [
         "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
@@ -18,102 +33,87 @@ window.SIGNAL_DAILY = {
       "horizon": "中期"
     },
     {
-      "id": "SG93IHRoZSBV",
-      "title": "How the US elections and Iran war are influencing the UN’s COP31 climate talks – and discussions around fossil fuels",
-      "url": "https://theconversation.com/how-the-us-elections-and-iran-war-are-influencing-the-uns-cop31-climate-talks-and-discussions-around-fossil-fuels-296682",
-      "source": "The Conversation",
-      "category": "frontier",
-      "score": 8.97,
-      "brief": "I have followed the talks for years as a policy expert and former climate envoy for Germany, and I’m seeing growing concern about the rising costs and harm from fossil fuels.",
-      "why": "本轮影响度最高的一档，命中「climate、war」。",
-      "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
-      ],
-      "horizon": "中期"
-    },
-    {
-      "id": "Q09QMzEgZW50",
-      "title": "COP31 enters decisive week as climate talks face political test and AI initiatives gather pace",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168812",
-      "source": "UN News",
-      "category": "order",
-      "score": 8.81,
-      "brief": "New international initiatives on artificial intelligence and green industrialization showcased technology’s growing role in climate action, even as negotiators remained deadlocked on…",
-      "why": "本轮影响度最高的一档，命中「climate」，来源权威。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "5Yqg5ou_5aSn",
-      "title": "加拿大央行行长宣布明年6月卸任，贝莱德经济学家等三人成接任热门",
-      "url": "https://wallstreetcn.com/articles/3786046",
-      "source": "华尔街见闻",
+      "id": "576O5rCR5Li7",
+      "title": "美民主党人高调重返气候大会 称新国会将追究涉油气巨头的权钱交易",
+      "url": "https://international.caixin.com/2026-11-17/102506003.html",
+      "source": "财新",
       "category": "economy",
-      "score": 8.69,
-      "brief": "11月16日，加拿大央行发布声明表示， 央行行长Tiff Macklem已告知董事会，他将在2027年6月2日七年任期届满后不再寻求连任。 为压制通胀，央行随即启动史上最激进加息周期之一，在约18个月内将政策利率累计上调475个基点至5%。",
-      "why": "本轮影响度最高的一档，命中「央行」。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "量化信号：2027年、6月"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "6IGU5ZCI5Zu9",
-      "title": "联合国妇女署：将性别平等纳入气候政策，中国为全球提供借鉴",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-16/10733049.shtml",
-      "source": "中新网国际",
-      "category": "order",
-      "score": 8.56,
-      "brief": "《联合国气候变化框架公约》第三十一次缔约方大会(COP31)正在土耳其安塔利亚举行。 联合国妇女署政策专家、研究及数据副主任劳拉·图尔凯(Laura Turquet)当地时间16日在中国角发言时表示，气候危机本质上是一场不平等危机，没有妇女的包容性参与就无法应对气候变化；",
-      "why": "本轮影响度最高的一档，命中「气候、联合国」。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "量化信号：16日、11月"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "5YyX5Lqs5aSn",
-      "title": "北京大学张海滨：中国日益成为全球气候治理引领者",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10733120.shtml",
-      "source": "中新网财经",
-      "category": "economy",
-      "score": 8.17,
-      "brief": "《联合国气候变化框架公约》第三十一次缔约方大会(COP31)正在土耳其安塔利亚举行。 北京大学碳中和研究院副院长、北大博雅特聘教授、国家气候变化专家委员会委员张海滨在大会期间表示，中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，在国内引领可再生能源转型的同时，积极推动面向全球南方的国际合作，并将持续为世界提供更多全球公共产品。",
+      "score": 8.6,
+      "brief": "即便民主党在中期选举中大胜，地方主政者对未来两年的联邦层面的气候政策依然非常谨慎，也坦言在未来两年仍由特朗普执政的期间内，能做得并不多 【财新网】 在美国民主党在2026年11月6日举行的美国中期选举中，一举夺回美国国会参众两院未来两年的主导权后（详见《财新周刊》 《封面报道｜“蓝色海啸”扑向特朗普 》），一批美国民主党籍的国会议员与州长…",
       "why": "本轮影响度最高的一档，命中「气候」。",
       "impact": [
         "资本与就业：资金流向和用工需求会先动",
-        "量化信号：11月、16日"
+        "量化信号：2026年、2028年"
       ],
       "horizon": "短期"
+    },
+    {
+      "id": "5pel5pys4oCc",
+      "title": "日本“隼鸟2”号小行星探测器因发动机故障变更探测目标",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-17/10733796.shtml",
+      "source": "中新网国际",
+      "category": "order",
+      "score": 8.4,
+      "brief": "日本宇宙航空研究开发机构17日说，超期服役的“隼鸟2”号小行星探测器因4台发动机全部出现故障，不得不放弃此前的探测目标，改为飞掠探测另一天体。",
+      "why": "本轮影响度最高的一档，命中「小行星」。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：17日、11月"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5LiW5Y2r57uE",
+      "title": "世卫组织：刚果（金）埃博拉疫情已致逾5400人死亡",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143214",
+      "source": "联合国新闻",
+      "category": "order",
+      "score": 8.35,
+      "brief": "世界卫生组织总干事谭德塞周二表示，刚果民主共和国（刚果（金））本迪布焦病毒埃博拉病疫情暴发六个月以来，病例数已翻了一番多，八个省的67个卫生区共报告超过1.1万例病例和5400多例死亡病例。 儿童受到的影响尤为严重，占确诊病例的四分之一以上，占死亡病例的三分之一。",
+      "why": "本轮影响度最高的一档，命中「疫情」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：1.1万"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "Q2xpbWF0ZSBj",
+      "title": "Climate crisis more visible in film and TV but solutions remain rare, study finds",
+      "url": "https://www.theguardian.com/environment/2026/nov/17/climate-crisis-film-tv-solutions-study",
+      "source": "卫报 环境",
+      "category": "survival",
+      "score": 8.14,
+      "brief": "A report analyzing more than 35,000 scripts finds that storylines address its causes, but individual actions remain more prominent than systemic solutions Climate change and its causes are…",
+      "why": "本轮影响度最高的一档，命中「climate、study」。",
+      "impact": [
+        "公共健康与资源约束：影响的是成本曲线和监管强度"
+      ],
+      "horizon": "长期"
     }
   ],
   "watch": [
     {
-      "title": "东盟-联合国峰会：古特雷斯呼吁坚定不移地发挥合作的力量",
-      "source": "联合国新闻",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143205"
-    },
-    {
-      "title": "IPCC副主席：中国研究与技术创新为全球气候治理贡献关键力量",
-      "source": "中新网国际",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-16/10733048.shtml"
-    },
-    {
-      "title": "How Milburn won over Labour on tackling rising youth unemployment",
+      "title": "‘Godmother’ of illegal Israeli West Bank settler project Daniella Weiss among group sanctioned by Australia",
       "source": "Guardian",
-      "url": "https://www.theguardian.com/society/2026/nov/16/how-milburn-won-over-labour-tackling-rising-youth-unemployment"
+      "url": "https://www.theguardian.com/world/2026/nov/18/australia-sanctions-construction-company-west-bank-settlement-expansion-ntwnfb"
+    },
+    {
+      "title": "COP31: The push to protect warming oceans reaches the negotiating table",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168824"
+    },
+    {
+      "title": "UK sanctions firms over Israeli West Bank settlements",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1236,
-    "events": 1209,
-    "sources": "101/108",
+    "scanned": 1165,
+    "events": 1144,
+    "sources": "94/108",
     "candidates": 10
   }
 };
