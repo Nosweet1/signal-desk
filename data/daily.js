@@ -1,117 +1,120 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-19",
-  "generatedAt": "2026-11-19T00:05:59.591Z",
-  "headline": "主线：climate / launch / war｜首条「COP31 deadlock persists…」",
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T00:00:29.864Z",
+  "headline": "主线：vaccine / study / 战争｜首条「Anthropic上市 创史上最大IPO融资纪录」",
   "items": [
     {
-      "id": "Q09QMzEgZGVh",
-      "title": "COP31 deadlock persists as countries launch new ‘climate reality check’",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168833",
-      "source": "UN News",
+      "id": "QW50aHJvcGlj",
+      "title": "Anthropic上市 创史上最大IPO融资纪录",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-20/10734997.shtml",
+      "source": "中新网国际",
       "category": "order",
-      "score": 8.92,
-      "brief": "With the clock running down at COP31 in Antalya, countries on Wednesday launched a new global check on whether climate promises are being kept, even as ministers remained deadlocked over…",
-      "why": "本轮影响度最高的一档，命中「climate、launch」，来源权威。",
+      "score": 8.99,
+      "brief": "美国人工智能公司Anthropic当地时间19日在纽约纳斯达克证券交易所上市，其首次公开募股(IPO)融资总额超过813亿美元，创下美股史上最大IPO融资规模纪录。 扣除约19.6亿美元的老股出售部分，两笔交易完成后，Anthropic自身预计可获得约1054亿美元。",
+      "why": "本轮影响度最高的一档，3 家媒体同时报道。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
-        "一手来源，可信度高，可直接引用"
+        "量化信号：813.4亿、83美元"
       ],
       "horizon": "短期"
     },
     {
-      "id": "VG9kYXkncyBU",
-      "title": "Today's Thanksgiving holiday was invented amid the Civil War to unite a divided country",
-      "url": "https://phys.org/news/2026-11-today-thanksgiving-holiday-civil-war.html",
-      "source": "Phys.org",
-      "category": "frontier",
-      "score": 8.81,
-      "brief": "Thanksgiving as we know it today was created in the mid-1800s to unify a nation and was often used to assimilate new immigrants.",
-      "why": "本轮影响度最高的一档，2 家媒体同时报道，命中「war」。",
-      "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
-      ],
-      "horizon": "中期"
-    },
-    {
-      "id": "Rm9ybWVyIENs",
-      "title": "Former Climate Diplomats Blame Three Nations for Research Funding Stalemate",
-      "url": "https://insideclimatenews.org/news/18112026/cop31-russia-saudi-arabia-india-blocking-progress/",
-      "source": "Inside Climate News",
+      "id": "U3R1ZHkgcmFp",
+      "title": "Study raises doubts about combining vaccine, monoclonal antibody to protect against malaria",
+      "url": "https://www.statnews.com/2026/11/19/malaria-monoclonal-antibody-l9ls-vaccine-r21-infant-study-mali/?utm_campaign=rss",
+      "source": "STAT News",
       "category": "survival",
-      "score": 8.62,
-      "brief": "ANTALYA, Turkey—The science that guides negotiators and policymakers at the United Nations’ COP31 climate change conference is “under a serious and highly politicized attack,” said Laurence…",
-      "why": "本轮影响度最高的一档，命中「climate、research」。",
+      "score": 8.98,
+      "brief": "A monoclonal antibody holds promise in preventing malaria, but researchers found it interfered with a new vaccine when used in babies.",
+      "why": "本轮影响度最高的一档，命中「vaccine、study」。",
       "impact": [
         "公共健康与资源约束：影响的是成本曲线和监管强度"
       ],
       "horizon": "长期"
     },
     {
-      "id": "Q29tbWlzc2lv",
-      "title": "Commission sets up new EU Sanctions Office and appoints new EU Sanctions Envoy",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2499",
-      "source": "欧盟委员会",
+      "id": "6LSi57uP5pep",
+      "title": "财经早知道｜中俄美元首发表和平宣言",
+      "url": "https://finance.caixin.com/2026-11-20/102506835.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 8.7,
+      "brief": "推荐：2027届高校毕业生规模公布 预计1299万人； 中方将提供2000万美元资助务实合作，在深圳设立亚太共同体研究中心，并在数字技术、数据跨境流动等领域设立合作机构。",
+      "why": "本轮影响度最高的一档，命中「战争」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：11月、19日"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5LiT6K6_772c",
+      "title": "专访｜世界粮食计划署气候与韧性司司长：响应越早，救灾总成本越低",
+      "url": "https://science.caixin.com/2026-11-19/102506793.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 8.63,
+      "brief": "研究和实例已证实，如果进行预见性行动，每投入1美元，平均可节省3.5至7美元的灾害损失和灾后响应成本 【财新网】 “早期气象预警技术发展到今天，我们再也没有不作为的借口了。 当前因厄尔尼诺现象，全球出现大气环流异常，造成诸多地区发生极端干旱与洪涝，对粮食安全和营养状况的冲击将在部分地区持续恶化，并延续至2027年甚至2028年初。",
+      "why": "本轮影响度最高的一档，命中「气候、粮食」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2027年、2028年"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5Zu96ZmF6IO9",
+      "title": "国际能源署：中东冲突很可能对能源市场构成持久影响",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-20/10734995.shtml",
+      "source": "中新网国际",
       "category": "order",
-      "score": 7.81,
-      "brief": "European Commission Press release Brussels, 18 Nov 2026 Today, the Commission has created the EU Sanctions Office to bring together the Commission's expertise on the entire sanctions…",
-      "why": "本轮影响度最高的一档，命中「sanction」，来源权威。",
+      "score": 8.45,
+      "brief": "（记者 李洋）国际能源署当地时间19日发布《2026年世界能源展望》报告，警告中东冲突很可能对能源市场构成持久影响。",
+      "why": "本轮影响度最高的一档，命中「冲突」。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
-        "一手来源，可信度高，可直接引用"
+        "量化信号：19日、2026年"
       ],
       "horizon": "短期"
     },
     {
-      "id": "QW1lcmljYeKA",
-      "title": "America’s AI Chip War Is Heating Up in the Dumbest Possible Ways",
-      "url": "https://www.wired.com/story/the-ai-chip-war-meets-the-jensen-huang-affair/",
-      "source": "Wired",
+      "id": "5Lqk5piT5ZGY",
+      "title": "交易员押注三大央行利率将在数年内保持高位",
+      "url": "https://www.36kr.com/newsflashes/4077293390517127",
+      "source": "36氪 快讯",
       "category": "frontier",
-      "score": 7.8,
-      "brief": "The Trump administration announced plans to clamp down on China’s access to AI chips. Apparently, the cheating scandal of the century was the motivation they were missing.",
-      "why": "本轮影响度最高的一档，命中「war、chip」。",
+      "score": 8.25,
+      "brief": "交易员押注主要央行在2027年底结束加息后，将在数年内基本维持利率不变。 根据利率期货定价，预计未来12个月美联储、欧洲央行和英国央行都将进一步加息，此后至少到2031年基本按兵不动。",
+      "why": "本轮影响度最高的一档，命中「央行、利率」。",
       "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "量化信号：2027年、2031年"
       ],
       "horizon": "中期"
-    },
-    {
-      "id": "QmFpbiBQdXNo",
-      "title": "Bain Pushes Back LNG Glut Outlook to 2030 as War Tightens Market",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-18/bain-pushes-back-lng-glut-outlook-to-2030-as-war-tightens-market",
-      "source": "彭博社 市场",
-      "category": "economy",
-      "score": 7.76,
-      "brief": "A looming global glut of liquefied natural gas has been pushed back by more than a year as the conflict in the Middle East disrupts supplies and delays projects, according to Bain & Co.,…",
-      "why": "本轮影响度最高的一档，命中「war」。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动"
-      ],
-      "horizon": "短期"
     }
   ],
   "watch": [
     {
-      "title": "‘Phantom forests’ in Australia’s arid outback used to create carbon credits meant to offset emissions, report claims",
-      "source": "Guardian",
-      "url": "https://www.theguardian.com/environment/2026/nov/18/phantom-forests-in-australian-arid-outback-used-to-create-carbon-credits-meant-to-offset-emissions-report-claims"
+      "title": "Price tag for US war in Iran barrels past $48 billion",
+      "source": "德国之声",
+      "url": "https://www.dw.com/en/price-tag-for-us-war-in-iran-barrels-past-48-billion/a-79998255?maca=en-rss-en-all-1573-rdf"
     },
     {
-      "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
-      "source": "BBC",
-      "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss"
+      "title": "AI helps researchers investigate how thousands of medical studies share code",
+      "source": "MIT News",
+      "url": "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119"
     },
     {
-      "title": "Putin’s nuclear briefcase makes surprise appearance at China summit",
+      "title": "How vaccine fears fuelled a major measles comeback in the US",
       "source": "半岛电视台",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/putins-nuclear-briefcase-makes-surprise-appearance-at-china-summit?traffic_source=rss"
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/how-vaccine-fears-fuelled-a-major-measles-comeback-in-the-us?traffic_source=rss"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1228,
-    "events": 1203,
-    "sources": "98/108",
+    "scanned": 1244,
+    "events": 1220,
+    "sources": "100/108",
     "candidates": 10
   }
 };
