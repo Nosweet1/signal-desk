@@ -1,120 +1,120 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-20",
-  "generatedAt": "2026-11-20T00:00:29.864Z",
-  "headline": "主线：vaccine / study / 战争｜首条「Anthropic上市 创史上最大IPO融资纪录」",
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T00:03:17.655Z",
+  "headline": "主线：联合国 / 粮食 / trial｜首条「约旦河西岸：定居者袭击事件创纪录 联合国敦促以…」",
   "items": [
     {
-      "id": "QW50aHJvcGlj",
-      "title": "Anthropic上市 创史上最大IPO融资纪录",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-20/10734997.shtml",
-      "source": "中新网国际",
+      "id": "57qm5pem5rKz",
+      "title": "约旦河西岸：定居者袭击事件创纪录 联合国敦促以色列保护农民",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143241",
+      "source": "联合国新闻",
       "category": "order",
-      "score": 8.99,
-      "brief": "美国人工智能公司Anthropic当地时间19日在纽约纳斯达克证券交易所上市，其首次公开募股(IPO)融资总额超过813亿美元，创下美股史上最大IPO融资规模纪录。 扣除约19.6亿美元的老股出售部分，两笔交易完成后，Anthropic自身预计可获得约1054亿美元。",
-      "why": "本轮影响度最高的一档，3 家媒体同时报道。",
+      "score": 8.35,
+      "brief": "联合国机构和人道主义非政府组织周五表示，在今年被占领的约旦河西岸橄榄收获季期间，以色列定居者发动了400多次袭击，造成人员伤亡或财产损失——这一数字超过了以往任何一个收获季。",
+      "why": "本轮影响度最高的一档，命中「联合国」，来源权威。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
-        "量化信号：813.4亿、83美元"
+        "一手来源，可信度高，可直接引用"
       ],
       "horizon": "短期"
     },
     {
-      "id": "U3R1ZHkgcmFp",
-      "title": "Study raises doubts about combining vaccine, monoclonal antibody to protect against malaria",
-      "url": "https://www.statnews.com/2026/11/19/malaria-monoclonal-antibody-l9ls-vaccine-r21-infant-study-mali/?utm_campaign=rss",
-      "source": "STAT News",
-      "category": "survival",
-      "score": 8.98,
-      "brief": "A monoclonal antibody holds promise in preventing malaria, but researchers found it interfered with a new vaccine when used in babies.",
-      "why": "本轮影响度最高的一档，命中「vaccine、study」。",
+      "id": "57Ku6aOf572y",
+      "title": "粮食署计划2027年援助9100万人",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143240",
+      "source": "联合国新闻",
+      "category": "order",
+      "score": 8.35,
+      "brief": "世界粮食计划署周五表示，计划在2027年为9100万人提供援助，需要121亿美元资金。 该机构警告，资金持续短缺将使更多人陷入饥饿，新一轮全球粮食危机可能正在逼近。",
+      "why": "本轮影响度最高的一档，命中「粮食」，来源权威。",
       "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度"
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：2027年、9100万"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "W0NvbW1lbnRd",
+      "title": "[Comment] Sacituzumab tirumotecan in previously treated endometrial cancer",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02250-6/fulltext?rss=yes",
+      "source": "柳叶刀",
+      "category": "survival",
+      "score": 7.7,
+      "brief": "Endometrial cancer is the most common gynaecological cancer in high-income countries, the sixth most common cancer in women worldwide,1 and one of few cancers for which both the incidence…",
+      "why": "本轮影响度最高的一档，命中「trial」，来源权威。",
+      "impact": [
+        "公共健康与资源约束：影响的是成本曲线和监管强度",
+        "量化信号：75%"
       ],
       "horizon": "长期"
     },
     {
-      "id": "6LSi57uP5pep",
-      "title": "财经早知道｜中俄美元首发表和平宣言",
-      "url": "https://finance.caixin.com/2026-11-20/102506835.html",
-      "source": "财新",
-      "category": "economy",
-      "score": 8.7,
-      "brief": "推荐：2027届高校毕业生规模公布 预计1299万人； 中方将提供2000万美元资助务实合作，在深圳设立亚太共同体研究中心，并在数字技术、数据跨境流动等领域设立合作机构。",
-      "why": "本轮影响度最高的一档，命中「战争」。",
+      "id": "W1dvcmxkIFJl",
+      "title": "[World Report] Research Focus: Te Poutoko Ora a Kiwa (Centre for Pacific and Global Health)",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02344-5/fulltext?rss=yes",
+      "source": "柳叶刀",
+      "category": "survival",
+      "score": 7.7,
+      "brief": "Based at the University of Auckland, the Centre seeks to better understand the intersections between health, climate change, and social inequities. Sima Barmania reports from Auckland.",
+      "why": "本轮影响度最高的一档，命中「research」，来源权威。",
       "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "量化信号：11月、19日"
+        "公共健康与资源约束：影响的是成本曲线和监管强度",
+        "一手来源，可信度高，可直接引用"
       ],
-      "horizon": "短期"
+      "horizon": "长期"
     },
     {
-      "id": "5LiT6K6_772c",
-      "title": "专访｜世界粮食计划署气候与韧性司司长：响应越早，救灾总成本越低",
-      "url": "https://science.caixin.com/2026-11-19/102506793.html",
-      "source": "财新",
-      "category": "economy",
-      "score": 8.63,
-      "brief": "研究和实例已证实，如果进行预见性行动，每投入1美元，平均可节省3.5至7美元的灾害损失和灾后响应成本 【财新网】 “早期气象预警技术发展到今天，我们再也没有不作为的借口了。 当前因厄尔尼诺现象，全球出现大气环流异常，造成诸多地区发生极端干旱与洪涝，对粮食安全和营养状况的冲击将在部分地区持续恶化，并延续至2027年甚至2028年初。",
-      "why": "本轮影响度最高的一档，命中「气候、粮食」。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "量化信号：2027年、2028年"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "5Zu96ZmF6IO9",
-      "title": "国际能源署：中东冲突很可能对能源市场构成持久影响",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-20/10734995.shtml",
-      "source": "中新网国际",
-      "category": "order",
-      "score": 8.45,
-      "brief": "（记者 李洋）国际能源署当地时间19日发布《2026年世界能源展望》报告，警告中东冲突很可能对能源市场构成持久影响。",
-      "why": "本轮影响度最高的一档，命中「冲突」。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "量化信号：19日、2026年"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "5Lqk5piT5ZGY",
-      "title": "交易员押注三大央行利率将在数年内保持高位",
-      "url": "https://www.36kr.com/newsflashes/4077293390517127",
-      "source": "36氪 快讯",
+      "id": "TWV0YSByZWNv",
+      "title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
+      "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+      "source": "Ars Technica",
       "category": "frontier",
-      "score": 8.25,
-      "brief": "交易员押注主要央行在2027年底结束加息后，将在数年内基本维持利率不变。 根据利率期货定价，预计未来12个月美联储、欧洲央行和英国央行都将进一步加息，此后至少到2031年基本按兵不动。",
-      "why": "本轮影响度最高的一档，命中「央行、利率」。",
+      "score": 7.59,
+      "brief": "Meta is “re-evaluating” 2030 sustainability goals. Will others follow?",
+      "why": "本轮影响度最高的一档，命中「emissions」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "QSB0aW55IHN1",
+      "title": "A tiny superconducting sandwich could help computers use less energy",
+      "url": "https://news.mit.edu/2026/tiny-superconducting-sandwich-could-help-computers-use-less-energy-1120",
+      "source": "MIT News",
+      "category": "frontier",
+      "score": 7.16,
+      "brief": "MIT researchers combined superconducting and magnetic layers in a tiny device offering persistent memory and signal control for more energy-efficient computing.",
+      "why": "本轮影响度最高的一档，来源权威。",
       "impact": [
         "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
-        "量化信号：2027年、2031年"
+        "一手来源，可信度高，可直接引用"
       ],
       "horizon": "中期"
     }
   ],
   "watch": [
     {
-      "title": "Price tag for US war in Iran barrels past $48 billion",
+      "title": "At COP31, conflict over climate science slows action on global warming",
       "source": "德国之声",
-      "url": "https://www.dw.com/en/price-tag-for-us-war-in-iran-barrels-past-48-billion/a-79998255?maca=en-rss-en-all-1573-rdf"
+      "url": "https://www.dw.com/en/at-cop31-conflict-over-climate-science-slows-action-on-global-warming/a-80004894?maca=en-rss-en-all-1573-rdf"
     },
     {
-      "title": "AI helps researchers investigate how thousands of medical studies share code",
-      "source": "MIT News",
-      "url": "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119"
-    },
-    {
-      "title": "How vaccine fears fuelled a major measles comeback in the US",
+      "title": "Rahul Gandhi backs strong India-Israel ties despite Gaza war",
       "source": "半岛电视台",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/how-vaccine-fears-fuelled-a-major-measles-comeback-in-the-us?traffic_source=rss"
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/rahul-gandhi-backs-strong-india-israel-ties-despite-gaza-war?traffic_source=rss"
+    },
+    {
+      "title": "Fossil fuel talks deadlock pushes COP31 climate summit into overtime",
+      "source": "半岛电视台",
+      "url": "https://www.aljazeera.com/news/2026/11/20/fossil-fuel-talks-deadlock-pushes-cop31-climate-summit-into-overtime?traffic_source=rss"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1244,
-    "events": 1220,
-    "sources": "100/108",
+    "scanned": 1234,
+    "events": 1215,
+    "sources": "96/108",
     "candidates": 10
   }
 };
