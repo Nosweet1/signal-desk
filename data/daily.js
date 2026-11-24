@@ -1,46 +1,46 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-23",
-  "generatedAt": "2026-11-22T23:59:08.914Z",
-  "headline": "主线：气候 / climate / policy｜首条「土耳其气候大会加时近50小时后闭幕 《安塔利亚…」",
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T00:06:35.490Z",
+  "headline": "主线：climate / policy / sanction｜首条「Philip R. Lane: Climate…」",
   "items": [
     {
-      "id": "5Zyf6ICz5YW2",
-      "title": "土耳其气候大会加时近50小时后闭幕 《安塔利亚契约》草案未获通过",
-      "url": "https://science.caixin.com/2026-11-23/102507684.html",
-      "source": "财新",
+      "id": "UGhpbGlwIFIu",
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+      "source": "ECB 欧洲央行",
       "category": "economy",
-      "score": 8.8,
-      "brief": "COP31主席库鲁姆在闭幕会议上承认，围绕化石燃料问题，各方谈判持续陷入僵局，因而无法就最终文本达成一致 【财新网】 当地时间11月22日晚，《联合国气候变化框架公约》（UNFCCC）第三十一次缔约方大会（COP31）在土耳其安塔利亚闭幕。",
-      "why": "本轮影响度最高的一档，命中「气候」。",
+      "score": 9.26,
+      "brief": "该信源未提供摘要，点标题看原文。",
+      "why": "本轮影响度最高的一档，命中「climate、policy」，来源权威。",
       "impact": [
         "资本与就业：资金流向和用工需求会先动",
-        "量化信号：11月、22日"
+        "一手来源，可信度高，可直接引用"
       ],
       "horizon": "短期"
     },
     {
-      "id": "VU7igJlzIENP",
-      "title": "UN’s COP31 Climate Conference Fizzles Out as Global Policy Divides Deepen",
-      "url": "https://insideclimatenews.org/news/22112026/uns-cop31-climate-conference-fizzles-out-as-global-policy-divides-deepen/",
-      "source": "Inside Climate News",
-      "category": "survival",
-      "score": 8.42,
-      "brief": "ANTALYA, Turkey—By the time the United Nations COP31 climate talks ended Sunday afternoon, the conference center resembled a going-out-of-business sale at a pawnshop for broken dreams. As…",
-      "why": "本轮影响度最高的一档，命中「climate、policy」。",
+      "id": "RVUgcGxhbnMg",
+      "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
+      "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
+      "source": "半岛电视台",
+      "category": "order",
+      "score": 9.1,
+      "brief": "Proposed sanctions aim to curb Russian crypto financing and 'propaganda' in sports.",
+      "why": "本轮影响度最高的一档，命中「sanction、ban」。",
       "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度"
+        "政策与监管口径：合规边界变了，商业模型跟着变"
       ],
-      "horizon": "长期"
+      "horizon": "短期"
     },
     {
-      "id": "Q29wMzEgbGVm",
-      "title": "Cop31 left Chris Bowen stuck between petrostates and climate reality. But the f-word failure is not his alone",
-      "url": "https://www.theguardian.com/environment/2026/nov/23/cop31-left-chris-bowen-stuck-between-petrostates-and-climate-reality-but-the-failure-to-say-the-f-word-is-not-his-alone",
-      "source": "Guardian",
+      "id": "5a6J55CG5Lya",
+      "title": "安理会讨论乌克兰局势：袭击加剧平民苦难，黑海粮食运输受阻",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143250",
+      "source": "联合国新闻",
       "category": "order",
-      "score": 8.27,
-      "brief": "Australia’s climate change minister will face a torrent of criticism over his role, but disagreement over fossil fuels proved an unbridgeable sticking point After delivering a major speech…",
-      "why": "本轮影响度最高的一档，命中「climate」，来源权威。",
+      "score": 8.74,
+      "brief": "联合国负责政治事务的副秘书长迪卡洛、世界粮食计划署执行主任林德伯格和联合国开发计划署署长德克罗周一在安理会就乌克兰局势作通报，指出俄罗斯对乌克兰能源及其他民用基础设施的持续袭击，正在加剧平民苦难，随着冬季临近，供电、供暖和供水中断带来的人道主义风险进一步上升。 与此同时，黑海地区的袭击持续威胁粮食运输，影响全球粮食安全。",
+      "why": "本轮影响度最高的一档，命中「粮食、安理会」，来源权威。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
         "一手来源，可信度高，可直接引用"
@@ -48,72 +48,71 @@ window.SIGNAL_DAILY = {
       "horizon": "短期"
     },
     {
-      "id": "44CQ6ZKb5pmo",
-      "title": "【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
-      "url": "https://www.tmtpost.com/8214014.html",
-      "source": "钛媒体",
+      "id": "TmV3IHN0dWR5",
+      "title": "New study reveals how modern humans may have driven Neanderthals to extinction",
+      "url": "https://phys.org/news/2026-11-reveals-modern-humans-driven-neanderthals.html",
+      "source": "Phys.org",
+      "category": "frontier",
+      "score": 8.63,
+      "brief": "The last of the Neanderthals died out in Europe around the same time that our own species, Homo sapiens, was spreading across the continent. Were these two events connected, or was it just…",
+      "why": "本轮影响度最高的一档，命中「extinction、study」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "UmVwb3J0czog",
+      "title": "Reports: Russia may launch nuclear weapon into orbit as soon as next month",
+      "url": "https://arstechnica.com/space/2026/11/russia-may-launch-a-nuclear-armed-satellite-far-sooner-than-we-thought/",
+      "source": "Ars Technica",
+      "category": "frontier",
+      "score": 8.48,
+      "brief": "A nuclear detonation in space \"could cause rapid and sudden loss or degradation of thousands of satellites.\"",
+      "why": "本轮影响度最高的一档，命中「nuclear、launch」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "SW5zaWRlIHRo",
+      "title": "Inside the ‘war room’ that lobbied Trump to bring back Nvidia’s Huang",
+      "url": "https://www.ft.com/content/82d3be02-8ac7-4acb-aefa-6e3722ee05cc?syn-25a6b1a6=1",
+      "source": "FT",
       "category": "economy",
-      "score": 8.01,
-      "brief": "多品牌宣布下调金饰克价； 美方拟禁止中国电信运营商直接获取美国互联网电话号码资源，商务部回应；",
-      "why": "本轮影响度最高的一档，命中「量子计算、首次」。",
+      "score": 8.4,
+      "brief": "Silicon Valley titans enlisted US president and JD Vance to rescue the billionaire tech boss whom they viewed as critical for the AI industry",
+      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
       "impact": [
-        "资本与就业：资金流向和用工需求会先动"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "Q09QMzEgZW5k",
-      "title": "COP31 ends without climate pact as UN chief warns there is ‘no ambiguity in the science’",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168855",
-      "source": "UN News",
-      "category": "order",
-      "score": 7.87,
-      "brief": "COP31 ended on Sunday without a climate pact after negotiators failed to overcome divisions over fossil fuels, bringing two weeks of talks and two days of overtime to a close that UN…",
-      "why": "本轮影响度最高的一档，命中「climate」，来源权威。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "资本与就业：资金流向和用工需求会先动",
         "一手来源，可信度高，可直接引用"
       ],
       "horizon": "短期"
-    },
-    {
-      "id": "QnJpdG9uIHN3",
-      "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
-      "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
-      "source": "卫报 环境",
-      "category": "survival",
-      "score": 6.63,
-      "brief": "UN patron Lewis Pugh saw ships ablaze and fighter jets overhead during three-day swim as Iran conflict continues A British endurance swimmer has completed a three-day swim through the…",
-      "why": "影响度靠前，命中「war」。",
-      "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度",
-        "量化信号：15km"
-      ],
-      "horizon": "长期"
     }
   ],
   "watch": [
     {
-      "title": "Why has the COP31 climate summit failed to reach agreement?",
-      "source": "半岛电视台",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/11/22/why-has-the-cop31-climate-summit-failed-to-reach-agreement?traffic_source=rss"
+      "title": "利比亚：联合国特派团敦促对班加西港口袭击事件展开调查",
+      "source": "联合国新闻",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143251"
     },
     {
-      "title": "Sanctioned Russian vessel attacked by drones near Finland",
-      "source": "FT",
-      "url": "https://www.ft.com/content/2c959c95-97a5-4957-9eb2-8436c34ba374?syn-25a6b1a6=1"
+      "title": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "title": "COP31 climate talks fail after stand-off over fossil fuels",
-      "source": "FT",
-      "url": "https://www.ft.com/content/1b6089f6-2201-43b4-8ed4-0c689a916afa?syn-25a6b1a6=1"
+      "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1255,
-    "events": 1232,
-    "sources": "99/108",
+    "scanned": 1190,
+    "events": 1159,
+    "sources": "97/108",
     "candidates": 10
   }
 };
