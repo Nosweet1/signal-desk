@@ -1,17 +1,17 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-24",
-  "generatedAt": "2026-11-24T00:06:35.490Z",
-  "headline": "主线：climate / policy / sanction｜首条「Philip R. Lane: Climate…」",
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T00:03:33.675Z",
+  "headline": "主线：sanction / trial / nuclear｜首条「Huawei convicted in US …」",
   "items": [
     {
-      "id": "UGhpbGlwIFIu",
-      "title": "Philip R. Lane: Climate change and monetary policy",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
-      "source": "ECB 欧洲央行",
+      "id": "SHVhd2VpIGNv",
+      "title": "Huawei convicted in US trial that exposed corporate espionage and sanctions evasion",
+      "url": "https://www.ft.com/content/6c64b8b8-531c-4eea-8fd0-90c4c4967ab9?syn-25a6b1a6=1",
+      "source": "FT",
       "category": "economy",
-      "score": 9.26,
-      "brief": "该信源未提供摘要，点标题看原文。",
-      "why": "本轮影响度最高的一档，命中「climate、policy」，来源权威。",
+      "score": 9.65,
+      "brief": "Verdict marks a victory for federal prosecutors after an eight-year legal battle with the Chinese telecoms company",
+      "why": "本轮影响度最高的一档，命中「sanction、trial」，来源权威。",
       "impact": [
         "资本与就业：资金流向和用工需求会先动",
         "一手来源，可信度高，可直接引用"
@@ -19,28 +19,14 @@ window.SIGNAL_DAILY = {
       "horizon": "短期"
     },
     {
-      "id": "RVUgcGxhbnMg",
-      "title": "EU plans sports ban in sweeping new Russia sanctions proposal",
-      "url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal?traffic_source=rss",
-      "source": "半岛电视台",
+      "id": "QnVybmhhbSBs",
+      "title": "Burnham launches inquiry into nuclear bomb test veterans’ records",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/24/burnham-inquiry-nuclear-bomb-test-veterans",
+      "source": "Guardian",
       "category": "order",
-      "score": 9.1,
-      "brief": "Proposed sanctions aim to curb Russian crypto financing and 'propaganda' in sports.",
-      "why": "本轮影响度最高的一档，命中「sanction、ban」。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "5a6J55CG5Lya",
-      "title": "安理会讨论乌克兰局势：袭击加剧平民苦难，黑海粮食运输受阻",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143250",
-      "source": "联合国新闻",
-      "category": "order",
-      "score": 8.74,
-      "brief": "联合国负责政治事务的副秘书长迪卡洛、世界粮食计划署执行主任林德伯格和联合国开发计划署署长德克罗周一在安理会就乌克兰局势作通报，指出俄罗斯对乌克兰能源及其他民用基础设施的持续袭击，正在加剧平民苦难，随着冬季临近，供电、供暖和供水中断带来的人道主义风险进一步上升。 与此同时，黑海地区的袭击持续威胁粮食运输，影响全球粮食安全。",
-      "why": "本轮影响度最高的一档，命中「粮食、安理会」，来源权威。",
+      "score": 9.64,
+      "brief": "Hillsborough panel chair to lead investigation into programme of blood tests during nuclear weapons trials Andy Burnham has launched a Hillsborough-style investigation to examine a…",
+      "why": "本轮影响度最高的一档，命中「nuclear、launch」，来源权威。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
         "一手来源，可信度高，可直接引用"
@@ -48,71 +34,88 @@ window.SIGNAL_DAILY = {
       "horizon": "短期"
     },
     {
-      "id": "TmV3IHN0dWR5",
-      "title": "New study reveals how modern humans may have driven Neanderthals to extinction",
-      "url": "https://phys.org/news/2026-11-reveals-modern-humans-driven-neanderthals.html",
-      "source": "Phys.org",
-      "category": "frontier",
-      "score": 8.63,
-      "brief": "The last of the Neanderthals died out in Europe around the same time that our own species, Homo sapiens, was spreading across the continent. Were these two events connected, or was it just…",
-      "why": "本轮影响度最高的一档，命中「extinction、study」。",
+      "id": "TnVjbGVhciB0",
+      "title": "Nuclear test veterans will get full truth, says Burnham, as he confirms independent panel",
+      "url": "https://www.bbc.co.uk/news/articles/c6808k8dxvgko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "order",
+      "score": 8.42,
+      "brief": "The prime minister says a Hillsborough-style independent panel will examine the health legacy of Britain's Cold War-era atomic programme.",
+      "why": "本轮影响度最高的一档，命中「nuclear」，来源权威。",
       "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
-      ],
-      "horizon": "中期"
-    },
-    {
-      "id": "UmVwb3J0czog",
-      "title": "Reports: Russia may launch nuclear weapon into orbit as soon as next month",
-      "url": "https://arstechnica.com/space/2026/11/russia-may-launch-a-nuclear-armed-satellite-far-sooner-than-we-thought/",
-      "source": "Ars Technica",
-      "category": "frontier",
-      "score": 8.48,
-      "brief": "A nuclear detonation in space \"could cause rapid and sudden loss or degradation of thousands of satellites.\"",
-      "why": "本轮影响度最高的一档，命中「nuclear、launch」。",
-      "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
-      ],
-      "horizon": "中期"
-    },
-    {
-      "id": "SW5zaWRlIHRo",
-      "title": "Inside the ‘war room’ that lobbied Trump to bring back Nvidia’s Huang",
-      "url": "https://www.ft.com/content/82d3be02-8ac7-4acb-aefa-6e3722ee05cc?syn-25a6b1a6=1",
-      "source": "FT",
-      "category": "economy",
-      "score": 8.4,
-      "brief": "Silicon Valley titans enlisted US president and JD Vance to rescue the billionaire tech boss whom they viewed as critical for the AI industry",
-      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
+        "政策与监管口径：合规边界变了，商业模型跟着变",
         "一手来源，可信度高，可直接引用"
       ],
       "horizon": "短期"
+    },
+    {
+      "id": "U2VsZi1hc3Nl",
+      "title": "Self-assembling nanocarriers show promise for delivering CRISPR to tumors and slowing growth",
+      "url": "https://phys.org/news/2026-11-nanocarriers-crispr-tumors-growth.html",
+      "source": "Phys.org",
+      "category": "frontier",
+      "score": 8.23,
+      "brief": "A self-assembling supramolecular nanocarrier protects Cas9 RNPs from degradation, enhances systemic delivery and preferential tumor accumulation, and enables pH-responsive intracellular…",
+      "why": "本轮影响度最高的一档，命中「CRISPR」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "量化信号：37.2%、1.5%"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "T1BFQyvlsIbm",
+      "title": "OPEC+将敲定2027年产量政策，伊朗战争与内部分歧加剧不确定性",
+      "url": "https://wallstreetcn.com/articles/3786624",
+      "source": "华尔街见闻",
+      "category": "economy",
+      "score": 8.17,
+      "brief": "油价大跌，但短期供应冲击或有限 布伦特原油期货本月累计跌幅接近25%，主要原因在于沙特及其他波斯湾出口国成功将原油以战前价格转移出该地区，实体市场供应显得相对充裕。 据知情人士9月透露，伊拉克寻求将产量基准定在每日600万桶。",
+      "why": "本轮影响度最高的一档，命中「战争、政策」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2027年、25%"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5peg6ZyA6YCQ",
+      "title": "无需逐字拼写，脑机系统可选择符合用户表达意图的内容",
+      "url": "https://www.36kr.com/newsflashes/4084383503460992",
+      "source": "36氪 快讯",
+      "category": "frontier",
+      "score": 8.1,
+      "brief": "非侵入式脑机接口搭上人工智能（AI）“快车”，能够突破逐字拼写限制，帮助用户更快地将脑活动转化为文字和短语。 在实验中，该系统的语义交流速度达到传统词典式预测方法的近3倍。",
+      "why": "本轮影响度最高的一档，命中「脑机」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "量化信号：3倍"
+      ],
+      "horizon": "中期"
     }
   ],
   "watch": [
     {
-      "title": "利比亚：联合国特派团敦促对班加西港口袭击事件展开调查",
-      "source": "联合国新闻",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143251"
+      "title": "World News in Brief: Vaccine crisis in Yemen, aid for Ukraine, another UNRWA staffer killed",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168871"
     },
     {
-      "title": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
-      "source": "BBC",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo?at_medium=RSS&at_campaign=rss"
+      "title": "Security Council LIVE: Can conflict resolution keep pace as AI and drones reshape war?",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168866"
     },
     {
-      "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
-      "source": "BBC",
-      "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss"
+      "title": "The Gulf survived a short, hot war. A long, cold one will be harder",
+      "source": "经济学人",
+      "url": "https://www.economist.com/middle-east-and-africa/2026/11/24/the-gulf-survived-a-short-hot-war-a-long-cold-one-will-be-harder"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1190,
-    "events": 1159,
-    "sources": "97/108",
+    "scanned": 1115,
+    "events": 1098,
+    "sources": "89/108",
     "candidates": 10
   }
 };

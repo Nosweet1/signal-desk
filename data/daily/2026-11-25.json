@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T00:03:33.675Z",
+  "headline": "主线：sanction / trial / nuclear｜首条「Huawei convicted in US …」",
+  "items": [
+    {
+      "id": "SHVhd2VpIGNv",
+      "title": "Huawei convicted in US trial that exposed corporate espionage and sanctions evasion",
+      "url": "https://www.ft.com/content/6c64b8b8-531c-4eea-8fd0-90c4c4967ab9?syn-25a6b1a6=1",
+      "source": "FT",
+      "category": "economy",
+      "score": 9.65,
+      "brief": "Verdict marks a victory for federal prosecutors after an eight-year legal battle with the Chinese telecoms company",
+      "why": "本轮影响度最高的一档，命中「sanction、trial」，来源权威。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "QnVybmhhbSBs",
+      "title": "Burnham launches inquiry into nuclear bomb test veterans’ records",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/24/burnham-inquiry-nuclear-bomb-test-veterans",
+      "source": "Guardian",
+      "category": "order",
+      "score": 9.64,
+      "brief": "Hillsborough panel chair to lead investigation into programme of blood tests during nuclear weapons trials Andy Burnham has launched a Hillsborough-style investigation to examine a…",
+      "why": "本轮影响度最高的一档，命中「nuclear、launch」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "TnVjbGVhciB0",
+      "title": "Nuclear test veterans will get full truth, says Burnham, as he confirms independent panel",
+      "url": "https://www.bbc.co.uk/news/articles/c6808k8dxvgko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "order",
+      "score": 8.42,
+      "brief": "The prime minister says a Hillsborough-style independent panel will examine the health legacy of Britain's Cold War-era atomic programme.",
+      "why": "本轮影响度最高的一档，命中「nuclear」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "U2VsZi1hc3Nl",
+      "title": "Self-assembling nanocarriers show promise for delivering CRISPR to tumors and slowing growth",
+      "url": "https://phys.org/news/2026-11-nanocarriers-crispr-tumors-growth.html",
+      "source": "Phys.org",
+      "category": "frontier",
+      "score": 8.23,
+      "brief": "A self-assembling supramolecular nanocarrier protects Cas9 RNPs from degradation, enhances systemic delivery and preferential tumor accumulation, and enables pH-responsive intracellular…",
+      "why": "本轮影响度最高的一档，命中「CRISPR」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "量化信号：37.2%、1.5%"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "T1BFQyvlsIbm",
+      "title": "OPEC+将敲定2027年产量政策，伊朗战争与内部分歧加剧不确定性",
+      "url": "https://wallstreetcn.com/articles/3786624",
+      "source": "华尔街见闻",
+      "category": "economy",
+      "score": 8.17,
+      "brief": "油价大跌，但短期供应冲击或有限 布伦特原油期货本月累计跌幅接近25%，主要原因在于沙特及其他波斯湾出口国成功将原油以战前价格转移出该地区，实体市场供应显得相对充裕。 据知情人士9月透露，伊拉克寻求将产量基准定在每日600万桶。",
+      "why": "本轮影响度最高的一档，命中「战争、政策」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2027年、25%"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "5peg6ZyA6YCQ",
+      "title": "无需逐字拼写，脑机系统可选择符合用户表达意图的内容",
+      "url": "https://www.36kr.com/newsflashes/4084383503460992",
+      "source": "36氪 快讯",
+      "category": "frontier",
+      "score": 8.1,
+      "brief": "非侵入式脑机接口搭上人工智能（AI）“快车”，能够突破逐字拼写限制，帮助用户更快地将脑活动转化为文字和短语。 在实验中，该系统的语义交流速度达到传统词典式预测方法的近3倍。",
+      "why": "本轮影响度最高的一档，命中「脑机」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
+        "量化信号：3倍"
+      ],
+      "horizon": "中期"
+    }
+  ],
+  "watch": [
+    {
+      "title": "World News in Brief: Vaccine crisis in Yemen, aid for Ukraine, another UNRWA staffer killed",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168871"
+    },
+    {
+      "title": "Security Council LIVE: Can conflict resolution keep pace as AI and drones reshape war?",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168866"
+    },
+    {
+      "title": "The Gulf survived a short, hot war. A long, cold one will be harder",
+      "source": "经济学人",
+      "url": "https://www.economist.com/middle-east-and-africa/2026/11/24/the-gulf-survived-a-short-hot-war-a-long-cold-one-will-be-harder"
+    }
+  ],
+  "engine": "rules",
+  "stats": {
+    "scanned": 1115,
+    "events": 1098,
+    "sources": "89/108",
+    "candidates": 10
+  }
+}
