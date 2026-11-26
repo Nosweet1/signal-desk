@@ -1,121 +1,120 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-25",
-  "generatedAt": "2026-11-25T00:03:33.675Z",
-  "headline": "主线：sanction / trial / nuclear｜首条「Huawei convicted in US …」",
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T00:05:21.888Z",
+  "headline": "主线：warming / 粮食 / 饥荒｜首条「Draining peatlands leav…」",
   "items": [
     {
-      "id": "SHVhd2VpIGNv",
-      "title": "Huawei convicted in US trial that exposed corporate espionage and sanctions evasion",
-      "url": "https://www.ft.com/content/6c64b8b8-531c-4eea-8fd0-90c4c4967ab9?syn-25a6b1a6=1",
-      "source": "FT",
-      "category": "economy",
-      "score": 9.65,
-      "brief": "Verdict marks a victory for federal prosecutors after an eight-year legal battle with the Chinese telecoms company",
-      "why": "本轮影响度最高的一档，命中「sanction、trial」，来源权威。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "QnVybmhhbSBs",
-      "title": "Burnham launches inquiry into nuclear bomb test veterans’ records",
-      "url": "https://www.theguardian.com/uk-news/2026/nov/24/burnham-inquiry-nuclear-bomb-test-veterans",
-      "source": "Guardian",
-      "category": "order",
-      "score": 9.64,
-      "brief": "Hillsborough panel chair to lead investigation into programme of blood tests during nuclear weapons trials Andy Burnham has launched a Hillsborough-style investigation to examine a…",
-      "why": "本轮影响度最高的一档，命中「nuclear、launch」，来源权威。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "TnVjbGVhciB0",
-      "title": "Nuclear test veterans will get full truth, says Burnham, as he confirms independent panel",
-      "url": "https://www.bbc.co.uk/news/articles/c6808k8dxvgko?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "order",
-      "score": 8.42,
-      "brief": "The prime minister says a Hillsborough-style independent panel will examine the health legacy of Britain's Cold War-era atomic programme.",
-      "why": "本轮影响度最高的一档，命中「nuclear」，来源权威。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "U2VsZi1hc3Nl",
-      "title": "Self-assembling nanocarriers show promise for delivering CRISPR to tumors and slowing growth",
-      "url": "https://phys.org/news/2026-11-nanocarriers-crispr-tumors-growth.html",
-      "source": "Phys.org",
+      "id": "RHJhaW5pbmcg",
+      "title": "Draining peatlands leaves a long legacy of warming",
+      "url": "https://news.mit.edu/2026/draining-peatlands-leaves-long-warming-legacy-1125",
+      "source": "MIT News",
       "category": "frontier",
-      "score": 8.23,
-      "brief": "A self-assembling supramolecular nanocarrier protects Cas9 RNPs from degradation, enhances systemic delivery and preferential tumor accumulation, and enables pH-responsive intracellular…",
-      "why": "本轮影响度最高的一档，命中「CRISPR」。",
+      "score": 10.5,
+      "brief": "A new study finds the long-term decomposition of drained bogs, fens, and swamps is responsible for about 3 percent of human-caused climate warming.",
+      "why": "本轮影响度最高的一档，2 家媒体同时报道，命中「warming」，来源权威。",
       "impact": [
         "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
-        "量化信号：37.2%、1.5%"
+        "一手来源，可信度高，可直接引用"
       ],
       "horizon": "中期"
     },
     {
-      "id": "T1BFQyvlsIbm",
-      "title": "OPEC+将敲定2027年产量政策，伊朗战争与内部分歧加剧不确定性",
-      "url": "https://wallstreetcn.com/articles/3786624",
-      "source": "华尔街见闻",
-      "category": "economy",
-      "score": 8.17,
-      "brief": "油价大跌，但短期供应冲击或有限 布伦特原油期货本月累计跌幅接近25%，主要原因在于沙特及其他波斯湾出口国成功将原油以战前价格转移出该地区，实体市场供应显得相对充裕。 据知情人士9月透露，伊拉克寻求将产量基准定在每日600万桶。",
-      "why": "本轮影响度最高的一档，命中「战争、政策」。",
+      "id": "57Si6ams6YeM",
+      "title": "索马里：拜多阿饥荒风险缓解 仍有数百万人面临粮食危机",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143266",
+      "source": "联合国新闻",
+      "category": "order",
+      "score": 8.74,
+      "brief": "国际饥荒预测与评估体系“粮食安全阶段综合分类”最新分析显示，索马里拜多阿地区境内流离失所者面临的饥荒风险有所缓解，但仍处于严重粮食不安全和营养不良状态。 预计2026年10月至12月期间，全国仍有530万人面临危机或更严重程度的急性粮食不安全状况。",
+      "why": "本轮影响度最高的一档，命中「粮食、饥荒」，来源权威。",
       "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "量化信号：2027年、25%"
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：2026年、530万"
       ],
       "horizon": "短期"
     },
     {
-      "id": "5peg6ZyA6YCQ",
-      "title": "无需逐字拼写，脑机系统可选择符合用户表达意图的内容",
-      "url": "https://www.36kr.com/newsflashes/4084383503460992",
-      "source": "36氪 快讯",
-      "category": "frontier",
-      "score": 8.1,
-      "brief": "非侵入式脑机接口搭上人工智能（AI）“快车”，能够突破逐字拼写限制，帮助用户更快地将脑活动转化为文字和短语。 在实验中，该系统的语义交流速度达到传统词典式预测方法的近3倍。",
-      "why": "本轮影响度最高的一档，命中「脑机」。",
+      "id": "5Lmf6Zeo5oiY",
+      "title": "也门战争：联合国紧急援助负责人呼吁允许进入受战火影响的社区",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143265",
+      "source": "联合国新闻",
+      "category": "order",
+      "score": 8.74,
+      "brief": "联合国最高援助事务官员弗莱彻在周三抵达也门进行访问时警告说，那里的战争正阻碍家庭获得生存所需的食物和药品，特别是塔伊兹市的家庭。",
+      "why": "本轮影响度最高的一档，命中「战争、联合国」，来源权威。",
       "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
-        "量化信号：3倍"
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "SW1hZ2VzIGZy",
+      "title": "Images from Earth's asteroid defence test reveal new crater",
+      "url": "https://www.bbc.co.uk/news/videos/cmjwjnxp2jgno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC 科学",
+      "category": "survival",
+      "score": 8.49,
+      "brief": "The crash was 'like something out of a disaster movie,' the BBC's science editor Rebecca Morelle says.",
+      "why": "本轮影响度最高的一档，命中「asteroid」，来源权威。",
+      "impact": [
+        "公共健康与资源约束：影响的是成本曲线和监管强度",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "长期"
+    },
+    {
+      "id": "TW9tZW50IE5h",
+      "title": "Moment Nasa spacecraft hit asteroid - and what happened next",
+      "url": "https://www.bbc.co.uk/news/videos/cwe9kxpgz2kpo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC 科学",
+      "category": "survival",
+      "score": 8.03,
+      "brief": "The crash was 'like something out of a disaster movie,' the BBC's science editor Rebecca Morelle says.",
+      "why": "本轮影响度最高的一档，命中「asteroid」，来源权威。",
+      "impact": [
+        "公共健康与资源约束：影响的是成本曲线和监管强度",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "长期"
+    },
+    {
+      "id": "RXVyb3BlYW4g",
+      "title": "European spacecraft finds chaotic scene after asteroid deflection experiment",
+      "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+      "source": "Ars Technica",
+      "category": "frontier",
+      "score": 7.7,
+      "brief": "\"DART made a really, really large mess. However, we didn’t really know what kind of mess.\"",
+      "why": "本轮影响度最高的一档，命中「asteroid」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
       ],
       "horizon": "中期"
     }
   ],
   "watch": [
     {
-      "title": "World News in Brief: Vaccine crisis in Yemen, aid for Ukraine, another UNRWA staffer killed",
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168871"
+      "title": "Treasury raises cost concerns over Milburn plan on youth unemployment",
+      "source": "Guardian",
+      "url": "https://www.theguardian.com/society/2026/nov/25/treasury-spending-concerns-proposed-support-youth-unemployment-milburn-review"
     },
     {
-      "title": "Security Council LIVE: Can conflict resolution keep pace as AI and drones reshape war?",
+      "title": "Somalia: Famine risk decreases in Baidoa – but millions still going hungry",
       "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168866"
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168874"
     },
     {
-      "title": "The Gulf survived a short, hot war. A long, cold one will be harder",
-      "source": "经济学人",
-      "url": "https://www.economist.com/middle-east-and-africa/2026/11/24/the-gulf-survived-a-short-hot-war-a-long-cold-one-will-be-harder"
+      "title": "Yemen war: Emergency aid chief calls for access to war-hit communities",
+      "source": "UN News",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168872"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1115,
-    "events": 1098,
-    "sources": "89/108",
+    "scanned": 1133,
+    "events": 1117,
+    "sources": "93/108",
     "candidates": 10
   }
 };
