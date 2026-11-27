@@ -1,47 +1,62 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-26",
-  "generatedAt": "2026-11-26T00:05:21.888Z",
-  "headline": "主线：warming / 粮食 / 饥荒｜首条「Draining peatlands leav…」",
+  "date": "2026-11-27",
+  "generatedAt": "2026-11-27T00:13:56.629Z",
+  "headline": "主线：疫苗 / 突破 / 央行｜首条「解药｜通用型“白血病疫苗”突破晚期治疗，国内已…」",
   "items": [
     {
-      "id": "RHJhaW5pbmcg",
-      "title": "Draining peatlands leaves a long legacy of warming",
-      "url": "https://news.mit.edu/2026/draining-peatlands-leaves-long-warming-legacy-1125",
-      "source": "MIT News",
-      "category": "frontier",
-      "score": 10.5,
-      "brief": "A new study finds the long-term decomposition of drained bogs, fens, and swamps is responsible for about 3 percent of human-caused climate warming.",
-      "why": "本轮影响度最高的一档，2 家媒体同时报道，命中「warming」，来源权威。",
+      "id": "6Kej6I2v772c",
+      "title": "解药｜通用型“白血病疫苗”突破晚期治疗，国内已布局",
+      "url": "https://www.caixin.com/2026-11-27/102509085.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 10.11,
+      "brief": "GPS在针对急性髓系白血病的关键三期临床试验中将患者生存期延长近10个月，这也是通用型肿瘤疫苗赛道的一项突破性进展 【财新网】 肿瘤疫苗领域，不同路线产品分别报告了或防止癌症复发，或延长患者生命的疗效。",
+      "why": "本轮影响度最高的一档，命中「疫苗、突破」。",
       "impact": [
-        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "中期"
-    },
-    {
-      "id": "57Si6ams6YeM",
-      "title": "索马里：拜多阿饥荒风险缓解 仍有数百万人面临粮食危机",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143266",
-      "source": "联合国新闻",
-      "category": "order",
-      "score": 8.74,
-      "brief": "国际饥荒预测与评估体系“粮食安全阶段综合分类”最新分析显示，索马里拜多阿地区境内流离失所者面临的饥荒风险有所缓解，但仍处于严重粮食不安全和营养不良状态。 预计2026年10月至12月期间，全国仍有530万人面临危机或更严重程度的急性粮食不安全状况。",
-      "why": "本轮影响度最高的一档，命中「粮食、饥荒」，来源权威。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "量化信号：2026年、530万"
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：11月、17日"
       ],
       "horizon": "短期"
     },
     {
-      "id": "5Lmf6Zeo5oiY",
-      "title": "也门战争：联合国紧急援助负责人呼吁允许进入受战火影响的社区",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143265",
+      "id": "5qyn5rSy5aSu",
+      "title": "欧洲央行新行长人选确定 国际清算银行总经理德科斯将接棒拉加德",
+      "url": "https://international.caixin.com/2026-11-27/102509079.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 9.8,
+      "brief": "据英国《金融时报》报道，欧元区大多数国家已经决定支持国际清算银行（BIS）总经理德科斯（Pablo Hernández de Cos）接棒拉加德，在2027年2月出任欧洲央行行长。 《金融时报》报道称，荷兰首相罗布·杰滕已向其他领导人表示，他“将支持”推举德科斯的共识。",
+      "why": "本轮影响度最高的一档，命中「央行」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2027年、11月"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "6IGU5ZCI5Zu9",
+      "title": "联合国大学澳门人工智能大会探讨以人为本的人工智能教育",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143270",
       "source": "联合国新闻",
       "category": "order",
-      "score": 8.74,
-      "brief": "联合国最高援助事务官员弗莱彻在周三抵达也门进行访问时警告说，那里的战争正阻碍家庭获得生存所需的食物和药品，特别是塔伊兹市的家庭。",
-      "why": "本轮影响度最高的一档，命中「战争、联合国」，来源权威。",
+      "score": 9.27,
+      "brief": "第三届联合国大学澳门人工智能大会11月25日至26日在澳门举行，来自全球的400多名政策制定者、教育工作者、学者和青年创新者齐聚一堂，探讨如何利用人工智能促进教育发展，同时确保技术应用符合人的主体性、社会公平和信任等原则。",
+      "why": "本轮影响度最高的一档，命中「联合国」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "量化信号：11月、25日"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "V2hhdCB3b3Vs",
+      "title": "What would happen if Russia detonated a nuclear weapon in space?",
+      "url": "https://www.theguardian.com/world/2026/nov/26/what-would-be-the-fallout-from-a-nuclear-armed-satellite-detonated-into-space",
+      "source": "Guardian",
+      "category": "order",
+      "score": 8.79,
+      "brief": "⁠Sputnik-S, a nuclear-enabled satellite, has been assembled by Russia and could be launched in 60 days, reports say Russia is reportedly preparing to launch a nuclear-armed satellite into…",
+      "why": "本轮影响度最高的一档，命中「nuclear」，来源权威。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
         "一手来源，可信度高，可直接引用"
@@ -49,44 +64,28 @@ window.SIGNAL_DAILY = {
       "horizon": "短期"
     },
     {
-      "id": "SW1hZ2VzIGZy",
-      "title": "Images from Earth's asteroid defence test reveal new crater",
-      "url": "https://www.bbc.co.uk/news/videos/cmjwjnxp2jgno?at_medium=RSS&at_campaign=rss",
-      "source": "BBC 科学",
+      "id": "SW4gYSBmZXJ0",
+      "title": "In a fertility advance, engineered molecular glue stabilizes chromosomes in aging eggs",
+      "url": "https://www.statnews.com/2026/11/26/fertility-advance-engineered-protein-stabilizes-chromosomes-in-aging-eggs/?utm_campaign=rss",
+      "source": "STAT News",
       "category": "survival",
-      "score": 8.49,
-      "brief": "The crash was 'like something out of a disaster movie,' the BBC's science editor Rebecca Morelle says.",
-      "why": "本轮影响度最高的一档，命中「asteroid」，来源权威。",
+      "score": 8.26,
+      "brief": "Researchers engineered a protein system capable of restoring normal chromosome connections in aging mouse eggs, raising hopes of one day improving IVF outcomes",
+      "why": "本轮影响度最高的一档，命中「fertility」。",
       "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度",
-        "一手来源，可信度高，可直接引用"
+        "公共健康与资源约束：影响的是成本曲线和监管强度"
       ],
       "horizon": "长期"
     },
     {
-      "id": "TW9tZW50IE5h",
-      "title": "Moment Nasa spacecraft hit asteroid - and what happened next",
-      "url": "https://www.bbc.co.uk/news/videos/cwe9kxpgz2kpo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC 科学",
-      "category": "survival",
-      "score": 8.03,
-      "brief": "The crash was 'like something out of a disaster movie,' the BBC's science editor Rebecca Morelle says.",
-      "why": "本轮影响度最高的一档，命中「asteroid」，来源权威。",
-      "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度",
-        "一手来源，可信度高，可直接引用"
-      ],
-      "horizon": "长期"
-    },
-    {
-      "id": "RXVyb3BlYW4g",
-      "title": "European spacecraft finds chaotic scene after asteroid deflection experiment",
-      "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
-      "source": "Ars Technica",
+      "id": "6Im-5ruL55eF",
+      "title": "艾滋病疫苗终于触手可及",
+      "url": "https://www.solidot.org/story?sid=86000",
+      "source": "Solidot",
       "category": "frontier",
-      "score": 7.7,
-      "brief": "\"DART made a really, really large mess. However, we didn’t really know what kind of mess.\"",
-      "why": "本轮影响度最高的一档，命中「asteroid」。",
+      "score": 7.07,
+      "brief": "她本可能成为统计数字的一部分，但通过参与 HIV 研究她却给数百万人带来了希望。 科学家现在认为，通过模拟她感染 HIV 过程中的部分关键元素，能训练其他人的免疫系统产生同样强效的抗体去阻断多种不同的 HIV 毒株，最终研发出一种能彻底阻断 HIV 感染疫苗。",
+      "why": "本轮影响度最高的一档，命中「疫苗」。",
       "impact": [
         "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
       ],
@@ -95,26 +94,26 @@ window.SIGNAL_DAILY = {
   ],
   "watch": [
     {
-      "title": "Treasury raises cost concerns over Milburn plan on youth unemployment",
+      "title": "11月27日会员早报：英伟达叫停对东南亚四国的服务器发货 日本央行释放一次加50基点的信号",
+      "source": "华尔街见闻",
+      "url": "https://wallstreetcn.com/member/articles/3786803"
+    },
+    {
+      "title": "危机频发之际，欧洲央行新领导层浮现：鸽派老将、金融学者与市场专家将如何应对下一场风暴？",
+      "source": "华尔街见闻",
+      "url": "https://wallstreetcn.com/articles/3786802"
+    },
+    {
+      "title": "Net migration to UK falls to lowest level since 1997 excluding pandemic",
       "source": "Guardian",
-      "url": "https://www.theguardian.com/society/2026/nov/25/treasury-spending-concerns-proposed-support-youth-unemployment-milburn-review"
-    },
-    {
-      "title": "Somalia: Famine risk decreases in Baidoa – but millions still going hungry",
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168874"
-    },
-    {
-      "title": "Yemen war: Emergency aid chief calls for access to war-hit communities",
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168872"
+      "url": "https://www.theguardian.com/uk-news/2026/nov/26/net-migration-to-uk-falls-to-lowest-level-since-1997-excluding-pandemic"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1133,
-    "events": 1117,
-    "sources": "93/108",
+    "scanned": 1168,
+    "events": 1153,
+    "sources": "97/108",
     "candidates": 10
   }
 };
