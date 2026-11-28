@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T00:06:55.683Z",
+  "headline": "主线：war / nuclear / 央行｜首条「Weary of war but with n…」",
+  "items": [
+    {
+      "id": "V2Vhcnkgb2Yg",
+      "title": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
+      "url": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "order",
+      "score": 7.83,
+      "brief": "Ukraine settles in for another devastating winter as the questions persists: how will it all end?",
+      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变",
+        "一手来源，可信度高，可直接引用"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "V2lsbCBUYWl3",
+      "title": "Will Taiwan vote to revive nuclear power – and why does that matter for AI?",
+      "url": "https://www.aljazeera.com/news/2026/11/27/will-taiwan-vote-to-revive-nuclear-power-and-why-does-that-matter-for-ai?traffic_source=rss",
+      "source": "半岛电视台",
+      "category": "order",
+      "score": 7.77,
+      "brief": "Voters will decide on Saturday whether to scrap the country's 'nuclear-free homeland' policy.",
+      "why": "本轮影响度最高的一档，命中「nuclear」。",
+      "impact": [
+        "政策与监管口径：合规边界变了，商业模型跟着变"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "6KeG57q_772c",
+      "title": "视线｜从花游运动员到欧洲央行行长 拉加德期待新角色",
+      "url": "https://photos.caixin.com/2026-11-27/102509405.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 7.57,
+      "brief": "当地时间2019年6月13日，卢森堡欧盟总部举行的欧元集团会议上，时任国际货币基金组织总裁拉加德在新闻发布会上微笑。 图：JOHN THYS/视觉中国 【财新网】 在欧洲深陷俄乌战火、能源通胀、主权债务危机等重重威胁之时，欧洲央行现任行长克里斯蒂娜·拉加德（Christine Largarde）决定于2027年2月7日正式卸任。",
+      "why": "本轮影响度最高的一档，命中「央行」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2019年、2027年"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "SGVyYSByZXZl",
+      "title": "Hera reveals stadium-sized asteroid crater from spacecraft impact",
+      "url": "https://phys.org/news/2026-11-hera-reveals-stadium-sized-asteroid.html",
+      "source": "Phys.org",
+      "category": "frontier",
+      "score": 7.39,
+      "brief": "Arriving at the site of humankind's first planetary defense experiment, the European Space Agency's Hera mission has found a miniature world of surprises. Dimorphos—the small asteroid whose…",
+      "why": "本轮影响度最高的一档，命中「asteroid」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "Q2xpbWF0ZSBj",
+      "title": "Climate change could dramatically alter habitats for Britain’s birds of prey – new research",
+      "url": "https://theconversation.com/climate-change-could-dramatically-alter-habitats-for-britains-birds-of-prey-new-research-297611",
+      "source": "The Conversation",
+      "category": "frontier",
+      "score": 7.36,
+      "brief": "There could be winners and losers among Britain’s raptors as temperatures rise.",
+      "why": "本轮影响度最高的一档，命中「climate、research」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "5Lit5Zu95pyJ",
+      "title": "中国有望建成全球首个核聚变能源工程供热示范堆先导堆型",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-27/10739040.shtml",
+      "source": "中新网财经",
+      "category": "economy",
+      "score": 7.13,
+      "brief": "27日在成都召开的“Z箍缩聚变裂变混合堆供热示范堆(ZFFR-Dt)工程专家会”透露，该工程倡议分两阶段实施：第一阶段为2026年至2030年，完成聚变点火验证及核心工艺验证； 第二阶段为2031年至2035年建造示范堆，设计聚变功率200兆瓦、热功率大于2000兆瓦，有望成为全球首个核聚变能源工程供热示范堆先导堆型。",
+      "why": "本轮影响度最高的一档，命中「核聚变」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：27日、2026年"
+      ],
+      "horizon": "短期"
+    }
+  ],
+  "watch": [
+    {
+      "title": "Putin unveils new Russian nuclear-powered submarine with hypersonic weapons",
+      "source": "半岛电视台",
+      "url": "https://www.aljazeera.com/news/2026/11/27/putin-unveils-new-russian-nuclear-powered-submarine-with-hypersonic-weapons?traffic_source=rss"
+    },
+    {
+      "title": "中国央行将大额存单认购起点金额下调一半",
+      "source": "中新网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-27/10739059.shtml"
+    },
+    {
+      "title": "联合国大学澳门人工智能大会探讨以人为本的人工智能教育",
+      "source": "联合国新闻",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143270"
+    }
+  ],
+  "engine": "rules",
+  "stats": {
+    "scanned": 1193,
+    "events": 1171,
+    "sources": "96/108",
+    "candidates": 10
+  }
+}

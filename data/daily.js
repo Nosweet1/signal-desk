@@ -1,62 +1,17 @@
 window.SIGNAL_DAILY = {
-  "date": "2026-11-27",
-  "generatedAt": "2026-11-27T00:13:56.629Z",
-  "headline": "主线：疫苗 / 突破 / 央行｜首条「解药｜通用型“白血病疫苗”突破晚期治疗，国内已…」",
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T00:06:55.683Z",
+  "headline": "主线：war / nuclear / 央行｜首条「Weary of war but with n…」",
   "items": [
     {
-      "id": "6Kej6I2v772c",
-      "title": "解药｜通用型“白血病疫苗”突破晚期治疗，国内已布局",
-      "url": "https://www.caixin.com/2026-11-27/102509085.html",
-      "source": "财新",
-      "category": "economy",
-      "score": 10.11,
-      "brief": "GPS在针对急性髓系白血病的关键三期临床试验中将患者生存期延长近10个月，这也是通用型肿瘤疫苗赛道的一项突破性进展 【财新网】 肿瘤疫苗领域，不同路线产品分别报告了或防止癌症复发，或延长患者生命的疗效。",
-      "why": "本轮影响度最高的一档，命中「疫苗、突破」。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "量化信号：11月、17日"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "5qyn5rSy5aSu",
-      "title": "欧洲央行新行长人选确定 国际清算银行总经理德科斯将接棒拉加德",
-      "url": "https://international.caixin.com/2026-11-27/102509079.html",
-      "source": "财新",
-      "category": "economy",
-      "score": 9.8,
-      "brief": "据英国《金融时报》报道，欧元区大多数国家已经决定支持国际清算银行（BIS）总经理德科斯（Pablo Hernández de Cos）接棒拉加德，在2027年2月出任欧洲央行行长。 《金融时报》报道称，荷兰首相罗布·杰滕已向其他领导人表示，他“将支持”推举德科斯的共识。",
-      "why": "本轮影响度最高的一档，命中「央行」。",
-      "impact": [
-        "资本与就业：资金流向和用工需求会先动",
-        "量化信号：2027年、11月"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "6IGU5ZCI5Zu9",
-      "title": "联合国大学澳门人工智能大会探讨以人为本的人工智能教育",
-      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143270",
-      "source": "联合国新闻",
+      "id": "V2Vhcnkgb2Yg",
+      "title": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
+      "url": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
       "category": "order",
-      "score": 9.27,
-      "brief": "第三届联合国大学澳门人工智能大会11月25日至26日在澳门举行，来自全球的400多名政策制定者、教育工作者、学者和青年创新者齐聚一堂，探讨如何利用人工智能促进教育发展，同时确保技术应用符合人的主体性、社会公平和信任等原则。",
-      "why": "本轮影响度最高的一档，命中「联合国」，来源权威。",
-      "impact": [
-        "政策与监管口径：合规边界变了，商业模型跟着变",
-        "量化信号：11月、25日"
-      ],
-      "horizon": "短期"
-    },
-    {
-      "id": "V2hhdCB3b3Vs",
-      "title": "What would happen if Russia detonated a nuclear weapon in space?",
-      "url": "https://www.theguardian.com/world/2026/nov/26/what-would-be-the-fallout-from-a-nuclear-armed-satellite-detonated-into-space",
-      "source": "Guardian",
-      "category": "order",
-      "score": 8.79,
-      "brief": "⁠Sputnik-S, a nuclear-enabled satellite, has been assembled by Russia and could be launched in 60 days, reports say Russia is reportedly preparing to launch a nuclear-armed satellite into…",
-      "why": "本轮影响度最高的一档，命中「nuclear」，来源权威。",
+      "score": 7.83,
+      "brief": "Ukraine settles in for another devastating winter as the questions persists: how will it all end?",
+      "why": "本轮影响度最高的一档，命中「war」，来源权威。",
       "impact": [
         "政策与监管口径：合规边界变了，商业模型跟着变",
         "一手来源，可信度高，可直接引用"
@@ -64,56 +19,100 @@ window.SIGNAL_DAILY = {
       "horizon": "短期"
     },
     {
-      "id": "SW4gYSBmZXJ0",
-      "title": "In a fertility advance, engineered molecular glue stabilizes chromosomes in aging eggs",
-      "url": "https://www.statnews.com/2026/11/26/fertility-advance-engineered-protein-stabilizes-chromosomes-in-aging-eggs/?utm_campaign=rss",
-      "source": "STAT News",
-      "category": "survival",
-      "score": 8.26,
-      "brief": "Researchers engineered a protein system capable of restoring normal chromosome connections in aging mouse eggs, raising hopes of one day improving IVF outcomes",
-      "why": "本轮影响度最高的一档，命中「fertility」。",
+      "id": "V2lsbCBUYWl3",
+      "title": "Will Taiwan vote to revive nuclear power – and why does that matter for AI?",
+      "url": "https://www.aljazeera.com/news/2026/11/27/will-taiwan-vote-to-revive-nuclear-power-and-why-does-that-matter-for-ai?traffic_source=rss",
+      "source": "半岛电视台",
+      "category": "order",
+      "score": 7.77,
+      "brief": "Voters will decide on Saturday whether to scrap the country's 'nuclear-free homeland' policy.",
+      "why": "本轮影响度最高的一档，命中「nuclear」。",
       "impact": [
-        "公共健康与资源约束：影响的是成本曲线和监管强度"
+        "政策与监管口径：合规边界变了，商业模型跟着变"
       ],
-      "horizon": "长期"
+      "horizon": "短期"
     },
     {
-      "id": "6Im-5ruL55eF",
-      "title": "艾滋病疫苗终于触手可及",
-      "url": "https://www.solidot.org/story?sid=86000",
-      "source": "Solidot",
+      "id": "6KeG57q_772c",
+      "title": "视线｜从花游运动员到欧洲央行行长 拉加德期待新角色",
+      "url": "https://photos.caixin.com/2026-11-27/102509405.html",
+      "source": "财新",
+      "category": "economy",
+      "score": 7.57,
+      "brief": "当地时间2019年6月13日，卢森堡欧盟总部举行的欧元集团会议上，时任国际货币基金组织总裁拉加德在新闻发布会上微笑。 图：JOHN THYS/视觉中国 【财新网】 在欧洲深陷俄乌战火、能源通胀、主权债务危机等重重威胁之时，欧洲央行现任行长克里斯蒂娜·拉加德（Christine Largarde）决定于2027年2月7日正式卸任。",
+      "why": "本轮影响度最高的一档，命中「央行」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：2019年、2027年"
+      ],
+      "horizon": "短期"
+    },
+    {
+      "id": "SGVyYSByZXZl",
+      "title": "Hera reveals stadium-sized asteroid crater from spacecraft impact",
+      "url": "https://phys.org/news/2026-11-hera-reveals-stadium-sized-asteroid.html",
+      "source": "Phys.org",
       "category": "frontier",
-      "score": 7.07,
-      "brief": "她本可能成为统计数字的一部分，但通过参与 HIV 研究她却给数百万人带来了希望。 科学家现在认为，通过模拟她感染 HIV 过程中的部分关键元素，能训练其他人的免疫系统产生同样强效的抗体去阻断多种不同的 HIV 毒株，最终研发出一种能彻底阻断 HIV 感染疫苗。",
-      "why": "本轮影响度最高的一档，命中「疫苗」。",
+      "score": 7.39,
+      "brief": "Arriving at the site of humankind's first planetary defense experiment, the European Space Agency's Hera mission has found a miniature world of surprises. Dimorphos—the small asteroid whose…",
+      "why": "本轮影响度最高的一档，命中「asteroid」。",
       "impact": [
         "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
       ],
       "horizon": "中期"
+    },
+    {
+      "id": "Q2xpbWF0ZSBj",
+      "title": "Climate change could dramatically alter habitats for Britain’s birds of prey – new research",
+      "url": "https://theconversation.com/climate-change-could-dramatically-alter-habitats-for-britains-birds-of-prey-new-research-297611",
+      "source": "The Conversation",
+      "category": "frontier",
+      "score": 7.36,
+      "brief": "There could be winners and losers among Britain’s raptors as temperatures rise.",
+      "why": "本轮影响度最高的一档，命中「climate、research」。",
+      "impact": [
+        "技术路线与产业格局：谁先落地，谁就拿到下一轮定价权"
+      ],
+      "horizon": "中期"
+    },
+    {
+      "id": "5Lit5Zu95pyJ",
+      "title": "中国有望建成全球首个核聚变能源工程供热示范堆先导堆型",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-27/10739040.shtml",
+      "source": "中新网财经",
+      "category": "economy",
+      "score": 7.13,
+      "brief": "27日在成都召开的“Z箍缩聚变裂变混合堆供热示范堆(ZFFR-Dt)工程专家会”透露，该工程倡议分两阶段实施：第一阶段为2026年至2030年，完成聚变点火验证及核心工艺验证； 第二阶段为2031年至2035年建造示范堆，设计聚变功率200兆瓦、热功率大于2000兆瓦，有望成为全球首个核聚变能源工程供热示范堆先导堆型。",
+      "why": "本轮影响度最高的一档，命中「核聚变」。",
+      "impact": [
+        "资本与就业：资金流向和用工需求会先动",
+        "量化信号：27日、2026年"
+      ],
+      "horizon": "短期"
     }
   ],
   "watch": [
     {
-      "title": "11月27日会员早报：英伟达叫停对东南亚四国的服务器发货 日本央行释放一次加50基点的信号",
-      "source": "华尔街见闻",
-      "url": "https://wallstreetcn.com/member/articles/3786803"
+      "title": "Putin unveils new Russian nuclear-powered submarine with hypersonic weapons",
+      "source": "半岛电视台",
+      "url": "https://www.aljazeera.com/news/2026/11/27/putin-unveils-new-russian-nuclear-powered-submarine-with-hypersonic-weapons?traffic_source=rss"
     },
     {
-      "title": "危机频发之际，欧洲央行新领导层浮现：鸽派老将、金融学者与市场专家将如何应对下一场风暴？",
-      "source": "华尔街见闻",
-      "url": "https://wallstreetcn.com/articles/3786802"
+      "title": "中国央行将大额存单认购起点金额下调一半",
+      "source": "中新网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-27/10739059.shtml"
     },
     {
-      "title": "Net migration to UK falls to lowest level since 1997 excluding pandemic",
-      "source": "Guardian",
-      "url": "https://www.theguardian.com/uk-news/2026/nov/26/net-migration-to-uk-falls-to-lowest-level-since-1997-excluding-pandemic"
+      "title": "联合国大学澳门人工智能大会探讨以人为本的人工智能教育",
+      "source": "联合国新闻",
+      "url": "https://news.un.org/feed/view/zh/story/2026/11/1143270"
     }
   ],
   "engine": "rules",
   "stats": {
-    "scanned": 1168,
-    "events": 1153,
-    "sources": "97/108",
+    "scanned": 1193,
+    "events": 1171,
+    "sources": "96/108",
     "candidates": 10
   }
 };
